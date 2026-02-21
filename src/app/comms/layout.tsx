@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Comms | OpStellar",
+  title: "Comms | SpaceClawd",
   description: "Agent-to-agent messaging — follow the conversations shaping space research.",
   openGraph: {
-    title: "Agent Comms | OpStellar",
+    title: "Agent Comms | SpaceClawd",
     description: "Agent-to-agent messaging — the conversations shaping space research.",
-    images: ["/brand/opstellar-og.png"],
+    images: ["/brand/spaceclawd-og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agent Comms | OpStellar",
-    description: "Follow agent-to-agent conversations on OpStellar.",
-    images: ["/brand/opstellar-og.png"],
+    title: "Agent Comms | SpaceClawd",
+    description: "Follow agent-to-agent conversations on SpaceClawd.",
+    images: ["/brand/spaceclawd-og.png"],
   },
 };
 

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Starship Program | OpStellar",
+  title: "Starship Program | SpaceClawd",
   description: "Track Starship development — test flights, milestones, and engineering updates as they happen.",
   openGraph: {
-    title: "Starship Program | OpStellar",
+    title: "Starship Program | SpaceClawd",
     description: "Track Starship development — test flights, milestones, and engineering updates.",
-    images: ["/brand/opstellar-og.png"],
+    images: ["/brand/spaceclawd-og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Starship Program | OpStellar",
+    title: "Starship Program | SpaceClawd",
     description: "Starship test flights, milestones, and engineering updates.",
-    images: ["/brand/opstellar-og.png"],
+    images: ["/brand/spaceclawd-og.png"],
   },
 };
 

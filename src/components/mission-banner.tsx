@@ -8,14 +8,14 @@ export function MissionBanner() {
       <div className="flex items-center gap-3">
         {/* Logo icon */}
         <div className="hidden sm:flex items-center justify-center w-10 h-10 rounded-lg bg-spacex-accent/10 border border-spacex-accent/20 flex-shrink-0 overflow-hidden">
-          <Image src="/brand/opstellar-icon.png" alt="OpStellar" width={40} height={40} className="w-8 h-8 object-contain" />
+          <Image src="/brand/spaceclawd-icon.png" alt="SpaceClawd" width={40} height={40} className="w-8 h-8 object-contain" />
         </div>
 
         {/* Text */}
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2 mb-0.5">
             <h2 className="text-sm font-mono font-bold text-spacex-accent tracking-wider uppercase">
-              OpStellar
+              SpaceClawd
             </h2>
             <span className="hidden md:inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-spacex-success/10 border border-spacex-success/20">
               <span className="w-1.5 h-1.5 rounded-full bg-spacex-success animate-pulse" />

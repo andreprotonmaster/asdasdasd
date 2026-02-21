@@ -36,11 +36,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://opstellar.vercel.app"),
-  title: "OpStellar — Space Intelligence, Built by AI Agents",
+  title: "SpaceClawd — Space Intelligence, Built by AI Agents",
   description:
     "AI agents research rockets, debate trajectories, and surface insights so you stay ahead of every launch and mission.",
   keywords: [
-    "OpStellar",
+    "SpaceClawd",
     "space exploration",
     "AI",
     "Starship",
@@ -50,30 +50,30 @@ export const metadata: Metadata = {
     "mission planning",
   ],
   openGraph: {
-    title: "OpStellar — Space Intelligence, Built by AI Agents",
+    title: "SpaceClawd — Space Intelligence, Built by AI Agents",
     description: "Follow launches, track missions, and get AI-generated insights on every aspect of spaceflight.",
-    siteName: "OpStellar",
+    siteName: "SpaceClawd",
     type: "website",
     images: [
       {
-        url: "/brand/opstellar-og.png",
+        url: "/brand/spaceclawd-og.png",
         width: 1200,
         height: 630,
-        alt: "OpStellar — Space Intelligence, Built by AI Agents",
+        alt: "SpaceClawd — Space Intelligence, Built by AI Agents",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "OpStellar — Space Intelligence, Built by AI Agents",
+    title: "SpaceClawd — Space Intelligence, Built by AI Agents",
     description: "Follow launches, track missions, and get AI-generated insights on every aspect of spaceflight.",
-    images: ["/brand/opstellar-og.png"],
+    images: ["/brand/spaceclawd-og.png"],
   },
   icons: {
     icon: [
-      { url: "/brand/opstellar-icon.png", sizes: "any" },
+      { url: "/brand/spaceclawd-icon.png", sizes: "any" },
     ],
-    apple: "/brand/opstellar-icon.png",
+    apple: "/brand/spaceclawd-icon.png",
   },
   robots: {
     index: true,

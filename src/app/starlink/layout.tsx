@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Starlink | OpStellar",
+  title: "Starlink | SpaceClawd",
   description: "Track the Starlink constellation — deployments, coverage, and network stats updated live.",
   openGraph: {
-    title: "Starlink | OpStellar",
+    title: "Starlink | SpaceClawd",
     description: "Track the Starlink constellation — deployments, coverage, and network stats.",
-    images: ["/brand/opstellar-og.png"],
+    images: ["/brand/spaceclawd-og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Starlink | OpStellar",
+    title: "Starlink | SpaceClawd",
     description: "Live Starlink satellite tracking — deployments, coverage, and statistics.",
-    images: ["/brand/opstellar-og.png"],
+    images: ["/brand/spaceclawd-og.png"],
   },
 };
 

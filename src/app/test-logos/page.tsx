@@ -3,7 +3,7 @@
 import { useRef, useState, useCallback } from "react";
 
 /*
-  OpStellar — Final Brand Assets (Archivo Black)
+  SpaceClawd — Final Brand Assets (Archivo Black)
   ────────────────────────────────────────────────
   Neon Glow Spectrum icon × Archivo Black wordmark.
   Favicon · One-liner · OG Image · Icon-only · Dark & Light.
@@ -275,13 +275,13 @@ export default function TestLogosPage() {
       {/* ── PAGE HEADER ── */}
       <div className="mb-20">
         <p className="text-[10px] font-mono text-[#A855F7]/50 tracking-[0.3em] mb-3">
-          OPSTELLAR BRAND KIT
+          SPACECLAWD BRAND KIT
         </p>
         <h1
           className="text-4xl font-bold text-white mb-3 tracking-tight"
           style={{ fontFamily: "'Inter', 'SF Pro Display', system-ui, sans-serif" }}
         >
-          OpStellar — Final Brand Assets
+          SpaceClawd — Final Brand Assets
         </h1>
         <p className="text-white/35 text-sm max-w-2xl leading-relaxed">
           Neon Glow Spectrum icon × <span className="text-white/50">Archivo Black</span> wordmark.
@@ -296,7 +296,7 @@ export default function TestLogosPage() {
         <SectionHeader
           tag="01 · PRIMARY LOCKUP"
           title="Icon + Wordmark — Horizontal"
-          desc="The primary brand mark. Icon left, OPSTELLAR right. Use on dashboards, headers, marketing."
+          desc="The primary brand mark. Icon left, SPACECLAWD right. Use on dashboards, headers, marketing."
         />
         {/* Dark */}
         <div className="bg-[#0A0A0F] rounded-2xl border border-white/[0.06] p-12 flex items-center justify-center">
@@ -316,7 +316,7 @@ export default function TestLogosPage() {
             </text>
           </svg>
         </div>
-        <DownloadBar svgRef={lockupDarkRef} baseName="opstellar-lockup-dark" />
+        <DownloadBar svgRef={lockupDarkRef} baseName="spaceclawd-lockup-dark" />
 
         {/* Light */}
         <div className="mt-6 bg-white rounded-2xl border border-neutral-200 p-12 flex items-center justify-center">
@@ -336,7 +336,7 @@ export default function TestLogosPage() {
             </text>
           </svg>
         </div>
-        <DownloadBar svgRef={lockupLightRef} baseName="opstellar-lockup-light" />
+        <DownloadBar svgRef={lockupLightRef} baseName="spaceclawd-lockup-light" />
       </section>
 
       {/* ═══════════════════════════════════════════
@@ -368,7 +368,7 @@ export default function TestLogosPage() {
             </text>
           </svg>
         </div>
-        <DownloadBar svgRef={oneLinerDarkRef} baseName="opstellar-oneliner-dark" />
+        <DownloadBar svgRef={oneLinerDarkRef} baseName="spaceclawd-oneliner-dark" />
 
         {/* Light */}
         <div className="mt-6 bg-white rounded-2xl border border-neutral-200 p-8 flex items-center justify-center">
@@ -390,7 +390,7 @@ export default function TestLogosPage() {
             </text>
           </svg>
         </div>
-        <DownloadBar svgRef={oneLinerLightRef} baseName="opstellar-oneliner-light" />
+        <DownloadBar svgRef={oneLinerLightRef} baseName="spaceclawd-oneliner-light" />
       </section>
 
       {/* ═══════════════════════════════════════════
@@ -413,7 +413,7 @@ export default function TestLogosPage() {
                 </svg>
               </div>
             </div>
-            <DownloadBar svgRef={faviconDarkRef} baseName="opstellar-favicon-dark" />
+            <DownloadBar svgRef={faviconDarkRef} baseName="spaceclawd-favicon-dark" />
           </div>
           {/* Light bg */}
           <div>
@@ -425,7 +425,7 @@ export default function TestLogosPage() {
                 </svg>
               </div>
             </div>
-            <DownloadBar svgRef={faviconLightRef} baseName="opstellar-favicon-light" />
+            <DownloadBar svgRef={faviconLightRef} baseName="spaceclawd-favicon-light" />
           </div>
           {/* Transparent */}
           <div>
@@ -440,7 +440,7 @@ export default function TestLogosPage() {
                 </svg>
               </div>
             </div>
-            <DownloadBar svgRef={faviconTransRef} baseName="opstellar-favicon-transparent" />
+            <DownloadBar svgRef={faviconTransRef} baseName="spaceclawd-favicon-transparent" />
           </div>
         </div>
 
@@ -551,7 +551,7 @@ export default function TestLogosPage() {
             </text>
           </svg>
         </div>
-        <DownloadBar svgRef={ogDarkRef} baseName="opstellar-og-dark" />
+        <DownloadBar svgRef={ogDarkRef} baseName="spaceclawd-og-dark" />
 
         {/* Light OG */}
         <div className="mt-6 bg-white rounded-2xl border border-neutral-200 p-4">
@@ -626,7 +626,7 @@ export default function TestLogosPage() {
             </text>
           </svg>
         </div>
-        <DownloadBar svgRef={ogLightRef} baseName="opstellar-og-light" />
+        <DownloadBar svgRef={ogLightRef} baseName="spaceclawd-og-light" />
 
         {/* ── BG-only downloads (no logo/text) ── */}
         <div className="mt-10 mb-4">
@@ -648,7 +648,7 @@ export default function TestLogosPage() {
             <rect width="1200" height="630" fill="url(#og-bgonly-d-glow)" />
           </svg>
         </div>
-        <DownloadBar svgRef={ogBgDarkRef} baseName="opstellar-bg-dark" />
+        <DownloadBar svgRef={ogBgDarkRef} baseName="spaceclawd-bg-dark" />
 
         {/* Light BG only */}
         <div className="mt-6 bg-white rounded-2xl border border-neutral-200 p-4">
@@ -663,7 +663,7 @@ export default function TestLogosPage() {
             <rect width="1200" height="630" fill="url(#og-bgonly-l-glow)" />
           </svg>
         </div>
-        <DownloadBar svgRef={ogBgLightRef} baseName="opstellar-bg-light" />
+        <DownloadBar svgRef={ogBgLightRef} baseName="spaceclawd-bg-light" />
       </section>
 
       {/* ═══════════════════════════════════════════
@@ -724,7 +724,7 @@ export default function TestLogosPage() {
             </svg>
           </div>
         </div>
-        <DownloadBar svgRef={twitterPfpRef} baseName="opstellar-twitter-pfp" />
+        <DownloadBar svgRef={twitterPfpRef} baseName="spaceclawd-twitter-pfp" />
 
         {/* Twitter Cover / Header — 1500×500 */}
         <p className="text-[10px] font-mono text-white/30 tracking-wider mb-3 mt-10">HEADER / COVER PHOTO · 1500×500</p>
@@ -837,7 +837,7 @@ export default function TestLogosPage() {
             </text>
           </svg>
         </div>
-        <DownloadBar svgRef={twitterCoverRef} baseName="opstellar-twitter-cover" />
+        <DownloadBar svgRef={twitterCoverRef} baseName="spaceclawd-twitter-cover" />
       </section>
 
       {/* ═══════════════════════════════════════════
@@ -856,7 +856,7 @@ export default function TestLogosPage() {
             </svg>
           </div>
         </div>
-        <DownloadBar svgRef={iconOnlyRef} baseName="opstellar-icon" />
+        <DownloadBar svgRef={iconOnlyRef} baseName="spaceclawd-icon" />
       </section>
 
       {/* ═══════════════════════════════════════════
@@ -866,7 +866,7 @@ export default function TestLogosPage() {
         <SectionHeader
           tag="07 · WORDMARK ONLY"
           title="Text-Only Wordmark"
-          desc="OPSTELLAR in Archivo Black — no icon. For footers, legal, small type."
+          desc="SPACECLAWD in Archivo Black — no icon. For footers, legal, small type."
         />
         {/* Dark */}
         <div className="bg-[#0A0A0F] rounded-2xl border border-white/[0.06] p-10 flex items-center justify-center">
@@ -894,7 +894,7 @@ export default function TestLogosPage() {
             </text>
           </svg>
         </div>
-        <DownloadBar svgRef={wordmarkDarkRef} baseName="opstellar-wordmark-dark" />
+        <DownloadBar svgRef={wordmarkDarkRef} baseName="spaceclawd-wordmark-dark" />
 
         {/* Light */}
         <div className="mt-6 bg-white rounded-2xl border border-neutral-200 p-10 flex items-center justify-center">
@@ -922,7 +922,7 @@ export default function TestLogosPage() {
             </text>
           </svg>
         </div>
-        <DownloadBar svgRef={wordmarkLightRef} baseName="opstellar-wordmark-light" />
+        <DownloadBar svgRef={wordmarkLightRef} baseName="spaceclawd-wordmark-light" />
       </section>
 
       {/* ═══════════════════════════════════════════
@@ -959,14 +959,14 @@ export default function TestLogosPage() {
         <SectionHeader
           tag="09 · TYPOGRAPHY"
           title="Archivo Black"
-          desc="Primary display typeface. Used for the OPSTELLAR wordmark across all brand materials."
+          desc="Primary display typeface. Used for the SPACECLAWD wordmark across all brand materials."
         />
         <div className="bg-[#0A0A0F] rounded-2xl border border-white/[0.06] p-10 space-y-6">
           {[64, 48, 36, 28, 20, 14].map((s) => (
             <div key={s} className="flex items-baseline gap-4">
               <span className="text-[10px] font-mono text-white/20 w-12 text-right shrink-0">{s}px</span>
               <p style={{ fontFamily: FONT, fontSize: s, letterSpacing: 2 }} className="text-white/80 truncate">
-                OPSTELLAR
+                SPACECLAWD
               </p>
             </div>
           ))}
@@ -997,16 +997,16 @@ export default function TestLogosPage() {
             { asset: "Apple Touch Icon", path: "public/favicons/apple-touch-icon.png", dl: "Favicon Dark → PNG @4x (resize to 180px)" },
             { asset: "Android 192×192", path: "public/favicons/android-chrome-192x192.png", dl: "Favicon Dark → PNG @4x (resize to 192px)" },
             { asset: "Android 512×512", path: "public/favicons/android-chrome-512x512.png", dl: "Favicon Dark → PNG @4x (resize to 512px)" },
-            { asset: "OG Image", path: "public/brand/opstellar-og.png", dl: "OG Dark → PNG @1x (1200×630)" },
-            { asset: "OG Image 4×", path: "public/brand/opstellar-og@4x.png", dl: "OG Dark → PNG @4x (4800×2520)" },
-            { asset: "App Icon PNG", path: "public/brand/opstellar-icon.png", dl: "Icon Only → PNG @1x" },
-            { asset: "App Icon SVG", path: "public/brand/opstellar-icon.svg", dl: "Icon Only → SVG" },
-            { asset: "Lockup Dark PNG", path: "public/brand/opstellar-lockup-dark.png", dl: "Primary Lockup → PNG @1x" },
-            { asset: "Lockup Dark SVG", path: "public/brand/opstellar-lockup-dark.svg", dl: "Primary Lockup → SVG" },
-            { asset: "One-liner PNG", path: "public/brand/opstellar-oneliner-dark.png", dl: "One-liner Dark → PNG @1x" },
-            { asset: "Sidebar Logo", path: "public/brand/opstellar-lockup-dark.png", dl: "Used for sidebar navigation" },
-            { asset: "X Profile Pic", path: "public/brand/opstellar-twitter-pfp.png", dl: "Twitter PFP → PNG @1x (400×400)" },
-            { asset: "X Cover Photo", path: "public/brand/opstellar-twitter-cover.png", dl: "Twitter Cover → PNG @1x (1500×500)" },
+            { asset: "OG Image", path: "public/brand/spaceclawd-og.png", dl: "OG Dark → PNG @1x (1200×630)" },
+            { asset: "OG Image 4×", path: "public/brand/spaceclawd-og@4x.png", dl: "OG Dark → PNG @4x (4800×2520)" },
+            { asset: "App Icon PNG", path: "public/brand/spaceclawd-icon.png", dl: "Icon Only → PNG @1x" },
+            { asset: "App Icon SVG", path: "public/brand/spaceclawd-icon.svg", dl: "Icon Only → SVG" },
+            { asset: "Lockup Dark PNG", path: "public/brand/spaceclawd-lockup-dark.png", dl: "Primary Lockup → PNG @1x" },
+            { asset: "Lockup Dark SVG", path: "public/brand/spaceclawd-lockup-dark.svg", dl: "Primary Lockup → SVG" },
+            { asset: "One-liner PNG", path: "public/brand/spaceclawd-oneliner-dark.png", dl: "One-liner Dark → PNG @1x" },
+            { asset: "Sidebar Logo", path: "public/brand/spaceclawd-lockup-dark.png", dl: "Used for sidebar navigation" },
+            { asset: "X Profile Pic", path: "public/brand/spaceclawd-twitter-pfp.png", dl: "Twitter PFP → PNG @1x (400×400)" },
+            { asset: "X Cover Photo", path: "public/brand/spaceclawd-twitter-cover.png", dl: "Twitter Cover → PNG @1x (1500×500)" },
           ].map((row) => (
             <div key={row.path} className="grid grid-cols-[1fr_2fr_1fr] gap-4 items-start">
               <span className="text-white/60 text-[12px]">{row.asset}</span>
@@ -1020,14 +1020,14 @@ export default function TestLogosPage() {
               <span className="text-[#A855F7]/60">layout.tsx</span> metadata currently references:
             </p>
             <pre className="text-white/20 text-[10px] bg-white/[0.03] rounded-lg p-4 overflow-x-auto">{`icons: {
-  icon: [{ url: "/brand/opstellar-icon.png", sizes: "any" }],
-  apple: "/brand/opstellar-icon.png",
+  icon: [{ url: "/brand/spaceclawd-icon.png", sizes: "any" }],
+  apple: "/brand/spaceclawd-icon.png",
 },
 openGraph: {
-  images: [{ url: "/brand/opstellar-og.png", width: 1200, height: 630 }],
+  images: [{ url: "/brand/spaceclawd-og.png", width: 1200, height: 630 }],
 },
 twitter: {
-  images: ["/brand/opstellar-og.png"],
+  images: ["/brand/spaceclawd-og.png"],
 }`}</pre>
             <p className="text-green-400/60 text-[10px] mt-3 leading-relaxed">
               ✓ All brand assets are placed in <span className="text-green-400/80">public/brand/</span> and
@@ -1040,8 +1040,8 @@ twitter: {
               <span className="text-[#A855F7]/60">site.webmanifest</span> at public/favicons/site.webmanifest — update name:
             </p>
             <pre className="text-white/20 text-[10px] bg-white/[0.03] rounded-lg p-4 overflow-x-auto">{`{
-  "name": "OpStellar",
-  "short_name": "OpStellar",
+  "name": "SpaceClawd",
+  "short_name": "SpaceClawd",
   "icons": [
     { "src": "/favicons/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/favicons/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
@@ -1057,7 +1057,7 @@ twitter: {
       {/* ── FOOTER ── */}
       <div className="border-t border-white/[0.06] pt-8 pb-12 text-center">
         <p className="text-[10px] font-mono text-white/20">
-          OpStellar Brand Kit · Archivo Black · Neon Glow Spectrum
+          SpaceClawd Brand Kit · Archivo Black · Neon Glow Spectrum
         </p>
       </div>
     </div>

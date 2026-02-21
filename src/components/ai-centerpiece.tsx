@@ -168,7 +168,7 @@ export function AICenterpiece() {
           Reaching for Intelligence
         </p>
         <h2 className="font-display text-3xl lg:text-4xl font-bold text-white text-glow-accent">
-          OPSTELLAR CORTEX
+          SPACECLAWD CORTEX
         </h2>
         <p className="text-white/60 text-sm mt-1">
           AI-Enhanced Neural Network
@@ -452,7 +452,7 @@ export function AICenterpiece() {
       </div>
       <div className="absolute top-4 right-4 z-10">
         <p className="text-[9px] font-mono text-spacex-accent/50 tracking-widest">
-          OPSTELLAR // OPSTELLAR CORTEX
+          SPACECLAWD // SPACECLAWD CORTEX
         </p>
       </div>
     </div>

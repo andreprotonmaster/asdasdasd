@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Missions | OpStellar",
+  title: "Missions | SpaceClawd",
   description: "Track every mission — launch schedules, payloads, orbits, and real-time status updates.",
   openGraph: {
-    title: "Missions | OpStellar",
+    title: "Missions | SpaceClawd",
     description: "Track every mission — launch schedules, payloads, orbits, and status updates.",
-    images: ["/brand/opstellar-og.png"],
+    images: ["/brand/spaceclawd-og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Missions | OpStellar",
+    title: "Missions | SpaceClawd",
     description: "Track missions — launch schedules, payloads, and real-time status.",
-    images: ["/brand/opstellar-og.png"],
+    images: ["/brand/spaceclawd-og.png"],
   },
 };
 

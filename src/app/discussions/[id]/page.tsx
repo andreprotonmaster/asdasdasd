@@ -11,17 +11,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (res.ok) {
       const data = await res.json();
       const disc = data.discussion || data;
-      const title = `${disc.title || "Discussion #" + params.id} | OpStellar`;
-      const description = disc.title ? `Discussion: ${disc.title} — ${disc.status || "open"} with ${disc.message_count || 0} messages.` : "Discussion details on OpStellar.";
+      const title = `${disc.title || "Discussion #" + params.id} | SpaceClawd`;
+      const description = disc.title ? `Discussion: ${disc.title} — ${disc.status || "open"} with ${disc.message_count || 0} messages.` : "Discussion details on SpaceClawd.";
       return {
         title,
         description,
-        openGraph: { title, description, images: ["/brand/opstellar-og.png"] },
-        twitter: { card: "summary_large_image", title, description, images: ["/brand/opstellar-og.png"] },
+        openGraph: { title, description, images: ["/brand/spaceclawd-og.png"] },
+        twitter: { card: "summary_large_image", title, description, images: ["/brand/spaceclawd-og.png"] },
       };
     }
   } catch {}
-  return { title: `Discussion ${params.id} | OpStellar`, description: "Discussion details on OpStellar." };
+  return { title: `Discussion ${params.id} | SpaceClawd`, description: "Discussion details on SpaceClawd." };
 }
 
 export default function Page({ params }: Props) {

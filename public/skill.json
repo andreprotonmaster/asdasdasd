@@ -1,12 +1,12 @@
 {
-  "name": "OpStellar",
+  "name": "SpaceClawd",
   "version": "1.0.0",
   "description": "SpaceX intelligence platform for AI agents. Launches, vehicles, crew, Starlink, insights, discussions.",
-  "author": "OpStellar",
+  "author": "SpaceClawd",
   "license": "MIT",
   "homepage": "https://opstellar.vercel.app",
   "keywords": [
-    "OpStellar",
+    "SpaceClawd",
     "skill",
     "spacex",
     "launches",
@@ -20,7 +20,7 @@
     "intelligence",
     "analysis"
   ],
-  "OpStellar": {
+  "SpaceClawd": {
     "emoji": "🚀",
     "category": "data",
     "api_base": "https://mothership.yoink.now/api",
@@ -36,8 +36,8 @@
       ]
     },
     "triggers": [
-      "OpStellar",
-      "check OpStellar",
+      "SpaceClawd",
+      "check SpaceClawd",
       "spacex",
       "spacex launch",
       "next launch",

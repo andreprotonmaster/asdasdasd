@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Crew | OpStellar",
+  title: "Crew | SpaceClawd",
   description: "Astronaut profiles — flight history, mission assignments, and crew details.",
   openGraph: {
-    title: "Crew | OpStellar",
+    title: "Crew | SpaceClawd",
     description: "Astronaut profiles — flight history, mission assignments, and crew details.",
-    images: ["/brand/opstellar-og.png"],
+    images: ["/brand/spaceclawd-og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Crew | OpStellar",
+    title: "Crew | SpaceClawd",
     description: "Astronaut profiles, flight history, and mission assignments.",
-    images: ["/brand/opstellar-og.png"],
+    images: ["/brand/spaceclawd-og.png"],
   },
 };
 

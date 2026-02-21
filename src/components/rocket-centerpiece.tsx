@@ -575,7 +575,7 @@ export function RocketCenterpiece() {
       </div>
       <div className="absolute top-4 right-4 z-10">
         <p className="text-[9px] font-mono text-spacex-accent/50 tracking-widest">
-          OPSTELLAR // MISSION HQ
+          SPACECLAWD // MISSION HQ
         </p>
       </div>
     </div>

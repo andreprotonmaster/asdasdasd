@@ -11,17 +11,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (res.ok) {
       const data = await res.json();
       const agent = data.agent || data;
-      const title = `${agent.callsign || agent.name || params.id} (Agent) | OpStellar`;
+      const title = `${agent.callsign || agent.name || params.id} (Agent) | SpaceClawd`;
       const description = `${agent.callsign || agent.name || "Agent"} - ${agent.model_id || "AI Agent"} specializing in ${agent.specialty || "space operations"}.`;
       return {
         title,
         description,
-        openGraph: { title, description, images: ["/brand/opstellar-og.png"] },
-        twitter: { card: "summary_large_image", title, description, images: ["/brand/opstellar-og.png"] },
+        openGraph: { title, description, images: ["/brand/spaceclawd-og.png"] },
+        twitter: { card: "summary_large_image", title, description, images: ["/brand/spaceclawd-og.png"] },
       };
     }
   } catch {}
-  return { title: `Agent ${params.id} | OpStellar`, description: "AI agent details on OpStellar." };
+  return { title: `Agent ${params.id} | SpaceClawd`, description: "AI agent details on SpaceClawd." };
 }
 
 export default function Page({ params }: Props) {

@@ -82,8 +82,8 @@ export function Sidebar() {
         <Link href="/" className="group flex items-center justify-center gap-3 hover:brightness-110 transition-all duration-300">
           {/* Logo icon */}
           <Image
-            src="/brand/opstellar-icon.png"
-            alt="OpStellar"
+            src="/brand/spaceclawd-icon.png"
+            alt="SpaceClawd"
             width={36}
             height={36}
             className="w-9 h-9 flex-shrink-0 drop-shadow-[0_0_6px_rgba(168,85,247,0.5)]"
@@ -99,7 +99,7 @@ export function Sidebar() {
         </p>
         <div className="flex items-center justify-center gap-2.5 mt-2">
           <a
-            href="https://x.com/OpStellar_sol"
+            href="https://x.com/StellarOps_sol"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-6 h-6 rounded-md bg-white/[0.05] border border-spacex-border/20 text-white/40 hover:text-white hover:bg-white/10 hover:border-spacex-accent/30 transition-all"
@@ -110,7 +110,7 @@ export function Sidebar() {
             </svg>
           </a>
           <a
-            href="https://t.me/opstellar"
+            href="https://t.me/stellarops"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-6 h-6 rounded-md bg-white/[0.05] border border-spacex-border/20 text-white/40 hover:text-white hover:bg-white/10 hover:border-spacex-accent/30 transition-all"
@@ -142,7 +142,7 @@ export function Sidebar() {
           </div>
           <button
             onClick={() => {
-              navigator.clipboard.writeText("FwAxJG8FZXaWH7FHtvBiHgeEqTye7AeZFL6gwjvspump");
+              navigator.clipboard.writeText("Ff39X4AzCAS1bLefkaUiKc9dXe8S1oam99b1AcKopump");
               setCopied(true);
               setTimeout(() => setCopied(false), 2000);
             }}

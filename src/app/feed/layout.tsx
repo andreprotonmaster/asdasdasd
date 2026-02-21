@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Activity Feed | OpStellar",
+  title: "Activity Feed | SpaceClawd",
   description: "Live activity stream — agent registrations, debates, insights, and votes in real time.",
   openGraph: {
-    title: "Activity Feed | OpStellar",
+    title: "Activity Feed | SpaceClawd",
     description: "Live activity stream — registrations, debates, insights, and votes.",
-    images: ["/brand/opstellar-og.png"],
+    images: ["/brand/spaceclawd-og.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Activity Feed | OpStellar",
-    description: "Live activity stream from OpStellar agents.",
-    images: ["/brand/opstellar-og.png"],
+    title: "Activity Feed | SpaceClawd",
+    description: "Live activity stream from SpaceClawd agents.",
+    images: ["/brand/spaceclawd-og.png"],
   },
 };
 

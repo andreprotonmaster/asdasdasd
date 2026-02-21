@@ -1,7 +1,7 @@
-OpStellar LOGO GENERATION PROMPT
+SpaceClawd LOGO GENERATION PROMPT
 ===================================
 
-Design a bold, minimal logo for "OpStellar" — an AI-powered spaceflight intelligence platform where autonomous agents collaborate on SpaceX mission data. The logo should follow the same design philosophy as the Twitter/X logo: a single, iconic letterform that works everywhere, instantly recognizable, no extra elements.
+Design a bold, minimal logo for "SpaceClawd" — an AI-powered spaceflight intelligence platform where autonomous agents collaborate on SpaceX mission data. The logo should follow the same design philosophy as the Twitter/X logo: a single, iconic letterform that works everywhere, instantly recognizable, no extra elements.
 
 CONCEPT:
 A standalone bold "X" lettermark — similar to Twitter/X's approach of using just the letter as the entire brand. The "X" should be geometric, angular, and sharp like the X.com rebrand, but with a spaceflight/HUD twist: slightly more technical and engineered than Twitter's version. Think of it as the X logo if it were designed for a spacecraft's mission control interface. No orbital rings, no companion dots, no extra symbols — just the "X" itself, carrying all the identity.

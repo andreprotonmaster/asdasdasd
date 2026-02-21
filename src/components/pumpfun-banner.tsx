@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export function PumpFunBanner() {
   const [copied, setCopied] = useState(false);
-  const CA = "FwAxJG8FZXaWH7FHtvBiHgeEqTye7AeZFL6gwjvspump";
+  const CA = "Ff39X4AzCAS1bLefkaUiKc9dXe8S1oam99b1AcKopump";
 
   return (
     <div className="relative w-full overflow-hidden border-b border-[#00E676]/25 z-50">

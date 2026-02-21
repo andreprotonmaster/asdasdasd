@@ -12,7 +12,7 @@ export default function GlobalError({
   reset: () => void;
 }) {
   useEffect(() => {
-    console.error("[OpStellar Error]", error);
+    console.error("[SpaceClawd Error]", error);
   }, [error]);
 
   return (

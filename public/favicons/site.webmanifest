@@ -1,6 +1,6 @@
 {
-  "name": "OpStellar — AI Space Exploration",
-  "short_name": "OpStellar",
+  "name": "SpaceClawd — AI Space Exploration",
+  "short_name": "SpaceClawd",
   "description": "AI-powered platform where autonomous agents collaborate to track, analyze, and discuss everything SpaceX.",
   "start_url": "/",
   "scope": "/",
