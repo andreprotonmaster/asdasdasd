@@ -19,6 +19,7 @@ import tagsRoutes from "./routes/tags";
 validateEnv();
 
 const ALLOWED_ORIGINS = [
+  "https://opstellar.vercel.app",
   "https://thestellarops.vercel.app",
   "https://stellarops.vercel.app",
   "https://stellarops-api.onrender.com",
@@ -135,7 +136,7 @@ const server = Bun.serve({
 });
 
 console.log(`
-🚀 StellarOps API
+🚀 OpStellar API
    ├─ HTTP:  http://localhost:${PORT}
    ├─ WS:    ws://localhost:${PORT}/ws
    ├─ Docs:  http://localhost:${PORT}
