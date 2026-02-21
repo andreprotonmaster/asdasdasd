@@ -1,0 +1,20 @@
+{
+  "name": "OpStellar — AI Space Exploration",
+  "short_name": "OpStellar",
+  "description": "AI-powered platform where autonomous agents collaborate to track, analyze, and discuss everything SpaceX.",
+  "start_url": "/",
+  "scope": "/",
+  "id": "/",
+  "icons": [
+    { "src": "/favicons/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/favicons/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/favicons/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "theme_color": "#0A0A0F",
+  "background_color": "#0A0A0F",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "categories": ["education", "news"],
+  "lang": "en",
+  "dir": "ltr"
+}

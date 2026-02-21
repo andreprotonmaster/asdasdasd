@@ -1,0 +1,63 @@
+OpStellar LOGO GENERATION PROMPT
+===================================
+
+Design a bold, minimal logo for "OpStellar" — an AI-powered spaceflight intelligence platform where autonomous agents collaborate on SpaceX mission data. The logo should follow the same design philosophy as the Twitter/X logo: a single, iconic letterform that works everywhere, instantly recognizable, no extra elements.
+
+CONCEPT:
+A standalone bold "X" lettermark — similar to Twitter/X's approach of using just the letter as the entire brand. The "X" should be geometric, angular, and sharp like the X.com rebrand, but with a spaceflight/HUD twist: slightly more technical and engineered than Twitter's version. Think of it as the X logo if it were designed for a spacecraft's mission control interface. No orbital rings, no companion dots, no extra symbols — just the "X" itself, carrying all the identity.
+
+KEY DESIGN DIRECTION:
+- Study the Twitter/X logo: bold, clean, single geometric "X" shape
+- Same simplicity and confidence, but with a colder, more technical edge
+- The strokes of the "X" can have subtle asymmetry or tapered ends to feel engineered rather than generic
+- Optionally: hairline inner cuts, beveled edges, or a faint tech-grid texture within the strokes to give it a HUD/aerospace feel — but keep it subtle enough to read as a clean "X" at small sizes
+- The shape should feel like it was precision-cut from titanium, not drawn with a pen
+
+STYLE:
+- Ultra-minimal, single-shape logo — the "X" IS the logo, nothing else
+- Flat, vector-ready, no gradients in the primary mark
+- Geometric precision — every angle intentional
+- Should feel like a spacecraft insignia stamped into metal
+- At a glance it should remind you of X/Twitter's boldness, but the details whisper SpaceX mission control
+
+COLOR PALETTE:
+- Primary: Cyan/electric blue (#00D4FF) on deep space black (#0A0A0F)
+- Accent: Cool white (#E0E6ED) for secondary use
+- Optional glow variant: Soft cyan bloom/halo effect behind the mark for dark backgrounds
+- Monochrome version must work in pure white on black (like Twitter/X does)
+- The cyan "X" on black should be the signature look
+
+TYPOGRAPHY (for wordmark version):
+- The bold "X" icon mark on the left
+- "COMPANION" to the right in a clean condensed mono or sans-serif (Space Grotesk, JetBrains Mono, Eurostile)
+- Letter-spacing: wide, military/aerospace style, all caps
+- The "X" mark should be noticeably larger/heavier than the text — it's the hero
+- Wordmark is secondary — the icon "X" alone should be the primary brand mark
+
+ICON MARK (standalone):
+- Just the geometric "X" — nothing else
+- Must be instantly recognizable at 16x16px favicon size
+- Should be stunning and sharp at 512x512px
+- The negative space inside the X should be clean and deliberate
+- Optionally: the tiniest HUD corner brackets at the four corners of the bounding box, barely visible — a nod to the platform's mission control aesthetic
+
+WHAT TO AVOID:
+- Multiple elements, symbols, or companion shapes — keep it to JUST the X
+- Cartoonish, playful, or rounded styles
+- Generic rocket imagery or orbital rings
+- Overly complex details that break at small sizes
+- Anything that looks like a generic "X" from a font — it must feel custom and engineered
+- Looking identical to Twitter/X — it should be inspired by the same philosophy but clearly its own thing
+
+VARIATIONS NEEDED:
+1. Icon mark only — the bold X (square, for app icon / favicon)
+2. Horizontal wordmark — X icon + "COMPANION" text
+3. Dark background — cyan X on black (primary brand usage)
+4. Light background — dark X on white
+5. Monochrome — pure white X on black, pure black X on white
+
+MOOD REFERENCES:
+Twitter/X rebrand logo (boldness and simplicity), SpaceX mission control HUD, Starship flight telemetry overlays, The Expanse UI design, Bloomberg Terminal aesthetic, aerospace insignias stamped on hardware.
+
+OUTPUT FORMAT:
+SVG vector (primary), PNG at 512x512 and 1024x1024, favicon ICO at 32x32 and 16x16.

@@ -1,0 +1,783 @@
+[
+  {
+    "name": "Robert Behnken",
+    "agency": "NASA",
+    "image": "/images/crew/0smMgMH.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Robert_L._Behnken",
+    "launches": [
+      "5eb87d46ffd86e000604b388"
+    ],
+    "status": "active",
+    "id": "5ebf1a6e23a9a60006e03a7a",
+    "nationality": "American",
+    "role": "Test Pilot, Mission Commander",
+    "bio": "Robert L. Behnken is a NASA astronaut, former Chief of the Astronaut Office, and a U.S. Air Force colonel. He flew on STS-123 and STS-130 before commanding the historic SpaceX Demo-2 mission — the first crewed flight of Crew Dragon and the first crewed orbital spaceflight launched from the United States since STS-135 in 2011. He has performed six spacewalks totaling over 37 hours.",
+    "totalFlights": 3,
+    "spacewalks": 6,
+    "dateOfBirth": "1970-07-28",
+    "birthPlace": "St. Ann, Missouri, U.S.",
+    "education": [
+      "BS Mechanical Engineering & Physics, Washington University in St. Louis",
+      "MS & PhD Mechanical Engineering, California Institute of Technology"
+    ],
+    "militaryService": "Colonel, U.S. Air Force",
+    "timeInSpace": "93d 11h 42m",
+    "twitter": "AstroBehnken",
+    "selection": "NASA Group 18 (2000)"
+  },
+  {
+    "name": "Douglas Hurley",
+    "agency": "NASA",
+    "image": "/images/crew/ooaayWf.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Douglas_G._Hurley",
+    "launches": [
+      "5eb87d46ffd86e000604b388"
+    ],
+    "status": "active",
+    "id": "5ebf1b7323a9a60006e03a7b",
+    "nationality": "American",
+    "role": "Test Pilot, Spacecraft Commander",
+    "bio": "Douglas G. Hurley is a retired NASA astronaut and former U.S. Marine Corps colonel and fighter/test pilot. He piloted STS-127 and commanded STS-135, the final Space Shuttle mission. He then flew as joint commander on SpaceX Demo-2, the first crewed flight of Dragon. He retired from NASA in 2021.",
+    "totalFlights": 3,
+    "spacewalks": 0,
+    "dateOfBirth": "1966-10-21",
+    "birthPlace": "Endicott, New York, U.S.",
+    "education": [
+      "BS Civil Engineering, Tulane University"
+    ],
+    "militaryService": "Colonel, U.S. Marine Corps",
+    "timeInSpace": "92d 10h 38m",
+    "twitter": null,
+    "selection": "NASA Group 18 (2000)"
+  },
+  {
+    "name": "Shannon Walker",
+    "agency": "NASA",
+    "image": "/images/crew/9z4tRIO.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shannon_Walker",
+    "launches": [
+      "5eb87d4dffd86e000604b38e"
+    ],
+    "status": "active",
+    "id": "5f7f1543bf32c864a529b23e",
+    "nationality": "American",
+    "role": "Mission Specialist",
+    "bio": "Shannon Walker is a NASA astronaut and physicist. She served as a flight controller and ISS program representative before becoming an astronaut. She flew to the ISS aboard Soyuz TMA-19 in 2010 and later as a mission specialist on SpaceX Crew-1, the first operational crewed flight of Crew Dragon.",
+    "totalFlights": 2,
+    "spacewalks": 0,
+    "dateOfBirth": "1965-06-04",
+    "birthPlace": "Houston, Texas, U.S.",
+    "education": [
+      "BA Physics, Rice University",
+      "MS & PhD Space Physics, Rice University"
+    ],
+    "militaryService": null,
+    "timeInSpace": "330d 13h 40m",
+    "twitter": null,
+    "selection": "NASA Group 19 (2004)"
+  },
+  {
+    "name": "Soichi Noguchi",
+    "agency": "JAXA",
+    "image": "/images/crew/7B1jxl8.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Soichi_Noguchi",
+    "launches": [
+      "5eb87d4dffd86e000604b38e"
+    ],
+    "status": "active",
+    "id": "5f7f158bbf32c864a529b23f",
+    "nationality": "Japanese",
+    "role": "Mission Specialist",
+    "bio": "Soichi Noguchi is a JAXA astronaut and aerospace engineer. He first flew on STS-114, the Return to Flight mission after the Columbia disaster, performing three EVAs. He later spent over five months on the ISS via Soyuz TMA-17 and flew again on SpaceX Crew-1, becoming the third person to reach space on three different types of spacecraft.",
+    "totalFlights": 3,
+    "spacewalks": 3,
+    "dateOfBirth": "1965-04-15",
+    "birthPlace": "Yokohama, Japan",
+    "education": [
+      "BS & MS Aeronautical Engineering, University of Tokyo",
+      "PhD Advanced Interdisciplinary Studies, University of Tokyo"
+    ],
+    "militaryService": null,
+    "timeInSpace": "344d 9h 33m",
+    "twitter": "Astro_Soichi",
+    "selection": "NASDA Group (1996)"
+  },
+  {
+    "name": "Victor J. Glover",
+    "agency": "NASA",
+    "image": "/images/crew/Vv5Hgzh.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Victor_J._Glover",
+    "launches": [
+      "5eb87d4dffd86e000604b38e"
+    ],
+    "status": "active",
+    "id": "5f7f15d5bf32c864a529b240",
+    "nationality": "American",
+    "role": "Pilot",
+    "bio": "Victor J. Glover is a NASA astronaut and U.S. Navy captain and test pilot. He served as pilot on SpaceX Crew-1, his first spaceflight. He became the first African American to live aboard the ISS for an extended stay. He was selected as the pilot for Artemis II, which will be the first crewed mission to orbit the Moon since Apollo 17.",
+    "totalFlights": 1,
+    "spacewalks": 4,
+    "dateOfBirth": "1976-04-30",
+    "birthPlace": "Pomona, California, U.S.",
+    "education": [
+      "BS General Engineering, Cal Poly San Luis Obispo",
+      "MS Flight Test Engineering, Air University",
+      "MS Systems Engineering, Naval Postgraduate School",
+      "MMAS, Air University"
+    ],
+    "militaryService": "Captain, U.S. Navy",
+    "timeInSpace": "167d 6h 29m",
+    "twitter": "AstroVicGlover",
+    "selection": "NASA Group 21 (2013)"
+  },
+  {
+    "name": "Michael S. Hopkins",
+    "agency": "NASA",
+    "image": "/images/crew/Dfg8OJ2.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Michael_S._Hopkins",
+    "launches": [
+      "5eb87d4dffd86e000604b38e"
+    ],
+    "status": "active",
+    "id": "5f7f1614bf32c864a529b241",
+    "nationality": "American",
+    "role": "Mission Commander",
+    "bio": "Michael S. Hopkins is a NASA astronaut and U.S. Space Force colonel — the first Space Force member to go to space. He first flew on Soyuz TMA-10M for Expedition 37/38 and commanded SpaceX Crew-1 aboard Crew Dragon Resilience. He has spent over 340 days in space across two long-duration missions.",
+    "totalFlights": 2,
+    "spacewalks": 6,
+    "dateOfBirth": "1968-12-28",
+    "birthPlace": "Lebanon, Missouri, U.S.",
+    "education": [
+      "BS Aerospace Engineering, University of Illinois Urbana-Champaign",
+      "MS Aerospace Engineering, Stanford University"
+    ],
+    "militaryService": "Colonel, U.S. Space Force",
+    "timeInSpace": "340d 9h 33m",
+    "twitter": "Astro_Hoppy",
+    "selection": "NASA Group 20 (2009)"
+  },
+  {
+    "name": "Shane Kimbrough",
+    "agency": "NASA",
+    "image": "/images/crew/nwxqtcT.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Shane_Kimbrough",
+    "launches": [
+      "5fe3af58b3467846b324215f"
+    ],
+    "status": "active",
+    "id": "5fe3ba5fb3467846b3242188",
+    "nationality": "American",
+    "role": "Mission Commander",
+    "bio": "Shane Kimbrough is a NASA astronaut and retired U.S. Army colonel who served as a helicopter pilot and flight test engineer. He flew on STS-126 and Soyuz MS-02/Expedition 49-50 before commanding SpaceX Crew-2 aboard Crew Dragon Endeavour. He has performed multiple EVAs and spent over 388 days in space.",
+    "totalFlights": 3,
+    "spacewalks": 6,
+    "dateOfBirth": "1967-06-04",
+    "birthPlace": "Killeen, Texas, U.S.",
+    "education": [
+      "BS Aerospace Engineering, West Point",
+      "MS Operations Research, Georgia Institute of Technology"
+    ],
+    "militaryService": "Colonel, U.S. Army (Ret.)",
+    "timeInSpace": "388d 15h 32m",
+    "twitter": "astro_kimbrough",
+    "selection": "NASA Group 19 (2004)"
+  },
+  {
+    "name": "K. Megan McArthur",
+    "agency": "NASA",
+    "image": "/images/crew/0VNXcdM.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/K._Megan_McArthur",
+    "launches": [
+      "5fe3af58b3467846b324215f"
+    ],
+    "status": "active",
+    "id": "5fe3bb01b3467846b3242189",
+    "nationality": "American",
+    "role": "Pilot",
+    "bio": "K. Megan McArthur is a NASA astronaut and oceanographer. She operated the Canadarm2 robotic arm on STS-125, the final Hubble Space Telescope servicing mission. She later served as pilot on SpaceX Crew-2. She is married to fellow astronaut Robert Behnken.",
+    "totalFlights": 2,
+    "spacewalks": 0,
+    "dateOfBirth": "1971-08-30",
+    "birthPlace": "Honolulu, Hawaii, U.S.",
+    "education": [
+      "BS Aerospace Engineering, UCLA",
+      "PhD Oceanography, UC San Diego / Scripps Institution"
+    ],
+    "militaryService": null,
+    "timeInSpace": "203d 15h 20m",
+    "twitter": "Astro_Megan",
+    "selection": "NASA Group 18 (2000)"
+  },
+  {
+    "name": "Thomas Pesquet",
+    "agency": "ESA",
+    "image": "/images/crew/5iColcZ.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thomas_Pesquet",
+    "launches": [
+      "5fe3af58b3467846b324215f"
+    ],
+    "status": "active",
+    "id": "5fe3bc3db3467846b324218b",
+    "nationality": "French",
+    "role": "Mission Specialist",
+    "bio": "Thomas Pesquet is an ESA astronaut and aerospace engineer who previously worked as an Air France pilot. He first flew to the ISS on Soyuz MS-03 for Expedition 50/51 and returned on SpaceX Crew-2, during which he served as ISS commander for Expedition 65 — the first French person to command the station.",
+    "totalFlights": 2,
+    "spacewalks": 6,
+    "dateOfBirth": "1978-02-27",
+    "birthPlace": "Rouen, Normandy, France",
+    "education": [
+      "MS Space Systems, ISAE-SUPAERO, Toulouse",
+      "Airline Transport Pilot License, Air France"
+    ],
+    "militaryService": null,
+    "timeInSpace": "396d 11h 34m",
+    "twitter": "Thom_astro",
+    "selection": "ESA Group (2009)"
+  },
+  {
+    "name": "Akihiko Hoshide",
+    "agency": "JAXA",
+    "image": "/images/crew/GefuPYs.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Akihiko_Hoshide",
+    "launches": [
+      "5fe3af58b3467846b324215f"
+    ],
+    "status": "active",
+    "id": "5fe3bc8ab3467846b324218c",
+    "nationality": "Japanese",
+    "role": "Mission Specialist",
+    "bio": "Akihiko Hoshide is a JAXA astronaut and engineer. He first flew on STS-124 and then on Soyuz TMA-05M for Expedition 32/33, performing multiple EVAs. He flew again on SpaceX Crew-2 as a mission specialist and served as ISS commander for part of Expedition 65.",
+    "totalFlights": 3,
+    "spacewalks": 3,
+    "dateOfBirth": "1968-12-28",
+    "birthPlace": "Tokyo, Japan",
+    "education": [
+      "BS Mechanical Engineering, Keio University",
+      "MS Aerospace Engineering, University of Houston"
+    ],
+    "militaryService": null,
+    "timeInSpace": "340d 12h 52m",
+    "twitter": "Aki_Hoshide",
+    "selection": "NASDA Group (1999)"
+  },
+  {
+    "name": "Raja Chari",
+    "agency": "NASA",
+    "image": "/images/crew/uKj6DOF.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Raja_Chari",
+    "launches": [
+      "5fe3b15eb3467846b324216d"
+    ],
+    "status": "active",
+    "id": "5fe3c587b3467846b3242198",
+    "nationality": "American",
+    "role": "Mission Commander",
+    "bio": "Raja Chari is a NASA astronaut and U.S. Air Force colonel and test pilot. He commanded SpaceX Crew-3 aboard Crew Dragon Endurance on his first spaceflight, spending nearly six months on the ISS for Expedition 66. He is a graduate of the U.S. Air Force Test Pilot School and MIT.",
+    "totalFlights": 1,
+    "spacewalks": 3,
+    "dateOfBirth": "1977-06-24",
+    "birthPlace": "Milwaukee, Wisconsin, U.S.",
+    "education": [
+      "BS Astronautical Engineering, U.S. Air Force Academy",
+      "MS Aeronautics & Astronautics, MIT"
+    ],
+    "militaryService": "Colonel, U.S. Air Force",
+    "timeInSpace": "176d 2h 39m",
+    "twitter": "Astro_Raja",
+    "selection": "NASA Group 22 (2017)"
+  },
+  {
+    "name": "Thomas Marshburn",
+    "agency": "NASA",
+    "image": "/images/crew/9RmQJZw.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Thomas_Marshburn",
+    "launches": [
+      "5fe3b15eb3467846b324216d"
+    ],
+    "status": "active",
+    "id": "5fe3c5beb3467846b3242199",
+    "nationality": "American",
+    "role": "Pilot",
+    "bio": "Thomas Marshburn is a NASA astronaut and physician specializing in emergency medicine and aerospace medicine. He flew on STS-127 and Soyuz TMA-07M before serving as pilot on SpaceX Crew-3. During Expedition 66, he became the ISS commander. He has performed five EVAs and spent over 305 days in space.",
+    "totalFlights": 3,
+    "spacewalks": 5,
+    "dateOfBirth": "1960-08-29",
+    "birthPlace": "Statesville, North Carolina, U.S.",
+    "education": [
+      "BS Physics, Davidson College",
+      "MS Engineering Physics, University of Virginia",
+      "MD, Wake Forest University"
+    ],
+    "militaryService": null,
+    "timeInSpace": "305d 1h 10m",
+    "twitter": "AstroMarshburn",
+    "selection": "NASA Group 19 (2004)"
+  },
+  {
+    "name": "Matthias Maurer",
+    "agency": "ESA",
+    "image": "/images/crew/yBPw4mX.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Matthias_Maurer",
+    "launches": [
+      "5fe3b15eb3467846b324216d"
+    ],
+    "status": "active",
+    "id": "5fe3c5f6b3467846b324219a",
+    "nationality": "German",
+    "role": "Mission Specialist",
+    "bio": "Matthias Maurer is an ESA astronaut and materials science engineer from Germany. He flew to the ISS as a mission specialist on SpaceX Crew-3 for Expedition 66, his first spaceflight. He performed one EVA during his nearly six-month stay on the station.",
+    "totalFlights": 1,
+    "spacewalks": 1,
+    "dateOfBirth": "1970-03-18",
+    "birthPlace": "St. Wendel, Saarland, Germany",
+    "education": [
+      "Diploma Material Science, University of Saarland",
+      "PhD Material Science, RWTH Aachen University"
+    ],
+    "militaryService": null,
+    "timeInSpace": "176d 2h 39m",
+    "twitter": "astro_matthias",
+    "selection": "ESA Group (2015)"
+  },
+  {
+    "name": "Jared Isaacman",
+    "agency": "SpaceX",
+    "image": "/images/crew/BpdQrMv.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jared_Isaacman",
+    "launches": [
+      "607a37565a906a44023e0866"
+    ],
+    "status": "active",
+    "id": "607a3a5f5a906a44023e0870",
+    "nationality": "American",
+    "role": "Mission Commander",
+    "bio": "Jared Isaacman is an American billionaire entrepreneur, pilot, and commander of the Inspiration4 mission — the first all-civilian orbital spaceflight. He is the CEO of Shift4 Payments. He also commanded the Polaris Dawn mission, during which the first commercial EVA was performed. He is an accomplished jet pilot rated to fly multiple military aircraft.",
+    "totalFlights": 2,
+    "spacewalks": 1,
+    "dateOfBirth": "1983-02-11",
+    "birthPlace": "Summit, New Jersey, U.S.",
+    "education": [
+      "BS Professional Aeronautics, Embry-Riddle Aeronautical University"
+    ],
+    "militaryService": null,
+    "timeInSpace": "8d 21h 17m",
+    "twitter": "rookisaacman",
+    "selection": "Private (Inspiration4, 2021)"
+  },
+  {
+    "name": "Hayley Arceneaux",
+    "agency": "SpaceX",
+    "image": "/images/crew/ll7TlwD.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hayley_Arceneaux",
+    "launches": [
+      "607a37565a906a44023e0866"
+    ],
+    "status": "active",
+    "id": "607a3ab45a906a44023e0872",
+    "nationality": "American",
+    "role": "Medical Officer",
+    "bio": "Hayley Arceneaux is a physician assistant at St. Jude Children's Research Hospital and a childhood bone cancer survivor. She flew on the Inspiration4 mission as the medical officer. At 29, she became the youngest American in orbital spaceflight and the first person with a prosthetic body part to go to space.",
+    "totalFlights": 1,
+    "spacewalks": 0,
+    "dateOfBirth": "1991-12-04",
+    "birthPlace": "Baton Rouge, Louisiana, U.S.",
+    "education": [
+      "BS Biology, St. Mary's University",
+      "MS Physician Assistant Studies, Nova Southeastern University"
+    ],
+    "militaryService": null,
+    "timeInSpace": "2d 23h 55m",
+    "twitter": "ArceneauxHayley",
+    "selection": "Private (Inspiration4, 2021)"
+  },
+  {
+    "name": "Sian Proctor",
+    "agency": "SpaceX",
+    "image": "/images/crew/gcnGDC6.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sian_Proctor",
+    "launches": [
+      "607a37565a906a44023e0866"
+    ],
+    "status": "active",
+    "id": "607b48375a906a44023e08b8",
+    "nationality": "American",
+    "role": "Pilot",
+    "bio": "Sian Proctor is an American geoscientist, explorer, STEM communicator, and astronaut analog researcher. She served as pilot on the Inspiration4 mission, becoming the fourth African American woman to go to space. She was a finalist in the 2009 NASA astronaut selection and holds a PhD in curriculum and instruction with a geology focus.",
+    "totalFlights": 1,
+    "spacewalks": 0,
+    "dateOfBirth": "1970-03-28",
+    "birthPlace": "Guam, U.S.",
+    "education": [
+      "BS Environmental Science, Syracuse University",
+      "MS Geology, Arizona State University",
+      "PhD Curriculum & Instruction (Geology), Arizona State University"
+    ],
+    "militaryService": null,
+    "timeInSpace": "2d 23h 55m",
+    "twitter": "DrSianProctor",
+    "selection": "Private (Inspiration4, 2021)"
+  },
+  {
+    "name": "Christopher Sembroski",
+    "agency": "SpaceX",
+    "image": "/images/crew/mC9naw6.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Christopher_Sembroski",
+    "launches": [
+      "607a37565a906a44023e0866"
+    ],
+    "status": "active",
+    "id": "607b48da5a906a44023e08b9",
+    "nationality": "American",
+    "role": "Mission Specialist",
+    "bio": "Christopher Sembroski is an aerospace data engineer at Lockheed Martin and a U.S. Air Force veteran. He served as a mission specialist on the Inspiration4 mission after winning his seat through a fundraiser for St. Jude. He previously worked on Minuteman III missile maintenance.",
+    "totalFlights": 1,
+    "spacewalks": 0,
+    "dateOfBirth": "1979-08-28",
+    "birthPlace": "Elyria, Ohio, U.S.",
+    "education": [
+      "BS Professional Aeronautics, Embry-Riddle Aeronautical University"
+    ],
+    "militaryService": "Veteran, U.S. Air Force",
+    "timeInSpace": "2d 23h 55m",
+    "twitter": "csaborsky",
+    "selection": "Private (Inspiration4, 2021)"
+  },
+  {
+    "name": "Kayla Barron",
+    "agency": "NASA",
+    "image": "/images/crew/2rXxSFw.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kayla_Barron",
+    "launches": [
+      "5fe3b15eb3467846b324216d"
+    ],
+    "status": "active",
+    "id": "60c4b5ad4e041c0b356db393",
+    "nationality": "American",
+    "role": "Mission Specialist",
+    "bio": "Kayla Barron is a NASA astronaut and U.S. Navy lieutenant commander and submarine warfare officer — one of the first women to serve aboard a U.S. Navy submarine. She flew on SpaceX Crew-3 as a mission specialist for Expedition 66, performing two EVAs during her stay on the ISS.",
+    "totalFlights": 1,
+    "spacewalks": 2,
+    "dateOfBirth": "1987-09-19",
+    "birthPlace": "Pocatello, Idaho, U.S.",
+    "education": [
+      "BS Systems Engineering, U.S. Naval Academy",
+      "MS Nuclear Engineering, University of Cambridge"
+    ],
+    "militaryService": "Lieutenant Commander, U.S. Navy",
+    "timeInSpace": "176d 2h 39m",
+    "twitter": "Astro_Kayla",
+    "selection": "NASA Group 22 (2017)"
+  },
+  {
+    "name": "Michael López-Alegría",
+    "agency": "Axiom Space",
+    "image": "/images/crew/60YDzr6.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Michael_L%C3%B3pez-Alegr%C3%ADa",
+    "launches": [
+      "61eefaa89eb1064137a1bd73"
+    ],
+    "status": "active",
+    "id": "61eefc9c9eb1064137a1bd77",
+    "nationality": "American/Spanish",
+    "role": "Mission Commander",
+    "bio": "Michael López-Alegría is a former NASA astronaut and retired U.S. Navy captain who holds the American record for total EVA time. He flew on four NASA missions including STS-73, STS-92, STS-113, and a long-duration stay on Expedition 14. He commanded the Axiom Space Ax-1 mission to the ISS aboard Crew Dragon.",
+    "totalFlights": 5,
+    "spacewalks": 10,
+    "dateOfBirth": "1958-05-30",
+    "birthPlace": "Madrid, Spain",
+    "education": [
+      "BS Systems Engineering, U.S. Naval Academy",
+      "MS Aeronautical Engineering, Naval Postgraduate School"
+    ],
+    "militaryService": "Captain, U.S. Navy (Ret.)",
+    "timeInSpace": "257d 22h 45m",
+    "twitter": "CommanderMLA",
+    "selection": "NASA Group 14 (1992)"
+  },
+  {
+    "name": "Larry Connor",
+    "agency": "Axiom Space",
+    "image": "/images/crew/BMJiQ3G.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Larry_Connor",
+    "launches": [
+      "61eefaa89eb1064137a1bd73"
+    ],
+    "status": "active",
+    "id": "61eefcf89eb1064137a1bd79",
+    "nationality": "American",
+    "role": "Pilot",
+    "bio": "Larry Connor is an American entrepreneur, investor, and adventurer who served as pilot on the Axiom Space Ax-1 mission. He is notable for having traveled to the deepest part of every ocean and is an accomplished aviator. The Ax-1 mission was the first fully private crewed mission to the ISS.",
+    "totalFlights": 1,
+    "spacewalks": 0,
+    "dateOfBirth": "1950-01-01",
+    "birthPlace": "Dayton, Ohio, U.S.",
+    "education": [
+      "MBA, Vanderbilt University"
+    ],
+    "militaryService": null,
+    "timeInSpace": "17d 1h 49m",
+    "twitter": null,
+    "selection": "Private (Axiom Ax-1, 2022)"
+  },
+  {
+    "name": "Mark Pathy",
+    "agency": "Axiom Space",
+    "image": "/images/crew/IFpgQpP.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mark_Pathy",
+    "launches": [
+      "61eefaa89eb1064137a1bd73"
+    ],
+    "status": "active",
+    "id": "61eefd5b9eb1064137a1bd7a",
+    "nationality": "Canadian",
+    "role": "Mission Specialist",
+    "bio": "Mark Pathy is a Canadian businessman and philanthropist who flew on the Axiom Space Ax-1 mission as a mission specialist. He is the CEO of Mavrik Corp. During the mission, he conducted research projects focused on health topics and Earth observation from the ISS.",
+    "totalFlights": 1,
+    "spacewalks": 0,
+    "dateOfBirth": "1967-03-26",
+    "birthPlace": "Montreal, Quebec, Canada",
+    "education": [
+      "BA Economics, McGill University",
+      "MBA, INSEAD"
+    ],
+    "militaryService": null,
+    "timeInSpace": "17d 1h 49m",
+    "twitter": "mark_pathy",
+    "selection": "Private (Axiom Ax-1, 2022)"
+  },
+  {
+    "name": "Eytan Stibbe",
+    "agency": "Axiom Space",
+    "image": "/images/crew/96TBbFB.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Eytan_Stibbe",
+    "launches": [
+      "61eefaa89eb1064137a1bd73"
+    ],
+    "status": "active",
+    "id": "61eefdbf9eb1064137a1bd7b",
+    "nationality": "Israeli",
+    "role": "Mission Specialist",
+    "bio": "Eytan Stibbe is an Israeli businessman, fighter pilot, and philanthropist who flew on the Axiom Space Ax-1 mission. He is a former Israeli Air Force F-16 pilot and the second Israeli to travel to space, after Ilan Ramon. He conducted experiments and cultural activities aboard the ISS.",
+    "totalFlights": 1,
+    "spacewalks": 0,
+    "dateOfBirth": "1958-11-12",
+    "birthPlace": "Haifa, Israel",
+    "education": [
+      "BA Faculty of Humanities, Tel Aviv University"
+    ],
+    "militaryService": "Colonel, Israeli Air Force (Ret.)",
+    "timeInSpace": "17d 1h 49m",
+    "twitter": null,
+    "selection": "Private (Axiom Ax-1, 2022)"
+  },
+  {
+    "name": "Kjell Lindgren",
+    "agency": "NASA",
+    "image": "/images/crew/U7o2UX1.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kjell_N._Lindgren",
+    "launches": [
+      "6243ade2af52800c6e919255"
+    ],
+    "status": "active",
+    "id": "6243bc5baf52800c6e919276",
+    "nationality": "American",
+    "role": "Mission Commander",
+    "bio": "Kjell Lindgren is a NASA astronaut and physician who was born in Taipei, Taiwan. He first flew to the ISS on Soyuz TMA-17M for Expedition 44/45 and later commanded SpaceX Crew-4 aboard Crew Dragon Freedom. He has performed multiple EVAs and has logged over 300 days in space.",
+    "totalFlights": 2,
+    "spacewalks": 4,
+    "dateOfBirth": "1973-01-23",
+    "birthPlace": "Taipei, Taiwan",
+    "education": [
+      "BS Biology, U.S. Air Force Academy",
+      "MD, University of Colorado",
+      "MS Human Biology, University of Colorado"
+    ],
+    "militaryService": null,
+    "timeInSpace": "305d 7h 48m",
+    "twitter": "astro_kjell",
+    "selection": "NASA Group 20 (2009)"
+  },
+  {
+    "name": "Robert Hines",
+    "agency": "NASA",
+    "image": "/images/crew/1Ca8K9L.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Robert_Hines_(astronaut)",
+    "launches": [
+      "6243ade2af52800c6e919255"
+    ],
+    "status": "active",
+    "id": "6243bcdcaf52800c6e919277",
+    "nationality": "American",
+    "role": "Pilot",
+    "bio": "Robert Hines is a NASA astronaut and U.S. Army colonel, instructor pilot, and experimental test pilot. SpaceX Crew-4 was his first spaceflight, during which he served as pilot aboard Crew Dragon Freedom for Expedition 67. He spent over 170 days on the ISS.",
+    "totalFlights": 1,
+    "spacewalks": 0,
+    "dateOfBirth": "1975-01-11",
+    "birthPlace": "Harrisburg, Pennsylvania, U.S.",
+    "education": [
+      "BS Aerospace Engineering, Boston University",
+      "MS Aerospace Engineering, University of Texas"
+    ],
+    "militaryService": "Colonel, U.S. Army",
+    "timeInSpace": "170d 21h 20m",
+    "twitter": "Astro_FarmerBob",
+    "selection": "NASA Group 22 (2017)"
+  },
+  {
+    "name": "Samantha Cristoforetti",
+    "agency": "ESA",
+    "image": "/images/crew/xtoVDZo.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Samantha_Cristoforetti",
+    "launches": [
+      "6243ade2af52800c6e919255"
+    ],
+    "status": "active",
+    "id": "6243bd7baf52800c6e919278",
+    "nationality": "Italian",
+    "role": "Mission Specialist",
+    "bio": "Samantha Cristoforetti is an ESA astronaut and Italian Air Force pilot and engineer. She first flew on Soyuz TMA-15M for Expedition 42/43, setting the record for longest uninterrupted spaceflight by a European. She flew again on SpaceX Crew-4 and became the first European woman to command the ISS during Expedition 68.",
+    "totalFlights": 2,
+    "spacewalks": 1,
+    "dateOfBirth": "1977-04-26",
+    "birthPlace": "Milan, Italy",
+    "education": [
+      "BS Aerospace Engineering, Technical University of Munich",
+      "MS Mechanical Engineering, École supérieure de mécanique et d'aérotechnique"
+    ],
+    "militaryService": "Captain, Italian Air Force",
+    "timeInSpace": "369d 20h 36m",
+    "twitter": "AstroSamantha",
+    "selection": "ESA Group (2009)"
+  },
+  {
+    "name": "Jessica Watkins",
+    "agency": "NASA",
+    "image": "/images/crew/bNH8BSo.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jessica_Watkins",
+    "launches": [
+      "6243ade2af52800c6e919255"
+    ],
+    "status": "active",
+    "id": "6243bdf8af52800c6e919279",
+    "nationality": "American",
+    "role": "Mission Specialist",
+    "bio": "Jessica Watkins is a NASA astronaut and geologist who has worked at NASA's Jet Propulsion Laboratory and Ames Research Center on Mars rover missions. She flew on SpaceX Crew-4 as a mission specialist for her first spaceflight, becoming the first African American woman to serve on a long-duration ISS mission.",
+    "totalFlights": 1,
+    "spacewalks": 0,
+    "dateOfBirth": "1988-05-14",
+    "birthPlace": "Gaithersburg, Maryland, U.S.",
+    "education": [
+      "BS Geological & Environmental Sciences, Stanford University",
+      "PhD Geology, UCLA"
+    ],
+    "militaryService": null,
+    "timeInSpace": "170d 21h 20m",
+    "twitter": "astro_watkins",
+    "selection": "NASA Group 22 (2017)"
+  },
+  {
+    "name": "Nicole Aunapu Mann",
+    "agency": "NASA",
+    "image": "/images/crew/EW93kmg.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nicole_Aunapu_Mann",
+    "launches": [
+      "62dd70d5202306255024d139"
+    ],
+    "status": "active",
+    "id": "62dd7196202306255024d13c",
+    "nationality": "American",
+    "role": "Mission Commander",
+    "bio": "Nicole Aunapu Mann is a NASA astronaut and U.S. Marine Corps colonel and test pilot. She commanded SpaceX Crew-5, becoming the first Native American woman to go to space. She is a member of the Wailacki of the Round Valley Indian Tribes in Northern California.",
+    "totalFlights": 1,
+    "spacewalks": 2,
+    "dateOfBirth": "1977-06-27",
+    "birthPlace": "Petaluma, California, U.S.",
+    "education": [
+      "BS Mechanical Engineering, U.S. Naval Academy",
+      "MS Mechanical Engineering, Stanford University"
+    ],
+    "militaryService": "Colonel, U.S. Marine Corps",
+    "timeInSpace": "157d 10h 1m",
+    "twitter": "AstroAnapu",
+    "selection": "NASA Group 21 (2013)"
+  },
+  {
+    "name": "Josh A. Cassada",
+    "agency": "NASA",
+    "image": "/images/crew/I7FDypC.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Josh_A._Cassada",
+    "launches": [
+      "62dd70d5202306255024d139"
+    ],
+    "status": "active",
+    "id": "62dd71c9202306255024d13d",
+    "nationality": "American",
+    "role": "Pilot",
+    "bio": "Josh A. Cassada is a NASA astronaut and U.S. Navy commander and test pilot with a PhD in high-energy particle physics from the University of Rochester. He served as pilot on SpaceX Crew-5 aboard Crew Dragon Endurance, his first spaceflight. He performed multiple EVAs during Expedition 68.",
+    "totalFlights": 1,
+    "spacewalks": 3,
+    "dateOfBirth": "1973-07-18",
+    "birthPlace": "San Diego, California, U.S.",
+    "education": [
+      "BS Physics, Albion College",
+      "PhD High-Energy Particle Physics, University of Rochester"
+    ],
+    "militaryService": "Captain, U.S. Navy",
+    "timeInSpace": "157d 10h 1m",
+    "twitter": "Astro_Josh",
+    "selection": "NASA Group 21 (2013)"
+  },
+  {
+    "name": "Koichi Wakata",
+    "agency": "JAXA",
+    "image": "/images/crew/X2wnqMT.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Koichi_Wakata",
+    "launches": [
+      "62dd70d5202306255024d139"
+    ],
+    "status": "active",
+    "id": "62dd7210202306255024d13e",
+    "nationality": "Japanese",
+    "role": "Mission Specialist",
+    "bio": "Koichi Wakata is a JAXA astronaut and the most experienced Japanese astronaut. He has flown five spaceflights including STS-72, STS-92, Soyuz TMA-11M/Expedition 38-39, and SpaceX Crew-5. He served as ISS commander during Expedition 39 and has spent over 500 days in space.",
+    "totalFlights": 5,
+    "spacewalks": 0,
+    "dateOfBirth": "1963-08-01",
+    "birthPlace": "Omiya, Saitama, Japan",
+    "education": [
+      "BS Aeronautical Engineering, Kyushu University",
+      "MS Applied Mechanics, Kyushu University",
+      "PhD Aerospace Engineering, University of Colorado Boulder"
+    ],
+    "militaryService": null,
+    "timeInSpace": "504d 18h 35m",
+    "twitter": "Astro_Wakata",
+    "selection": "NASDA Group (1992)"
+  },
+  {
+    "name": "Anna Kikina",
+    "agency": "Roscosmos",
+    "image": "/images/crew/tKCaih3.png",
+    "wikipedia": "https://en.wikipedia.org/wiki/Anna_Kikina",
+    "launches": [
+      "62dd70d5202306255024d139"
+    ],
+    "status": "active",
+    "id": "62dd7253202306255024d13f",
+    "nationality": "Russian",
+    "role": "Mission Specialist",
+    "bio": "Anna Kikina is a Roscosmos cosmonaut and the only active female Russian cosmonaut. She flew on SpaceX Crew-5 as part of a crew exchange agreement between NASA and Roscosmos. She is a civil engineer by training and was selected as a cosmonaut in 2012.",
+    "totalFlights": 1,
+    "spacewalks": 0,
+    "dateOfBirth": "1984-08-27",
+    "birthPlace": "Novosibirsk, Russia",
+    "education": [
+      "Diploma Engineering, Siberian State University of Water Transport",
+      "Degree in Economics & Management"
+    ],
+    "militaryService": null,
+    "timeInSpace": "157d 10h 1m",
+    "twitter": null,
+    "selection": "TsPK Cosmonaut Group (2012)"
+  }
+]
