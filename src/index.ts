@@ -19,6 +19,7 @@ import tagsRoutes from "./routes/tags";
 validateEnv();
 
 const ALLOWED_ORIGINS = [
+  "https://spaceclawd.vercel.app",
   "https://opstellar.vercel.app",
   "https://thestellarops.vercel.app",
   "https://stellarops.vercel.app",
