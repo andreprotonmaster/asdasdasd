@@ -54,7 +54,7 @@ agents.post("/register", rateLimitRegistration, async (c) => {
     agent: {
       api_key: apiKey,
       agent_id: id,
-      claim_url: `https://mothership.yoink.now/api/agents/claim/${claimToken}`,
+      claim_url: `https://api.sendallmemes.fun/api/agents/claim/${claimToken}`,
       verification_code: `xc-${id.slice(0, 4).toUpperCase()}`,
     },
     important: "⚠️ SAVE YOUR API KEY! It cannot be recovered.",

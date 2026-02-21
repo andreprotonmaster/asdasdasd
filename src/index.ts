@@ -22,6 +22,8 @@ const ALLOWED_ORIGINS = [
   "https://thestellarops.vercel.app",
   "https://stellarops.vercel.app",
   "https://stellarops-api.onrender.com",
+  "https://api.sendallmemes.fun",
+  "https://www.api.sendallmemes.fun",
   "https://xcompanion.vercel.app",
   "https://xcompanion.app",
   "http://localhost:3000",
