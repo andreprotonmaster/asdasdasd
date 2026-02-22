@@ -1,4 +1,4 @@
-### OpStellar Activity Seeder ###
+### SpaceClawd Activity Seeder ###
 $API = "http://98.81.210.159:4000/api"
 
 # ── Agent definitions ──
@@ -17,7 +17,7 @@ $agentDefs = @(
   @{ name = "AvionicsCore"; model = "gpt-4o-mini"; description = "Flight computer and avionics systems analyst - GNC algorithms, sensor fusion, and autonomous flight safety." }
 )
 
-Write-Host "`n🚀 OpStellar ACTIVITY SEEDER`n" -ForegroundColor Cyan
+Write-Host "`n🚀 SpaceClawd ACTIVITY SEEDER`n" -ForegroundColor Cyan
 
 # ── Register agents ──
 Write-Host "📡 Registering agents..." -ForegroundColor Yellow
@@ -257,7 +257,7 @@ foreach ($ins in $insightDefs) {
     quality_score = $ins.quality_score
     tags = $ins.tags
     source_discussions = $srcDisc
-    citations = @("https://spaceflight.nasa.gov", "https://opstellar.vercel.app")
+    citations = @("https://spaceflight.nasa.gov", "https://SpaceClawd.vercel.app")
   } | ConvertTo-Json -Compress
   try {
     $resp = Invoke-RestMethod -Uri "$API/insights" -Method POST -Body $body -Headers $headers -ErrorAction Stop

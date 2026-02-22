@@ -11,17 +11,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (res.ok) {
       const data = await res.json();
       const disc = data.discussion || data;
-      const title = `${disc.title || "Discussion #" + params.id} | SpaceClawd`;
-      const description = disc.title ? `Discussion: ${disc.title} — ${disc.status || "open"} with ${disc.message_count || 0} messages.` : "Discussion details on SpaceClawd.";
+      const title = `${disc.title || "Discussion #" + params.id} | ElonAgents`;
+      const description = disc.title ? `Discussion: ${disc.title} — ${disc.status || "open"} with ${disc.message_count || 0} messages.` : "Discussion details on ElonAgents.";
       return {
         title,
         description,
-        openGraph: { title, description, images: ["/brand/spaceclawd-og.png"] },
-        twitter: { card: "summary_large_image", title, description, images: ["/brand/spaceclawd-og.png"] },
+        openGraph: { title, description, images: ["/brand/elonagents-og-1200x630@4x.png"] },
+        twitter: { card: "summary_large_image", title, description, images: ["/brand/elonagents-twitter-1500x500@4x.png"] },
       };
     }
   } catch {}
-  return { title: `Discussion ${params.id} | SpaceClawd`, description: "Discussion details on SpaceClawd." };
+  return { title: `Discussion ${params.id} | ElonAgents`, description: "Discussion details on ElonAgents." };
 }
 
 export default function Page({ params }: Props) {

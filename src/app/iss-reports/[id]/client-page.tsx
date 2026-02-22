@@ -142,10 +142,10 @@ const SECTION_STYLES: Record<
   ParsedSection["icon"],
   { color: string; bg: string; border: string; Icon: React.ElementType; label: string }
 > = {
-  payload: { color: "text-cyan-400", bg: "bg-cyan-500/10", border: "border-cyan-500/20", Icon: Beaker, label: "Payload Operations" },
+  payload: { color: "text-emerald-300", bg: "bg-white/10", border: "border-white/20", Icon: Beaker, label: "Payload Operations" },
   system: { color: "text-amber-400", bg: "bg-amber-500/10", border: "border-amber-500/20", Icon: Wrench, label: "Systems & Maintenance" },
   task: { color: "text-emerald-400", bg: "bg-emerald-500/10", border: "border-emerald-500/20", Icon: ClipboardList, label: "Completed Tasks" },
-  plan: { color: "text-purple-400", bg: "bg-purple-500/10", border: "border-purple-500/20", Icon: Calendar, label: "Look Ahead Plan" },
+  plan: { color: "text-amber-400", bg: "bg-white/10", border: "border-white/20", Icon: Calendar, label: "Look Ahead Plan" },
   crew: { color: "text-spacex-accent", bg: "bg-spacex-accent/10", border: "border-spacex-accent/20", Icon: Rocket, label: "Crew Operations" },
   general: { color: "text-spacex-muted", bg: "bg-white/5", border: "border-spacex-border/20", Icon: FileText, label: "General" },
 };
@@ -471,9 +471,9 @@ export default function ReportDetailPage() {
             </div>
           )}
           {(report.matched_launches?.length ?? 0) > 0 && (
-            <div className="flex items-center gap-1 px-2 py-1 rounded-full bg-black/40 backdrop-blur-sm border border-purple-500/20">
-              <Rocket className="w-2.5 h-2.5 text-purple-400" />
-              <span className="text-[9px] font-mono text-purple-400 uppercase tracking-wider">
+            <div className="flex items-center gap-1 px-2 py-1 rounded-full bg-black/40 backdrop-blur-sm border border-white/20">
+              <Rocket className="w-2.5 h-2.5 text-amber-400" />
+              <span className="text-[9px] font-mono text-amber-400 uppercase tracking-wider">
                 {report.matched_launches!.length} Launch{report.matched_launches!.length > 1 ? 'es' : ''}
               </span>
             </div>
@@ -718,18 +718,18 @@ export default function ReportDetailPage() {
           {/* Docking Events */}
           {report.matched_dockings && report.matched_dockings.length > 0 && (
             <div className="glass-panel p-4 space-y-3">
-              <h3 className="text-[10px] font-mono font-semibold text-purple-400 tracking-wider uppercase flex items-center gap-1.5">
+              <h3 className="text-[10px] font-mono font-semibold text-amber-400 tracking-wider uppercase flex items-center gap-1.5">
                 <Link2 className="w-3 h-3" />
                 Docking Events ({report.matched_dockings.length})
               </h3>
               <div className="space-y-2">
                 {report.matched_dockings.map((dock, i) => (
-                  <div key={i} className="p-2.5 rounded-lg bg-purple-500/5 border border-purple-500/10">
+                  <div key={i} className="p-2.5 rounded-lg bg-white/5 border border-white/10">
                     <p className="text-[11px] text-white font-medium">
                       {dock.spacecraft || 'Unknown Spacecraft'}
                     </p>
                     <div className="flex items-center gap-1.5 mt-1 text-[9px] font-mono text-spacex-muted">
-                      <span className="text-purple-400">DOCK</span>
+                      <span className="text-amber-400">DOCK</span>
                       <span>{dock.docking_date ? new Date(dock.docking_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '—'}</span>
                       {dock.departure_date && (
                         <>
@@ -816,7 +816,7 @@ export default function ReportDetailPage() {
                         className={`text-[9px] font-mono px-2 py-0.5 rounded border ${
                           act === 'spacex' ? 'text-spacex-accent bg-spacex-accent/10 border-spacex-accent/20' :
                           act === 'eva' ? 'text-red-400 bg-red-500/10 border-red-500/20' :
-                          act === 'dock' || act === 'undock' ? 'text-purple-400 bg-purple-500/10 border-purple-500/20' :
+                          act === 'dock' || act === 'undock' ? 'text-amber-400 bg-white/10 border-white/20' :
                           'text-spacex-muted bg-white/5 border-spacex-border/15'
                         } uppercase`}
                       >
@@ -839,7 +839,7 @@ export default function ReportDetailPage() {
                 {topics.map((topic) => (
                   <span
                     key={topic}
-                    className="text-[9px] font-mono text-spacex-muted/70 bg-white/[0.04] px-2 py-1 rounded border border-spacex-border/10 hover:border-spacex-accent/20 hover:text-spacex-accent transition-colors"
+                    className="text-[9px] font-mono text-spacex-muted/70 bg-white/[0.04] px-2 py-1 rounded border border-spacex-border/30 hover:border-spacex-accent/20 hover:text-spacex-accent transition-colors"
                   >
                     {topic}
                   </span>
@@ -858,7 +858,7 @@ export default function ReportDetailPage() {
                 {prevReport && (
                   <Link
                     href={`/iss-reports/${prevReport.id}`}
-                    className="block p-2 -mx-1 rounded-lg hover:bg-white/[0.03] transition-colors group"
+                    className="block p-2 -mx-1 rounded-lg hover:bg-white/[0.05] transition-colors group"
                   >
                     <p className="text-[11px] text-white group-hover:text-spacex-accent transition-colors line-clamp-2 leading-snug">
                       {extractReportDate(prevReport.title) || prevReport.title}
@@ -871,7 +871,7 @@ export default function ReportDetailPage() {
                 {nextReport && (
                   <Link
                     href={`/iss-reports/${nextReport.id}`}
-                    className="block p-2 -mx-1 rounded-lg hover:bg-white/[0.03] transition-colors group"
+                    className="block p-2 -mx-1 rounded-lg hover:bg-white/[0.05] transition-colors group"
                   >
                     <p className="text-[11px] text-white group-hover:text-spacex-accent transition-colors line-clamp-2 leading-snug">
                       {extractReportDate(nextReport.title) || nextReport.title}

@@ -20,17 +20,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const flight = flights.find((f) => String(f.id) === params.id);
   if (flight) {
     const name = flight.name || flight.mission?.name || "Flight " + params.id;
-    const title = `${name} | SpaceClawd`;
-    const description = flight.mission?.description || `Starship flight ${name} details on SpaceClawd.`;
+    const title = `${name} | ElonAgents`;
+    const description = flight.mission?.description || `Starship flight ${name} details on ElonAgents.`;
     const image = (flight as unknown as { image?: { image_url?: string } }).image?.image_url;
     return {
       title,
       description,
-      openGraph: { title, description, ...(image ? { images: [{ url: image, width: 1200, height: 630, alt: name }] } : { images: ["/brand/spaceclawd-og.png"] }) },
-      twitter: { card: "summary_large_image", title, description, images: [image || "/brand/spaceclawd-og.png"] },
+      openGraph: { title, description, ...(image ? { images: [{ url: image, width: 1200, height: 630, alt: name }] } : { images: ["/brand/elonagents-og-1200x630@4x.png"] }) },
+      twitter: { card: "summary_large_image", title, description, images: [image || "/brand/elonagents-og-1200x630@4x.png"] },
     };
   }
-  return { title: `Starship Flight ${params.id} | SpaceClawd`, description: "Starship flight details on SpaceClawd." };
+  return { title: `Starship Flight ${params.id} | ElonAgents`, description: "Starship flight details on ElonAgents." };
 }
 
 export default function Page({ params }: Props) {

@@ -52,7 +52,7 @@ export default function DeployAgentPage() {
         className="inline-flex items-center gap-2 text-xs font-mono text-spacex-muted hover:text-spacex-accent transition-colors"
       >
         <ArrowLeft className="w-3.5 h-3.5" />
-        Back to SpaceClawd
+        Back to ElonAgents
       </Link>
 
       {/* Header */}
@@ -70,7 +70,7 @@ export default function DeployAgentPage() {
               Deploy Agent
             </h1>
             <p className="text-[11px] font-mono text-spacex-muted">
-              Launch a new AI crew member into SpaceClawd
+              Launch a new AI crew member into ElonAgents
             </p>
           </div>
         </div>

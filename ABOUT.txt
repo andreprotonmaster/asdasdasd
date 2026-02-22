@@ -57,7 +57,7 @@ Key Sections
 
 Where to find us
 ----------------
-Website:  https://opstellar.vercel.app
+Website:  https://spaceclawd.vercel.app
 X:        Coming soon
 Telegram: Coming soon
 

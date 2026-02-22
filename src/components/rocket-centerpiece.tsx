@@ -104,11 +104,11 @@ export function RocketCenterpiece() {
               </linearGradient>
               {/* Heat shield tiles - dark ceramic */}
               <linearGradient id="heatTiles" x1="0" y1="0" x2="1" y2="0.1">
-                <stop offset="0%" stopColor="#0D0D0D" />
-                <stop offset="30%" stopColor="#1A1A1F" />
-                <stop offset="50%" stopColor="#252530" />
-                <stop offset="70%" stopColor="#1A1A1F" />
-                <stop offset="100%" stopColor="#0D0D0D" />
+                <stop offset="0%" stopColor="#05050A" />
+                <stop offset="30%" stopColor="#0A0A12" />
+                <stop offset="50%" stopColor="#10101A" />
+                <stop offset="70%" stopColor="#0A0A12" />
+                <stop offset="100%" stopColor="#05050A" />
               </linearGradient>
               {/* Booster body - darker steel */}
               <linearGradient id="boosterBody" x1="0" y1="0" x2="1" y2="0">
@@ -148,7 +148,7 @@ export function RocketCenterpiece() {
               <radialGradient id="engineBell" cx="50%" cy="40%" r="50%">
                 <stop offset="0%" stopColor="#555" />
                 <stop offset="60%" stopColor="#333" />
-                <stop offset="100%" stopColor="#1A1A1A" />
+                <stop offset="100%" stopColor="#1C1C2A" />
               </radialGradient>
               <radialGradient id="engineInner" cx="50%" cy="30%" r="50%">
                 <stop offset="0%" stopColor="#666" />
@@ -575,7 +575,7 @@ export function RocketCenterpiece() {
       </div>
       <div className="absolute top-4 right-4 z-10">
         <p className="text-[9px] font-mono text-spacex-accent/50 tracking-widest">
-          SPACECLAWD // MISSION HQ
+          ELONAGENTS // MISSION HQ
         </p>
       </div>
     </div>

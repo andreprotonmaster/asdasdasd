@@ -161,7 +161,7 @@ const OrbitVisualization = memo(function OrbitVisualization({
 
     // Background
     const bgGrad = ctx.createRadialGradient(rw * 0.38, rh * 0.35, 0, cx, cy, rw * 0.55);
-    bgGrad.addColorStop(0, "#0a1020");
+    bgGrad.addColorStop(0, "#0A0A12");
     bgGrad.addColorStop(1, "#030508");
     ctx.fillStyle = bgGrad;
     ctx.fillRect(0, 0, rw, rh);
@@ -574,9 +574,9 @@ const OrbitVisualization = memo(function OrbitVisualization({
                   <div className="flex justify-between"><span>NORAD</span><span className="text-white">{displaySat.noradId}</span></div>
                   <div className="flex justify-between"><span>Alt</span><span className="text-spacex-accent">{displaySat.alt} km</span></div>
                   <div className="flex justify-between"><span>Vel</span><span className="text-white">{displaySat.vel.toLocaleString()} m/s</span></div>
-                  <div className="flex justify-between"><span>Inc</span><span className="text-cyan-400">{displaySat.inc}°</span></div>
+                  <div className="flex justify-between"><span>Inc</span><span className="text-emerald-300">{displaySat.inc}°</span></div>
                   <div className="flex justify-between"><span>Pos</span><span className="text-white">{displaySat.lat.toFixed(1)}°, {displaySat.lng.toFixed(1)}°</span></div>
-                  <div className="flex justify-between"><span>Shell</span><span className="text-purple-400 text-[8px]">{displaySat.shell}</span></div>
+                  <div className="flex justify-between"><span>Shell</span><span className="text-amber-400 text-[8px]">{displaySat.shell}</span></div>
                 </div>
                 {selectedSat?.noradId === displaySat.noradId && (
                   <button onClick={() => setSelectedSat(null)}
@@ -616,8 +616,8 @@ function ShellDistribution({ shells }: { shells: ShellInfo[] }) {
     <div className="glass-panel p-4 hud-corners">
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <Radio className="w-4 h-4 text-purple-400" />
-          <h3 className="text-xs font-mono font-semibold text-purple-400 tracking-wider uppercase">
+          <Radio className="w-4 h-4 text-amber-400" />
+          <h3 className="text-xs font-mono font-semibold text-amber-400 tracking-wider uppercase">
             Orbital Shell Distribution
           </h3>
         </div>
@@ -652,7 +652,7 @@ function ShellDistribution({ shells }: { shells: ShellInfo[] }) {
                 initial={{ width: 0 }}
                 animate={{ width: `${(shell.count / maxCount) * 100}%` }}
                 transition={{ duration: 0.6, delay: i * 0.04 }}
-                className="h-full rounded-full bg-gradient-to-r from-purple-500 to-spacex-accent"
+                className="h-full rounded-full bg-gradient-to-r from-amber-500 to-spacex-accent"
               />
             </div>
           </motion.div>
@@ -670,8 +670,8 @@ function AltitudeStats({
   return (
     <div className="glass-panel p-4 hud-corners">
       <div className="flex items-center gap-2 mb-4">
-        <TrendingUp className="w-4 h-4 text-cyan-400" />
-        <h3 className="text-xs font-mono font-semibold text-cyan-400 tracking-wider uppercase">
+        <TrendingUp className="w-4 h-4 text-emerald-300" />
+        <h3 className="text-xs font-mono font-semibold text-emerald-300 tracking-wider uppercase">
           Altitude Telemetry
         </h3>
       </div>
@@ -1084,14 +1084,14 @@ export default function StarlinkPage() {
       label: "Avg Altitude",
       value: `${altitude.avg}`,
       icon: TrendingUp,
-      color: "text-cyan-400",
+      color: "text-emerald-300",
       sub: `${altitude.min}–${altitude.max} km`,
     },
     {
       label: "Avg Velocity",
       value: `${velocity.avg}`,
       icon: Gauge,
-      color: "text-purple-400",
+      color: "text-amber-400",
       sub: `${velocity.min}–${velocity.max} m/s`,
     },
     {
@@ -1105,7 +1105,7 @@ export default function StarlinkPage() {
       label: "Orbital Shells",
       value: shells.length.toString(),
       icon: Globe,
-      color: "text-indigo-400",
+      color: "text-amber-400",
       sub: `Largest: ${shells[0]?.count.toLocaleString() || "—"}`,
     },
   ], [constellation, altitude, velocity, orbitalPeriod, shells]);
@@ -1209,8 +1209,8 @@ export default function StarlinkPage() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="glass-panel p-4 hud-corners">
           <div className="flex items-center gap-2 mb-3">
-            <Gauge className="w-4 h-4 text-purple-400" />
-            <h3 className="text-xs font-mono font-semibold text-purple-400 tracking-wider uppercase">
+            <Gauge className="w-4 h-4 text-amber-400" />
+            <h3 className="text-xs font-mono font-semibold text-amber-400 tracking-wider uppercase">
               Velocity Range
             </h3>
           </div>
@@ -1222,7 +1222,7 @@ export default function StarlinkPage() {
             </div>
             <div className="border-x border-spacex-border/30">
               <p className="text-[9px] font-mono text-spacex-muted uppercase mb-1">Avg</p>
-              <p className="text-lg font-mono font-bold text-purple-400">{velocity.avg}</p>
+              <p className="text-lg font-mono font-bold text-amber-400">{velocity.avg}</p>
               <p className="text-[9px] font-mono text-spacex-muted">m/s</p>
             </div>
             <div>
@@ -1251,8 +1251,8 @@ export default function StarlinkPage() {
 
         <div className="glass-panel p-4 hud-corners">
           <div className="flex items-center gap-2 mb-3">
-            <Activity className="w-4 h-4 text-cyan-400" />
-            <h3 className="text-xs font-mono font-semibold text-cyan-400 tracking-wider uppercase">
+            <Activity className="w-4 h-4 text-emerald-300" />
+            <h3 className="text-xs font-mono font-semibold text-emerald-300 tracking-wider uppercase">
               Constellation Health
             </h3>
           </div>
@@ -1373,7 +1373,7 @@ export default function StarlinkPage() {
                 return (
                   <div
                     key={sat.noradId}
-                    className="grid grid-cols-8 gap-2 px-3 py-2 rounded hover:bg-white/[0.02] transition-colors"
+                    className="grid grid-cols-8 gap-2 px-3 py-2 rounded hover:bg-white/[0.04] transition-colors"
                   >
                     <span className="text-[10px] font-mono text-white font-semibold truncate">
                       {sat.id}
@@ -1390,7 +1390,7 @@ export default function StarlinkPage() {
                     <span className="text-[10px] font-mono text-white">
                       {sat.velocity.toFixed(0)}
                     </span>
-                    <span className="text-[10px] font-mono text-cyan-400">
+                    <span className="text-[10px] font-mono text-emerald-300">
                       {sat.inclination.toFixed(2)}
                     </span>
                     <span className="text-[9px] font-mono text-spacex-muted">

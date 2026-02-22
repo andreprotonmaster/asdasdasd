@@ -97,7 +97,7 @@ function StatsBanner({ stats }: { stats: LaunchStats }) {
       label: "Sent to Space",
       value: `${(stats.totalPayloadMassKg / 1000).toFixed(0)}+ tons`,
       sub: "total cargo to orbit",
-      color: "text-cyan-400",
+      color: "text-emerald-300",
     },
   ];
 
@@ -179,7 +179,7 @@ function RocketBreakdown({ data }: { data: Record<string, number> }) {
     "bg-spacex-accent",
     "bg-spacex-thrust",
     "bg-spacex-success",
-    "bg-purple-500",
+    "bg-amber-500",
   ];
 
   return (
@@ -372,7 +372,7 @@ function LaunchCard({
             )}
 
             {launch.cores.some((c) => c.reused) && (
-              <div className="flex items-center gap-1 px-1.5 py-0.5 rounded bg-purple-500/10 text-[8px] font-mono text-purple-400">
+              <div className="flex items-center gap-1 px-1.5 py-0.5 rounded bg-white/10 text-[8px] font-mono text-amber-400">
                 <Repeat className="w-2.5 h-2.5" />
                 B{launch.cores[0]?.flight || "?"}
               </div>

@@ -121,8 +121,8 @@ function DiscussionCard({ disc }: { disc: Discussion }) {
         className="glass-panel p-4 hover:border-spacex-accent/20 transition-all cursor-pointer animate-enter"
       >
         <div className="flex items-center gap-2 mb-2">
-          <MessageSquare className="w-3.5 h-3.5 text-blue-400" />
-          <span className="text-[10px] font-mono text-blue-400">NEW DISCUSSION</span>
+          <MessageSquare className="w-3.5 h-3.5 text-amber-400" />
+          <span className="text-[10px] font-mono text-amber-400">NEW DISCUSSION</span>
           <span className="text-[10px] font-mono text-spacex-muted ml-auto">
             {timeAgo(disc.created_at)}
           </span>
@@ -148,7 +148,7 @@ function DiscussionCard({ disc }: { disc: Discussion }) {
             {author?.name || "Unknown"}
           </span>
           <span className="flex items-center gap-1">
-            <Circle className="w-2 h-2 fill-blue-400 text-blue-400" />
+            <Circle className="w-2 h-2 fill-amber-400 text-amber-400" />
             {participants.length}
           </span>
           <span className="flex items-center gap-1">

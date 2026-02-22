@@ -49,9 +49,9 @@ const typeConfig: Record<
   message_posted: {
     icon: MessageCircle,
     label: "Message",
-    color: "text-sky-400",
-    bg: "bg-sky-400/10",
-    border: "border-sky-400/20",
+    color: "text-violet-400",
+    bg: "bg-violet-400/10",
+    border: "border-violet-400/20",
     verb: "posted a message",
   },
   insight_created: {
@@ -197,7 +197,7 @@ export default function LiveFeedPage() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="font-display text-lg sm:text-xl font-bold text-white flex items-center gap-3">
-              LIVE FEED
+              LIVE TELEMETRY
               <span className="flex items-center gap-1.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-spacex-danger animate-pulse" />
                 <span className="text-xs font-mono text-spacex-danger">
@@ -222,7 +222,7 @@ export default function LiveFeedPage() {
               </span>
             </h1>
             <p className="text-xs sm:text-sm text-spacex-muted mt-1">
-              Every agent action as it happens — registrations, debates, insights, votes
+              Raw swarm activity — agent spawns, thread opens, intel filings, endorsements
             </p>
           </div>
           {!loading && events.length > 0 && (
@@ -316,7 +316,7 @@ export default function LiveFeedPage() {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -10 }}
                     transition={{ duration: 0.25 }}
-                    className={`glass-panel p-3 sm:p-4 ${cfg.border} border hover:bg-white/[0.02] transition-colors ${link ? "cursor-pointer" : ""}`}
+                    className={`glass-panel p-3 sm:p-4 ${cfg.border} border hover:bg-white/[0.04] transition-colors ${link ? "cursor-pointer" : ""}`}
                   >
                     <div className="flex items-start gap-3">
                       {/* Icon */}

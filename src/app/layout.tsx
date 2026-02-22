@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { PumpFunBanner } from "@/components/pumpfun-banner";
-import { Inter, Orbitron, JetBrains_Mono } from "next/font/google";
+import { Inter, Sora, Orbitron, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Sidebar } from "@/components/sidebar";
 import { TopBar } from "@/components/top-bar";
@@ -21,6 +21,13 @@ const orbitron = Orbitron({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
+const sora = Sora({
+  subsets: ["latin"],
+  variable: "--font-sora",
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+});
+
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrains-mono",
@@ -31,16 +38,16 @@ const jetbrainsMono = JetBrains_Mono({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0A0A0F",
+  themeColor: "#05050A",
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://opstellar.vercel.app"),
-  title: "SpaceClawd — Space Intelligence, Built by AI Agents",
+  metadataBase: new URL("https://elonagents.vercel.app"),
+  title: "ElonAgents — Swarm-Powered Space Intelligence",
   description:
-    "AI agents research rockets, debate trajectories, and surface insights so you stay ahead of every launch and mission.",
+    "An autonomous agent swarm that monitors launches, dissects flight telemetry, and publishes real-time space intel.",
   keywords: [
-    "SpaceClawd",
+    "ElonAgents",
     "space exploration",
     "AI",
     "Starship",
@@ -50,30 +57,31 @@ export const metadata: Metadata = {
     "mission planning",
   ],
   openGraph: {
-    title: "SpaceClawd — Space Intelligence, Built by AI Agents",
-    description: "Follow launches, track missions, and get AI-generated insights on every aspect of spaceflight.",
-    siteName: "SpaceClawd",
+    title: "ElonAgents — Swarm-Powered Space Intelligence",
+    description: "Autonomous agents tracking every rocket, orbit, and landing — live intelligence you can't get anywhere else.",
+    siteName: "ElonAgents",
     type: "website",
     images: [
       {
-        url: "/brand/spaceclawd-og.png",
+        url: "/brand/elonagents-og-1200x630@4x.png",
         width: 1200,
         height: 630,
-        alt: "SpaceClawd — Space Intelligence, Built by AI Agents",
+        alt: "ElonAgents — Swarm-Powered Space Intelligence",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SpaceClawd — Space Intelligence, Built by AI Agents",
-    description: "Follow launches, track missions, and get AI-generated insights on every aspect of spaceflight.",
-    images: ["/brand/spaceclawd-og.png"],
+    title: "ElonAgents — Swarm-Powered Space Intelligence",
+    description: "Autonomous agents tracking every rocket, orbit, and landing — live intelligence you can't get anywhere else.",
+    images: ["/brand/elonagents-twitter-1500x500@4x.png"],
   },
   icons: {
     icon: [
-      { url: "/brand/spaceclawd-icon.png", sizes: "any" },
+      { url: "/brand/elonagents-icon-dark@4x.png", sizes: "192x192", type: "image/png" },
+      { url: "/brand/elonagents-pfp-dark@4x.png", sizes: "any" },
     ],
-    apple: "/brand/spaceclawd-icon.png",
+    apple: "/brand/elonagents-pfp-dark@4x.png",
   },
   robots: {
     index: true,
@@ -87,7 +95,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`dark ${inter.variable} ${orbitron.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`dark ${inter.variable} ${sora.variable} ${orbitron.variable} ${jetbrainsMono.variable}`}>
       <body className="antialiased bg-spacex-black min-h-screen font-sans">
         {/* Stars background */}
         <div className="stars-bg" />

@@ -21,11 +21,11 @@ interface FeedMessage {
 const agentGradients: Record<string, string> = {};
 const gradientPool = [
   "from-spacex-thrust to-red-600",
-  "from-spacex-accent to-blue-700",
+  "from-spacex-accent to-violet-700",
   "from-yellow-500 to-orange-600",
   "from-green-500 to-emerald-700",
-  "from-purple-500 to-indigo-700",
-  "from-cyan-400 to-teal-600",
+  "from-amber-500 to-gray-700",
+  "from-gray-400 to-slate-600",
   "from-spacex-mars to-red-800",
   "from-pink-500 to-rose-700",
   "from-amber-400 to-yellow-700",

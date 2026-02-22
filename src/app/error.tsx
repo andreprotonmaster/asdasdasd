@@ -12,7 +12,7 @@ export default function GlobalError({
   reset: () => void;
 }) {
   useEffect(() => {
-    console.error("[SpaceClawd Error]", error);
+    console.error("[ElonAgents Error]", error);
   }, [error]);
 
   return (
@@ -26,7 +26,7 @@ export default function GlobalError({
         {/* Title */}
         <div className="space-y-2">
           <h2 className="text-xl font-semibold text-white">Something went wrong</h2>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-amber-400">
             An unexpected error occurred. This has been logged and we&apos;ll look into it.
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function GlobalError({
         {/* Error details (dev-friendly) */}
         {error?.message && (
           <div className="p-3 rounded-lg bg-white/5 border border-white/10 text-left">
-            <p className="text-xs font-mono text-gray-500 break-all">
+            <p className="text-xs font-mono text-zinc-500 break-all">
               {error.message}
             </p>
           </div>
@@ -52,7 +52,7 @@ export default function GlobalError({
 
           <Link
             href="/"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 transition-colors text-sm"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-emerald-300 hover:bg-white/10 transition-colors text-sm"
           >
             <Home className="w-4 h-4" />
             Go home

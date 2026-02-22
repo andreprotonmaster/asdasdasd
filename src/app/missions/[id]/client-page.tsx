@@ -67,17 +67,17 @@ interface NewsArticle {
 }
 
 const SOURCE_COLORS: Record<string, string> = {
-  SpaceNews: "text-blue-400 border-blue-400/30 bg-blue-400/10",
+  SpaceNews: "text-amber-400 border-amber-400/30 bg-amber-400/10",
   NASASpaceflight: "text-orange-400 border-orange-400/30 bg-orange-400/10",
-  "Spaceflight Now": "text-cyan-400 border-cyan-400/30 bg-cyan-400/10",
+  "Spaceflight Now": "text-emerald-300 border-white/30 bg-white/10",
   SpaceX: "text-white border-white/30 bg-white/10",
   NASA: "text-red-400 border-red-400/30 bg-red-400/10",
   Teslarati: "text-rose-400 border-rose-400/30 bg-rose-400/10",
   Arstechnica: "text-amber-400 border-amber-400/30 bg-amber-400/10",
   CNBC: "text-emerald-400 border-emerald-400/30 bg-emerald-400/10",
-  Reuters: "text-sky-400 border-sky-400/30 bg-sky-400/10",
-  "Space.com": "text-purple-400 border-purple-400/30 bg-purple-400/10",
-  "European Spaceflight": "text-indigo-400 border-indigo-400/30 bg-indigo-400/10",
+  Reuters: "text-violet-400 border-violet-400/30 bg-violet-400/10",
+  "Space.com": "text-amber-400 border-white/30 bg-white/10",
+  "European Spaceflight": "text-amber-400 border-white/30 bg-white/10",
   ESA: "text-teal-400 border-teal-400/30 bg-teal-400/10",
 };
 
@@ -195,7 +195,7 @@ function InfoRow({
   mono?: boolean;
 }) {
   return (
-    <div className="flex items-start justify-between gap-3 py-1.5 border-b border-spacex-border/10 last:border-0">
+    <div className="flex items-start justify-between gap-3 py-1.5 border-b border-spacex-border/30 last:border-0">
       <span className="text-[10px] font-mono text-spacex-muted shrink-0 uppercase tracking-wider">
         {label}
       </span>
@@ -249,7 +249,7 @@ function PayloadCard({ payload }: { payload: Payload }) {
         )}
       </div>
       <div className="flex flex-wrap gap-1.5 mb-2">
-        <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-cyan-500/10 text-cyan-400">
+        <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-white/10 text-emerald-300">
           {payload.type}
         </span>
         {payload.orbit && (
@@ -258,7 +258,7 @@ function PayloadCard({ payload }: { payload: Payload }) {
           </span>
         )}
         {payload.regime && (
-          <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-purple-500/10 text-purple-400">
+          <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-white/10 text-amber-400">
             {payload.regime}
           </span>
         )}
@@ -299,7 +299,7 @@ function PayloadCard({ payload }: { payload: Payload }) {
 
       {/* Orbital parameters */}
       {payload.orbit && (payload.periapsis_km !== null || payload.apoapsis_km !== null) && (
-        <div className="mt-3 pt-2 border-t border-spacex-border/10">
+        <div className="mt-3 pt-2 border-t border-spacex-border/30">
           <p className="text-[8px] font-mono text-spacex-muted tracking-wider uppercase mb-1.5">
             Orbital Parameters
           </p>
@@ -364,8 +364,8 @@ function PayloadCard({ payload }: { payload: Payload }) {
 
       {/* Dragon capsule data */}
       {payload.dragon && (payload.dragon.capsule || payload.dragon.mass_returned_kg !== null || payload.dragon.flight_time_sec !== null || payload.dragon.manifest || payload.dragon.water_landing !== null || payload.dragon.land_landing !== null) && (
-        <div className="mt-3 pt-2 border-t border-spacex-border/10">
-          <p className="text-[8px] font-mono text-cyan-400/80 tracking-wider uppercase mb-1.5">
+        <div className="mt-3 pt-2 border-t border-spacex-border/30">
+          <p className="text-[8px] font-mono text-emerald-300/80 tracking-wider uppercase mb-1.5">
             Dragon Data
           </p>
           <div className="space-y-0.5">
@@ -449,7 +449,7 @@ function CoreCard({
 
       <div className="flex flex-wrap gap-1.5 mb-3">
         {coreRef.reused && (
-          <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-purple-500/10 text-purple-400">
+          <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-white/10 text-amber-400">
             Reused
           </span>
         )}
@@ -615,7 +615,7 @@ function ArticleContentCard({
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <div className="px-4 pb-4 border-t border-spacex-border/10">
+            <div className="px-4 pb-4 border-t border-spacex-border/30">
               <div className="mt-4 prose prose-invert prose-sm max-w-none">
                 {article.content!.split("\n").filter((p) => p.trim()).map((paragraph, i) => (
                   <p
@@ -637,7 +637,7 @@ function ArticleContentCard({
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <div className="px-4 pb-4 border-t border-spacex-border/10">
+            <div className="px-4 pb-4 border-t border-spacex-border/30">
               <p className="mt-3 text-xs text-spacex-text/50 leading-relaxed">
                 {article.summary}
               </p>
@@ -650,7 +650,7 @@ function ArticleContentCard({
       </AnimatePresence>
 
       {/* Action bar */}
-      <div className="flex items-center gap-2 px-3 py-2 border-t border-spacex-border/10 bg-spacex-dark/30">
+      <div className="flex items-center gap-2 px-3 py-2 border-t border-spacex-border/30 bg-spacex-dark/30">
         <button
           onClick={() => setExpanded(!expanded)}
           className="flex items-center gap-1.5 text-[10px] font-mono text-spacex-accent hover:text-spacex-accent/80 transition-colors"
@@ -1095,7 +1095,7 @@ export default function MissionDetailPage() {
               )}
               {totalPayloadMass > 0 && (
                 <span className="flex items-center gap-1.5">
-                  <Package className="w-3.5 h-3.5 text-cyan-400/60" />
+                  <Package className="w-3.5 h-3.5 text-emerald-300/60" />
                   {formatMass(totalPayloadMass)}
                 </span>
               )}
@@ -1536,7 +1536,7 @@ export default function MissionDetailPage() {
           <Section
             title={`Payloads (${launch.payloadData.length})`}
             icon={<Package className="w-4 h-4" />}
-            color="text-cyan-400"
+            color="text-emerald-300"
             delay={0.25}
           >
             <div className="space-y-3">
@@ -1552,7 +1552,7 @@ export default function MissionDetailPage() {
           <Section
             title={`Boosters (${launch.cores.length})`}
             icon={<Repeat className="w-4 h-4" />}
-            color="text-purple-400"
+            color="text-amber-400"
             delay={0.3}
           >
             <div className="space-y-3">
@@ -1751,13 +1751,13 @@ export default function MissionDetailPage() {
           {/* Docking Events */}
           {launchDockings.length > 0 && (
             <div className="space-y-3">
-              <p className="text-[10px] font-mono text-purple-400 uppercase tracking-wider font-semibold">
+              <p className="text-[10px] font-mono text-amber-400 uppercase tracking-wider font-semibold">
                 Docking Events
               </p>
               {launchDockings.map((dock) => (
                 <div
                   key={dock.id}
-                  className="glass-panel p-4 hud-corners border-purple-500/10 hover:border-purple-500/30 transition-all"
+                  className="glass-panel p-4 hud-corners border-white/10 hover:border-white/30 transition-all"
                 >
                   <div className="flex items-start gap-3">
                     {dock.image && (
@@ -1775,12 +1775,12 @@ export default function MissionDetailPage() {
                       <h4 className="text-sm font-semibold text-white">
                         {dock.spacecraft_name}
                       </h4>
-                      <p className="text-[10px] font-mono text-purple-400/80 mt-0.5">
+                      <p className="text-[10px] font-mono text-amber-400/80 mt-0.5">
                         {dock.spacecraft_type} → {dock.destination}
                       </p>
                       <div className="flex items-center gap-4 mt-2 text-[10px] font-mono">
                         <div>
-                          <span className="text-purple-400">DOCK </span>
+                          <span className="text-amber-400">DOCK </span>
                           <span className="text-white">{new Date(dock.docking).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                         </div>
                         {dock.departure && (
@@ -1812,17 +1812,17 @@ export default function MissionDetailPage() {
         <Section
           title={`News Coverage (${missionCoverage.total})`}
           icon={<Newspaper className="w-4 h-4" />}
-          color="text-blue-400"
+          color="text-amber-400"
           delay={0.42}
         >
           {/* Coverage stats bar */}
           <div className="flex flex-wrap items-center gap-3 mb-4 p-3 rounded-xl bg-spacex-dark/40 border border-spacex-border/15">
-            <div className="flex items-center gap-1.5 text-xs font-mono text-blue-400">
+            <div className="flex items-center gap-1.5 text-xs font-mono text-amber-400">
               <Newspaper className="w-3.5 h-3.5" />
               <span>{missionCoverage.articles.length} article{missionCoverage.articles.length !== 1 ? "s" : ""}</span>
             </div>
             {missionCoverage.blogs.length > 0 && (
-              <div className="flex items-center gap-1.5 text-xs font-mono text-purple-400">
+              <div className="flex items-center gap-1.5 text-xs font-mono text-amber-400">
                 <BookOpen className="w-3.5 h-3.5" />
                 <span>{missionCoverage.blogs.length} blog{missionCoverage.blogs.length !== 1 ? "s" : ""}</span>
               </div>
@@ -1873,7 +1873,7 @@ export default function MissionDetailPage() {
           {missionCoverage.articles.length > 0 && (
             <div className="space-y-3 mb-4">
               {missionCoverage.articles.length > 1 && (
-                <h3 className="text-[10px] font-mono text-blue-400/70 uppercase tracking-wider flex items-center gap-1.5">
+                <h3 className="text-[10px] font-mono text-amber-400/70 uppercase tracking-wider flex items-center gap-1.5">
                   <Newspaper className="w-3 h-3" />
                   Articles
                 </h3>
@@ -1887,7 +1887,7 @@ export default function MissionDetailPage() {
           {/* Blogs */}
           {missionCoverage.blogs.length > 0 && (
             <div className="space-y-3 mb-4">
-              <h3 className="text-[10px] font-mono text-purple-400/70 uppercase tracking-wider flex items-center gap-1.5">
+              <h3 className="text-[10px] font-mono text-amber-400/70 uppercase tracking-wider flex items-center gap-1.5">
                 <BookOpen className="w-3 h-3" />
                 Blogs
               </h3>
@@ -1917,7 +1917,7 @@ export default function MissionDetailPage() {
           animate={{ opacity: 1 }}
           className="glass-panel p-4 hud-corners flex items-center gap-3"
         >
-          <Loader2 className="w-4 h-4 text-blue-400 animate-spin" />
+          <Loader2 className="w-4 h-4 text-amber-400 animate-spin" />
           <span className="text-xs font-mono text-spacex-muted">Loading news coverage...</span>
         </motion.div>
       )}

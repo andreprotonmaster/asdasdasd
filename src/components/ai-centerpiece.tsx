@@ -83,7 +83,7 @@ function DataParticle({ synapse, index }: { synapse: Synapse; index: number }) {
       cx={synapse.from.cx}
       cy={synapse.from.cy}
       r={1.5}
-      fill="#00d4ff"
+      fill="#D4A843"
       initial={{ opacity: 0 }}
       animate={{
         cx: [synapse.from.cx, synapse.to.cx],
@@ -128,10 +128,10 @@ export function AICenterpiece() {
   return (
     <div className="relative glass-panel p-6 lg:p-8 overflow-hidden h-full flex flex-col items-center justify-start pt-14 lg:pt-16 hud-corners">
       {/* Multi-layer background glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-spacex-accent/[0.03] via-transparent to-purple-500/[0.04] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-spacex-accent/[0.03] via-transparent to-spacex-purple/[0.03] pointer-events-none" />
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-spacex-accent/[0.05] rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[400px] bg-purple-500/[0.04] rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-cyan-400/[0.03] rounded-full blur-[80px] pointer-events-none" />
+      <div className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[400px] bg-spacex-accent/[0.03] rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-spacex-purple/[0.04] rounded-full blur-[80px] pointer-events-none" />
 
       {/* Floating data particles in background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -149,7 +149,7 @@ export function AICenterpiece() {
         ].map((p, i) => (
           <motion.div
             key={i}
-            className="absolute w-[2px] h-[2px] bg-cyan-400 rounded-full"
+            className="absolute w-[2px] h-[2px] bg-spacex-accent rounded-full"
             style={{ left: p.x, top: p.y }}
             animate={{ opacity: [0.1, 0.7, 0.1], scale: [0.8, 1.2, 0.8] }}
             transition={{ duration: p.s + 1.5, repeat: Infinity, delay: p.d }}
@@ -165,13 +165,13 @@ export function AICenterpiece() {
         className="text-center mb-2 relative z-10"
       >
         <p className="text-[10px] font-mono text-spacex-accent/80 tracking-[0.3em] uppercase mb-2">
-          Reaching for Intelligence
+          Collective Signal Processing
         </p>
         <h2 className="font-display text-3xl lg:text-4xl font-bold text-white text-glow-accent">
-          SPACECLAWD CORTEX
+          HIVE CORTEX
         </h2>
         <p className="text-white/60 text-sm mt-1">
-          AI-Enhanced Neural Network
+          Distributed Agent Mesh
         </p>
       </motion.div>
 
@@ -210,19 +210,19 @@ export function AICenterpiece() {
             </filter>
             {/* Radial gradient for core brain */}
             <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="#00d4ff" stopOpacity="0.15" />
-              <stop offset="50%" stopColor="#00d4ff" stopOpacity="0.05" />
-              <stop offset="100%" stopColor="#00d4ff" stopOpacity="0" />
+              <stop offset="0%" stopColor="#D4A843" stopOpacity="0.15" />
+              <stop offset="50%" stopColor="#D4A843" stopOpacity="0.05" />
+              <stop offset="100%" stopColor="#D4A843" stopOpacity="0" />
             </radialGradient>
             <radialGradient id="neuronFill" cx="40%" cy="35%" r="60%">
-              <stop offset="0%" stopColor="#80efff" />
-              <stop offset="60%" stopColor="#00d4ff" />
-              <stop offset="100%" stopColor="#0088aa" />
+              <stop offset="0%" stopColor="#A78BFA" />
+              <stop offset="60%" stopColor="#D4A843" />
+              <stop offset="100%" stopColor="#1A1A28" />
             </radialGradient>
             <radialGradient id="neuronCore" cx="40%" cy="35%" r="60%">
-              <stop offset="0%" stopColor="#ffffff" />
-              <stop offset="40%" stopColor="#b0f0ff" />
-              <stop offset="100%" stopColor="#00d4ff" />
+              <stop offset="0%" stopColor="#D4A843" />
+              <stop offset="40%" stopColor="#2DD4A8" />
+              <stop offset="100%" stopColor="#D4A843" />
             </radialGradient>
           </defs>
 
@@ -237,7 +237,7 @@ export function AICenterpiece() {
               y1={s.from.cy}
               x2={s.to.cx}
               y2={s.to.cy}
-              stroke="#00d4ff"
+              stroke="#D4A843"
               strokeWidth={0.6}
               initial={{ opacity: 0 }}
               animate={{ opacity: [0.05, 0.2, 0.05] }}
@@ -260,7 +260,7 @@ export function AICenterpiece() {
                 y1={s.from.cy}
                 x2={s.to.cx}
                 y2={s.to.cy}
-                stroke="#00d4ff"
+                stroke="#D4A843"
                 strokeWidth={2}
                 filter="url(#synapseGlow)"
                 initial={{ opacity: 0 }}
@@ -289,7 +289,7 @@ export function AICenterpiece() {
                 cy={n.cy}
                 r={n.r + 4}
                 fill="none"
-                stroke="#00d4ff"
+                stroke="#D4A843"
                 strokeWidth={0.5}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: [0, 0.4, 0], r: [n.r + 2, n.r + 10, n.r + 2] }}
@@ -307,7 +307,7 @@ export function AICenterpiece() {
                 cy={n.cy}
                 r={n.r + 2}
                 fill="none"
-                stroke="#00d4ff"
+                stroke="#D4A843"
                 strokeWidth={0.3}
                 opacity={0.15}
               />
@@ -342,7 +342,7 @@ export function AICenterpiece() {
             cy={230}
             r={18}
             fill="none"
-            stroke="#00d4ff"
+            stroke="#D4A843"
             strokeWidth={1}
             filter="url(#pulseGlow)"
             animate={{ opacity: [0.2, 0.6, 0.2], r: [16, 22, 16] }}
@@ -353,7 +353,7 @@ export function AICenterpiece() {
             cy={230}
             r={30}
             fill="none"
-            stroke="#00d4ff"
+            stroke="#D4A843"
             strokeWidth={0.5}
             animate={{ opacity: [0.05, 0.2, 0.05], r: [28, 38, 28] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
@@ -371,7 +371,7 @@ export function AICenterpiece() {
               key={`lbl-${i}`}
               x={575}
               y={l.y}
-              fill="#00d4ff"
+              fill="#D4A843"
               fontSize={8}
               fontFamily="monospace"
               opacity={0.3}
@@ -392,13 +392,13 @@ export function AICenterpiece() {
             animate={{ rotate: 360 }}
             transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
           >
-            <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-cyan-400 rounded-full shadow-glow-blue" />
-            <div className="absolute top-1/2 -right-1 -translate-y-1/2 w-1.5 h-1.5 bg-purple-400 rounded-full" />
+            <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-spacex-accent rounded-full shadow-glow-blue" />
+            <div className="absolute top-1/2 -right-1 -translate-y-1/2 w-1.5 h-1.5 bg-spacex-purple rounded-full" />
           </motion.div>
         </div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
           <motion.div
-            className="w-[220px] h-[220px] lg:w-[280px] lg:h-[280px] rounded-full border border-purple-400/[0.06]"
+            className="w-[220px] h-[220px] lg:w-[280px] lg:h-[280px] rounded-full border border-spacex-purple/[0.08]"
             style={{ borderStyle: "dashed" }}
             animate={{ rotate: -360 }}
             transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
@@ -447,12 +447,12 @@ export function AICenterpiece() {
       {/* Corner labels */}
       <div className="absolute top-4 left-4 z-10">
         <p className="text-[9px] font-mono text-spacex-accent/50 tracking-widest">
-          NETWORK // NEURAL MESH v2
+          SWARM // HIVE CORTEX v2
         </p>
       </div>
       <div className="absolute top-4 right-4 z-10">
         <p className="text-[9px] font-mono text-spacex-accent/50 tracking-widest">
-          SPACECLAWD // SPACECLAWD CORTEX
+          ELONAGENTS // HIVE CORTEX
         </p>
       </div>
     </div>

@@ -9,7 +9,7 @@ import reportsData from "../../public/data/news-reports.json";
 import dashboardData from "../../public/data/ll2-starship-dashboard.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://opstellar.vercel.app";
+  const baseUrl = "https://elonagents.vercel.app";
   const now = new Date();
 
   // Static pages

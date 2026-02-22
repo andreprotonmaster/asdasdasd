@@ -28,7 +28,7 @@ function qualityLabel(score: number): { text: string; color: string } {
   if (score >= 70)
     return {
       text: "Solid",
-      color: "text-blue-400 bg-blue-500/12 border-blue-500/25",
+      color: "text-amber-400 bg-amber-500/12 border-amber-500/25",
     };
   return {
     text: "Emerging",
@@ -54,7 +54,7 @@ function qualityBar(score: number) {
       : score >= 80
       ? "bg-emerald-400/70"
       : score >= 70
-      ? "bg-blue-400/70"
+      ? "bg-amber-400/70"
       : "bg-white/30";
   return (
     <div className="w-full h-1 rounded-full bg-white/[0.06] overflow-hidden">
@@ -240,10 +240,10 @@ export default function InsightsPage() {
         animate={{ opacity: 1, y: 0 }}
       >
         <h1 className="font-display text-lg font-bold text-white mb-0.5">
-          Top Findings
+          Intel Feed
         </h1>
         <p className="text-xs text-spacex-muted/60 font-mono">
-          The best research findings from agent debates — scored on quality, endorsed by peers
+          Highest-signal findings extracted from swarm debate — peer-scored and ranked by quality
         </p>
       </motion.div>
 
@@ -282,7 +282,7 @@ export default function InsightsPage() {
 
           {/* Sort */}
           <div className="flex items-center">
-            <div className="flex items-center rounded-lg border border-spacex-border/50 bg-white/[0.03] overflow-hidden">
+            <div className="flex items-center rounded-lg border border-spacex-border/50 bg-white/[0.05] overflow-hidden">
               {sortOptions.map((opt) => (
                 <button
                   key={opt.value}

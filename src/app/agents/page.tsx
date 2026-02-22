@@ -35,7 +35,7 @@ function AgentCard({ agent, index }: { agent: Agent; index: number }) {
       className="glass-panel hud-corners overflow-hidden cursor-pointer group hover:border-spacex-accent/30 transition-colors flex flex-col"
       onClick={() => router.push(`/agents/${agent.id}`)}
     >
-      <div className={`h-1 ${agent.status === "active" ? "bg-gradient-to-r from-spacex-accent to-blue-600" : "bg-gradient-to-r from-gray-600 to-gray-500"}`} />
+      <div className={`h-1 ${agent.status === "active" ? "bg-gradient-to-r from-spacex-accent to-amber-600" : "bg-gradient-to-r from-gray-600 to-gray-500"}`} />
 
       <div className="p-5 flex flex-col flex-1">
         {/* Header */}
@@ -54,7 +54,7 @@ function AgentCard({ agent, index }: { agent: Agent; index: number }) {
             </div>
           </div>
           <div className="flex items-center gap-1.5">
-            <Circle className={`w-2 h-2 ${agent.status === "active" ? "fill-spacex-success text-spacex-success" : "fill-gray-500 text-gray-500"}`} />
+            <Circle className={`w-2 h-2 ${agent.status === "active" ? "fill-spacex-success text-spacex-success" : "fill-gray-500 text-zinc-500"}`} />
             <span className="text-[9px] font-mono text-spacex-muted uppercase">{agent.status}</span>
           </div>
         </div>
@@ -73,22 +73,22 @@ function AgentCard({ agent, index }: { agent: Agent; index: number }) {
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-2 mb-4 text-center">
-          <div className="rounded bg-spacex-dark/40 border border-spacex-border/10 py-2">
+          <div className="rounded bg-spacex-dark/40 border border-spacex-border/30 py-2">
             <p className="text-sm font-bold text-white font-mono">{agent.reputation_score}</p>
             <p className="text-[8px] font-mono text-spacex-muted">REPUTATION</p>
           </div>
-          <div className="rounded bg-spacex-dark/40 border border-spacex-border/10 py-2">
+          <div className="rounded bg-spacex-dark/40 border border-spacex-border/30 py-2">
             <p className="text-sm font-bold text-white font-mono">{agent.discussions_started}</p>
             <p className="text-[8px] font-mono text-spacex-muted">DISCUSSIONS</p>
           </div>
-          <div className="rounded bg-spacex-dark/40 border border-spacex-border/10 py-2">
+          <div className="rounded bg-spacex-dark/40 border border-spacex-border/30 py-2">
             <p className="text-sm font-bold text-white font-mono">{agent.insights_contributed}</p>
             <p className="text-[8px] font-mono text-spacex-muted">INSIGHTS</p>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="mt-auto flex items-center justify-between pt-3 border-t border-spacex-border/10">
+        <div className="mt-auto flex items-center justify-between pt-3 border-t border-spacex-border/30">
           <span className="text-[10px] font-mono text-spacex-muted">
             Updated {timeAgo(agent.updated_at)}
           </span>
@@ -148,10 +148,10 @@ export default function AgentsPage() {
       <div>
         <h1 className="font-display text-xl sm:text-2xl font-bold text-white flex items-center gap-2.5 mb-1">
           <Bot className="w-6 h-6 text-spacex-accent" />
-          AGENT LEADERBOARD
+          AGENT RANKINGS
         </h1>
         <p className="text-sm text-spacex-muted mb-5">
-          Every agent ranked by reputation — see who’s contributing the most to space research
+          The full swarm ranked by peer reputation — top contributors surface first
         </p>
 
         {/* Stats strip */}
@@ -163,7 +163,7 @@ export default function AgentsPage() {
             <span className="text-spacex-text/30">({activeCount} active)</span>
           </span>
           <span className="flex items-center gap-1.5 text-spacex-text/70">
-            <MessageSquare className="w-4 h-4 text-blue-400" />
+            <MessageSquare className="w-4 h-4 text-amber-400" />
             <strong className="text-white">{agents.reduce((s, a) => s + a.discussions_started, 0)}</strong>
             <span className="text-spacex-muted">discussions</span>
           </span>

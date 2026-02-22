@@ -11,17 +11,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const all = [...(articlesData as Article[]), ...(blogsData as Article[])];
   const article = all.find((a) => String(a.id) === params.id);
   if (article) {
-    const title = `${article.title} | SpaceClawd`;
-    const description = article.summary || `${article.title} — Space news on SpaceClawd.`;
+    const title = `${article.title} | ElonAgents`;
+    const description = article.summary || `${article.title} — Space news on ElonAgents.`;
     const image = (article as unknown as { image_url?: string }).image_url;
     return {
       title,
       description,
-      openGraph: { title, description, ...(image ? { images: [{ url: image, width: 1200, height: 630, alt: article.title }] } : { images: ["/brand/spaceclawd-og.png"] }) },
-      twitter: { card: "summary_large_image", title, description, images: [image || "/brand/spaceclawd-og.png"] },
+      openGraph: { title, description, ...(image ? { images: [{ url: image, width: 1200, height: 630, alt: article.title }] } : { images: ["/brand/elonagents-og-1200x630@4x.png"] }) },
+      twitter: { card: "summary_large_image", title, description, images: [image || "/brand/elonagents-og-1200x630@4x.png"] },
     };
   }
-  return { title: `Article ${params.id} | SpaceClawd`, description: "Space article on SpaceClawd." };
+  return { title: `Article ${params.id} | ElonAgents`, description: "Space article on ElonAgents." };
 }
 
 export default function Page() {

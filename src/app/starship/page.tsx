@@ -51,11 +51,11 @@ const dashboard = dashboardData as {
 };
 
 const statusColors: Record<string, { bg: string; text: string; border: string }> = {
-  "scrapped": { bg: "bg-gray-500/10", text: "text-gray-400", border: "border-gray-500/20" },
+  "scrapped": { bg: "bg-amber-500/10", text: "text-amber-400", border: "border-amber-500/20" },
   "converted": { bg: "bg-yellow-500/10", text: "text-yellow-400", border: "border-yellow-500/20" },
   "destroyed": { bg: "bg-red-500/10", text: "text-red-400", border: "border-red-500/20" },
   "lost": { bg: "bg-orange-500/10", text: "text-orange-400", border: "border-orange-500/20" },
-  "retired": { bg: "bg-blue-500/10", text: "text-blue-400", border: "border-blue-500/20" },
+  "retired": { bg: "bg-amber-500/10", text: "text-amber-400", border: "border-amber-500/20" },
   "active": { bg: "bg-green-500/10", text: "text-green-400", border: "border-green-500/20" },
 };
 const defaultStatusColor = { bg: "bg-spacex-border/10", text: "text-spacex-muted", border: "border-spacex-border/20" };
@@ -129,7 +129,7 @@ export default function StarshipPage() {
           { label: "Successful", value: successCount.toString(), icon: CheckCircle2, color: "text-spacex-success" },
           { label: "Failed", value: failCount.toString(), icon: XCircle, color: "text-red-400" },
           { label: "Vehicles Built", value: vehicles.length.toString(), icon: Flame, color: "text-orange-400" },
-          { label: "Upcoming", value: upcomingFlights.length.toString(), icon: Clock, color: "text-cyan-400" },
+          { label: "Upcoming", value: upcomingFlights.length.toString(), icon: Clock, color: "text-emerald-300" },
         ].map((s, i) => (
           <div
             key={s.label}
@@ -165,7 +165,7 @@ export default function StarshipPage() {
                     className={`flex items-center gap-4 p-3 rounded-lg border transition-colors cursor-pointer ${
                       isUpcoming
                         ? "bg-spacex-accent/5 border-spacex-accent/15 hover:border-spacex-accent/30"
-                        : "bg-spacex-dark/30 border-spacex-border/10 hover:border-spacex-border/30"
+                        : "bg-spacex-dark/30 border-spacex-border/30 hover:border-spacex-border/30"
                     }`}
                   >
                     {/* Status icon */}
@@ -260,19 +260,19 @@ export default function StarshipPage() {
         <div
           className="glass-panel hud-corners overflow-hidden animate-enter-d3"
         >
-          <div className="h-1.5 bg-gradient-to-r from-cyan-500 to-blue-600" />
+          <div className="h-1.5 bg-gradient-to-r from-emerald-500 to-amber-600" />
           <div className="p-5">
             <h2 className="font-display text-sm font-bold text-white flex items-center gap-2 mb-4">
-              <Activity className="w-4 h-4 text-cyan-400" />
+              <Activity className="w-4 h-4 text-emerald-300" />
               DEVELOPMENT UPDATES
             </h2>
             <div className="space-y-3">
               {updates.slice(0, 8).map((u) => (
                 <div
                   key={u.id}
-                  className="flex gap-3 p-3 rounded-lg bg-spacex-dark/30 border border-spacex-border/10"
+                  className="flex gap-3 p-3 rounded-lg bg-spacex-dark/30 border border-spacex-border/30"
                 >
-                  <div className="w-1 shrink-0 rounded-full bg-cyan-500/40" />
+                  <div className="w-1 shrink-0 rounded-full bg-white/40" />
                   <div className="flex-1 min-w-0">
                     <p className="text-sm text-spacex-text/70 leading-relaxed">{u.comment}</p>
                     <div className="flex items-center gap-3 mt-1.5">

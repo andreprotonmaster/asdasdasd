@@ -40,7 +40,7 @@ type TabKey = "overview" | "activity" | "discussions" | "insights";
 const activityTypeConfig: Record<ActivityType, { icon: typeof UserPlus; color: string; bg: string; verb: string }> = {
   agent_registered: { icon: UserPlus, color: "text-spacex-success", bg: "bg-spacex-success/10", verb: "joined the network" },
   discussion_created: { icon: MessageSquarePlus, color: "text-spacex-accent", bg: "bg-spacex-accent/10", verb: "started a discussion" },
-  message_posted: { icon: MessageCircle, color: "text-sky-400", bg: "bg-sky-400/10", verb: "posted a message" },
+  message_posted: { icon: MessageCircle, color: "text-violet-400", bg: "bg-violet-400/10", verb: "posted a message" },
   insight_created: { icon: Lightbulb, color: "text-spacex-thrust", bg: "bg-spacex-thrust/10", verb: "published an insight" },
   insight_endorsed: { icon: Award, color: "text-amber-400", bg: "bg-amber-400/10", verb: "endorsed an insight" },
   upvote: { icon: ThumbsUp, color: "text-emerald-400", bg: "bg-emerald-400/10", verb: "upvoted" },
@@ -147,7 +147,7 @@ export default function AgentDetailPage({ params }: { params: { id: string } }) 
             <div className="flex items-center gap-3 mb-1">
               <h1 className="font-display text-2xl font-bold text-white">{agent.name}</h1>
               <div className="flex items-center gap-1.5">
-                <Circle className={`w-2.5 h-2.5 ${agent.status === "active" ? "fill-spacex-success text-spacex-success" : "fill-gray-500 text-gray-500"}`} />
+                <Circle className={`w-2.5 h-2.5 ${agent.status === "active" ? "fill-spacex-success text-spacex-success" : "fill-gray-500 text-zinc-500"}`} />
                 <span className="text-[10px] font-mono text-spacex-muted uppercase">{agent.status}</span>
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function AgentDetailPage({ params }: { params: { id: string } }) 
         </div>
 
         {agent.specialty && (
-          <div className="mt-4 pt-4 border-t border-spacex-border/10">
+          <div className="mt-4 pt-4 border-t border-spacex-border/30">
             <span className="px-2.5 py-1 rounded text-[10px] font-mono bg-spacex-accent/5 text-spacex-accent/80 border border-spacex-accent/15">
               {agent.specialty}
             </span>
@@ -177,10 +177,10 @@ export default function AgentDetailPage({ params }: { params: { id: string } }) 
       >
         {[
           { label: "REPUTATION", value: agent.reputation_score.toString(), color: "text-spacex-accent" },
-          { label: "MESSAGES", value: totalMessages.toString(), color: "text-cyan-400" },
+          { label: "MESSAGES", value: totalMessages.toString(), color: "text-emerald-300" },
           { label: "UPVOTES", value: totalUpvotes.toString(), color: "text-green-400" },
           { label: "ENDORSED", value: agent.endorsed_insights.length.toString(), color: "text-yellow-400" },
-          { label: "ACTIVITY", value: activity.length.toString(), color: "text-purple-400" },
+          { label: "ACTIVITY", value: activity.length.toString(), color: "text-amber-400" },
         ].map((s) => (
           <div key={s.label} className="glass-panel p-3 text-center">
             <p className={`text-xl font-bold font-mono ${s.color}`}>{s.value}</p>
@@ -248,7 +248,7 @@ export default function AgentDetailPage({ params }: { params: { id: string } }) 
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
             >
-              <h2 className="text-xs font-mono font-bold text-sky-400 tracking-wider mb-3 flex items-center gap-2">
+              <h2 className="text-xs font-mono font-bold text-violet-400 tracking-wider mb-3 flex items-center gap-2">
                 <MessageCircle className="w-3.5 h-3.5" /> RECENT MESSAGES
               </h2>
               <div className="space-y-2">
@@ -256,7 +256,7 @@ export default function AgentDetailPage({ params }: { params: { id: string } }) 
                   <Link
                     key={m.id}
                     href={`/discussions/${m.discussion_id}`}
-                    className="glass-panel p-4 group hover:border-sky-400/20 transition-colors block"
+                    className="glass-panel p-4 group hover:border-violet-400/20 transition-colors block"
                   >
                     <div className="flex items-center gap-2 mb-1.5">
                       <span className="text-[10px] font-mono text-spacex-muted">
@@ -300,7 +300,7 @@ export default function AgentDetailPage({ params }: { params: { id: string } }) 
                     key={event.id}
                     initial={{ opacity: 0, x: -8 }}
                     animate={{ opacity: 1, x: 0 }}
-                    className={`glass-panel p-3 border border-spacex-border/10 hover:bg-white/[0.02] transition-colors ${link ? "cursor-pointer" : ""}`}
+                    className={`glass-panel p-3 border border-spacex-border/30 hover:bg-white/[0.04] transition-colors ${link ? "cursor-pointer" : ""}`}
                   >
                     <div className="flex items-start gap-3">
                       <div className={`relative z-10 w-9 h-9 rounded-lg ${cfg.bg} flex items-center justify-center shrink-0`}>

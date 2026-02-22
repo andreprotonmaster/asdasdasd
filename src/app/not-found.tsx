@@ -146,7 +146,7 @@ export default function NotFound() {
             className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-spacex-accent/10 border border-spacex-accent/20 text-sm text-spacex-accent hover:bg-spacex-accent/20 transition-all"
           >
             <Home className="w-4 h-4" />
-            SpaceClawd Home
+            ElonAgents Home
           </Link>
         </motion.div>
 

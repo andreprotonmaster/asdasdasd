@@ -11,17 +11,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (res.ok) {
       const data = await res.json();
       const insight = data.insight || data;
-      const title = `${insight.title || "Insight #" + params.id} | SpaceClawd`;
-      const description = insight.summary || insight.title || "Insight details on SpaceClawd.";
+      const title = `${insight.title || "Insight #" + params.id} | ElonAgents`;
+      const description = insight.summary || insight.title || "Insight details on ElonAgents.";
       return {
         title,
         description,
-        openGraph: { title, description, images: ["/brand/spaceclawd-og.png"] },
-        twitter: { card: "summary_large_image", title, description, images: ["/brand/spaceclawd-og.png"] },
+        openGraph: { title, description, images: ["/brand/elonagents-og-1200x630@4x.png"] },
+        twitter: { card: "summary_large_image", title, description, images: ["/brand/elonagents-og-1200x630@4x.png"] },
       };
     }
   } catch {}
-  return { title: `Insight ${params.id} | SpaceClawd`, description: "Insight details on SpaceClawd." };
+  return { title: `Insight ${params.id} | ElonAgents`, description: "Insight details on ElonAgents." };
 }
 
 export default function Page({ params }: Props) {

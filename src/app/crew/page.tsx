@@ -45,15 +45,15 @@ interface Crew {
 const crewList: Crew[] = crewData as Crew[];
 
 const agencyColors: Record<string, { bg: string; text: string; border: string; dot: string; gradient: string }> = {
-  NASA: { bg: "bg-blue-500/10", text: "text-blue-400", border: "border-blue-500/20", dot: "bg-blue-400", gradient: "from-blue-500 to-blue-700" },
+  NASA: { bg: "bg-amber-500/10", text: "text-amber-400", border: "border-amber-500/20", dot: "bg-amber-400", gradient: "from-amber-500 to-violet-700" },
   JAXA: { bg: "bg-red-500/10", text: "text-red-400", border: "border-red-500/20", dot: "bg-red-400", gradient: "from-red-500 to-red-700" },
-  ESA: { bg: "bg-cyan-500/10", text: "text-cyan-400", border: "border-cyan-500/20", dot: "bg-cyan-400", gradient: "from-cyan-500 to-cyan-700" },
-  SpaceX: { bg: "bg-spacex-accent/10", text: "text-spacex-accent", border: "border-spacex-accent/20", dot: "bg-spacex-accent", gradient: "from-spacex-accent to-blue-700" },
-  "Axiom Space": { bg: "bg-purple-500/10", text: "text-purple-400", border: "border-purple-500/20", dot: "bg-purple-400", gradient: "from-purple-500 to-purple-700" },
+  ESA: { bg: "bg-white/10", text: "text-emerald-300", border: "border-white/20", dot: "bg-amber-400", gradient: "from-emerald-500 to-emerald-700" },
+  SpaceX: { bg: "bg-spacex-accent/10", text: "text-spacex-accent", border: "border-spacex-accent/20", dot: "bg-spacex-accent", gradient: "from-spacex-accent to-violet-700" },
+  "Axiom Space": { bg: "bg-white/10", text: "text-amber-400", border: "border-white/20", dot: "bg-purple-400", gradient: "from-amber-500 to-gray-700" },
   Roscosmos: { bg: "bg-orange-500/10", text: "text-orange-400", border: "border-orange-500/20", dot: "bg-orange-400", gradient: "from-orange-500 to-orange-700" },
 };
 
-const defaultAgencyStyle = { bg: "bg-spacex-border/10", text: "text-spacex-muted", border: "border-spacex-border/20", dot: "bg-spacex-muted", gradient: "from-gray-500 to-gray-700" };
+const defaultAgencyStyle = { bg: "bg-spacex-border/10", text: "text-spacex-muted", border: "border-spacex-border/20", dot: "bg-spacex-muted", gradient: "from-amber-500 to-gray-700" };
 
 export default function CrewPage() {
   const [search, setSearch] = useState("");
@@ -256,7 +256,7 @@ export default function CrewPage() {
                   </div>
 
                   {/* Stats footer */}
-                  <div className="border-t border-spacex-border/10 px-4 py-2.5 flex items-center gap-4 text-[10px] font-mono bg-spacex-dark/20">
+                  <div className="border-t border-spacex-border/30 px-4 py-2.5 flex items-center gap-4 text-[10px] font-mono bg-spacex-dark/20">
                     <span className="text-spacex-muted flex items-center gap-1">
                       <Rocket className="w-3 h-3" />
                       {crew.totalFlights || crew.launches.length} flight{(crew.totalFlights || crew.launches.length) !== 1 ? "s" : ""}
@@ -268,7 +268,7 @@ export default function CrewPage() {
                       </span>
                     )}
                     {crew.timeInSpace && (
-                      <span className="text-cyan-400/70 flex items-center gap-1">
+                      <span className="text-emerald-300/70 flex items-center gap-1">
                         <Clock className="w-3 h-3" />
                         {crew.timeInSpace}
                       </span>

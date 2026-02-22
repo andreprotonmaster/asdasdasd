@@ -54,7 +54,7 @@ function qualityLabel(score: number): { text: string; color: string } {
   if (score >= 70)
     return {
       text: "Solid",
-      color: "text-blue-400 bg-blue-500/12 border-blue-500/25",
+      color: "text-amber-400 bg-amber-500/12 border-amber-500/25",
     };
   return {
     text: "Emerging",
@@ -114,7 +114,7 @@ export default function InsightDetailPage({
       : insight.quality_score >= 80
       ? "bg-emerald-400/70"
       : insight.quality_score >= 70
-      ? "bg-blue-400/70"
+      ? "bg-amber-400/70"
       : "bg-white/30";
 
   return (
@@ -236,7 +236,7 @@ export default function InsightDetailPage({
               className="glass-panel hud-corners p-6"
             >
               <div className="flex items-center gap-2 mb-4">
-                <Zap className="w-4 h-4 text-cyan-400" />
+                <Zap className="w-4 h-4 text-emerald-300" />
                 <h2 className="text-[10px] font-mono text-white/50 tracking-wider">
                   CITATIONS ({insight.citations.length})
                 </h2>
@@ -246,10 +246,10 @@ export default function InsightDetailPage({
                   <Link
                     key={cite}
                     href={cite}
-                    className="flex items-center gap-3 px-4 py-2.5 rounded-lg bg-cyan-500/[0.04] border border-cyan-500/15 hover:bg-cyan-500/[0.08] hover:border-cyan-500/25 transition-all group"
+                    className="flex items-center gap-3 px-4 py-2.5 rounded-lg bg-white/[0.04] border border-white/15 hover:bg-white/[0.08] hover:border-white/25 transition-all group"
                   >
-                    <ExternalLink className="w-3.5 h-3.5 text-cyan-400/80 shrink-0" />
-                    <span className="text-xs font-mono text-cyan-300/80 group-hover:text-cyan-300 truncate">
+                    <ExternalLink className="w-3.5 h-3.5 text-emerald-300/80 shrink-0" />
+                    <span className="text-xs font-mono text-emerald-300/80 group-hover:text-emerald-300 truncate">
                       {cite}
                     </span>
                   </Link>
@@ -266,7 +266,7 @@ export default function InsightDetailPage({
             className="glass-panel hud-corners p-6"
           >
             <div className="flex items-center gap-2 mb-4">
-              <MessageSquare className="w-4 h-4 text-blue-400" />
+              <MessageSquare className="w-4 h-4 text-amber-400" />
               <h2 className="text-[10px] font-mono text-white/50 tracking-wider">
                 SOURCE DISCUSSIONS ({srcDiscs.length})
               </h2>
@@ -276,11 +276,11 @@ export default function InsightDetailPage({
                 <Link
                   key={disc.id}
                   href={`/discussions/${disc.id}`}
-                  className="flex items-center gap-3 px-4 py-3 rounded-lg border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.04] hover:border-blue-500/20 transition-all group"
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg border border-white/[0.10] bg-white/[0.04] hover:bg-white/[0.04] hover:border-amber-500/20 transition-all group"
                 >
-                  <MessageSquare className="w-4 h-4 text-blue-400/70 shrink-0" />
+                  <MessageSquare className="w-4 h-4 text-amber-400/70 shrink-0" />
                   <div className="min-w-0 flex-1">
-                    <p className="text-sm text-white/90 group-hover:text-blue-400 transition-colors truncate">
+                    <p className="text-sm text-white/90 group-hover:text-amber-400 transition-colors truncate">
                       {disc.title}
                     </p>
                     <div className="flex items-center gap-3 text-[10px] font-mono text-white/35 mt-1">
@@ -379,7 +379,7 @@ export default function InsightDetailPage({
                   <span className={`text-[10px] font-mono font-semibold shrink-0 ${
                     endorser.score >= 90 ? "text-yellow-400" :
                     endorser.score >= 70 ? "text-emerald-400" :
-                    endorser.score >= 50 ? "text-blue-400" :
+                    endorser.score >= 50 ? "text-amber-400" :
                     "text-white/50"
                   }`}>
                     {endorser.score}

@@ -9,7 +9,7 @@ import {
 const actions = [
   {
     label: "Deploy Agent",
-    description: "Put your AI to work on SpaceClawd",
+    description: "Put your AI to work on ElonAgents",
     icon: UserPlus,
     href: "/join",
     color: "text-spacex-accent",

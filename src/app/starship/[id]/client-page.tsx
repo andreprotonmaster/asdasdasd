@@ -106,7 +106,7 @@ const statusConfig: Record<string, { icon: typeof CheckCircle2; color: string; b
   "Launch Successful": { icon: CheckCircle2, color: "text-spacex-success", bg: "bg-spacex-success/10", border: "border-spacex-success/20" },
   "Launch Failure": { icon: XCircle, color: "text-red-400", bg: "bg-red-500/10", border: "border-red-500/20" },
   "Partial Failure": { icon: AlertTriangle, color: "text-yellow-400", bg: "bg-yellow-500/10", border: "border-yellow-500/20" },
-  "To Be Determined": { icon: Clock, color: "text-cyan-400", bg: "bg-cyan-500/10", border: "border-cyan-500/20" },
+  "To Be Determined": { icon: Clock, color: "text-emerald-300", bg: "bg-white/10", border: "border-white/20" },
   "To Be Confirmed": { icon: Clock, color: "text-spacex-muted", bg: "bg-spacex-border/10", border: "border-spacex-border/20" },
 };
 const defaultStatus = { icon: Clock, color: "text-spacex-muted", bg: "bg-spacex-border/10", border: "border-spacex-border/20" };
@@ -175,7 +175,7 @@ export default function StarshipFlightDetailPage({ params }: { params: { id: str
           <div className={`h-1.5 ${
             flight.status?.name === "Launch Successful" ? "bg-gradient-to-r from-spacex-success to-green-600" :
             flight.status?.name === "Launch Failure" ? "bg-gradient-to-r from-red-500 to-red-700" :
-            "bg-gradient-to-r from-spacex-accent to-cyan-500"
+            "bg-gradient-to-r from-white to-gray-400"
           }`} />
           <div className="p-5">
             <div className="flex items-start justify-between mb-4">
@@ -250,7 +250,7 @@ export default function StarshipFlightDetailPage({ params }: { params: { id: str
           transition={{ delay: 0.05 }}
           className="glass-panel hud-corners overflow-hidden"
         >
-          <div className="h-1 bg-gradient-to-r from-spacex-accent/60 to-blue-600/60" />
+          <div className="h-1 bg-gradient-to-r from-spacex-accent/60 to-slate-600/60" />
           <div className="p-5">
             <h2 className="font-display text-sm font-bold text-white mb-3">MISSION DETAILS</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
@@ -266,7 +266,7 @@ export default function StarshipFlightDetailPage({ params }: { params: { id: str
               {/* Orbit */}
               {flight.mission?.orbit?.name && (
                 <div className="rounded-lg bg-spacex-dark/40 border border-spacex-border/15 p-3 text-center">
-                  <Globe className="w-4 h-4 text-blue-400 mx-auto mb-1" />
+                  <Globe className="w-4 h-4 text-amber-400 mx-auto mb-1" />
                   <p className="text-sm font-bold text-white font-mono">{flight.mission.orbit.abbrev || flight.mission.orbit.name}</p>
                   <p className="text-[10px] font-mono text-spacex-muted">ORBIT</p>
                 </div>
@@ -300,7 +300,7 @@ export default function StarshipFlightDetailPage({ params }: { params: { id: str
               {/* Location */}
               {flight.pad?.location?.name && (
                 <div className="rounded-lg bg-spacex-dark/40 border border-spacex-border/15 p-3 text-center">
-                  <Globe className="w-4 h-4 text-cyan-400 mx-auto mb-1" />
+                  <Globe className="w-4 h-4 text-emerald-300 mx-auto mb-1" />
                   <p className="text-xs font-bold text-white font-mono leading-tight">{flight.pad.location.name}</p>
                   <p className="text-[10px] font-mono text-spacex-muted">LOCATION</p>
                 </div>
@@ -318,7 +318,7 @@ export default function StarshipFlightDetailPage({ params }: { params: { id: str
               {/* Attempt counts */}
               {flight.orbital_launch_attempt_count && (
                 <div className="rounded-lg bg-spacex-dark/40 border border-spacex-border/15 p-3 text-center">
-                  <BarChart3 className="w-4 h-4 text-purple-400 mx-auto mb-1" />
+                  <BarChart3 className="w-4 h-4 text-amber-400 mx-auto mb-1" />
                   <p className="text-sm font-bold text-white font-mono">#{flight.orbital_launch_attempt_count}</p>
                   <p className="text-[10px] font-mono text-spacex-muted">ORBITAL ATTEMPT</p>
                 </div>
@@ -335,14 +335,14 @@ export default function StarshipFlightDetailPage({ params }: { params: { id: str
             transition={{ delay: 0.1 }}
             className="glass-panel hud-corners overflow-hidden"
           >
-            <div className="h-1 bg-gradient-to-r from-purple-500/60 to-pink-500/60" />
+            <div className="h-1 bg-gradient-to-r from-amber-500/60 to-slate-600/60" />
             <div className="p-5">
               <h2 className="font-display text-sm font-bold text-white flex items-center gap-2 mb-3">
-                <Clock className="w-4 h-4 text-purple-400" /> LAUNCH WINDOW
+                <Clock className="w-4 h-4 text-amber-400" /> LAUNCH WINDOW
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {flight.window_start && (
-                  <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/10 p-4">
+                  <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/30 p-4">
                     <p className="text-[10px] text-spacex-muted font-mono mb-1">WINDOW OPEN</p>
                     <p className="text-sm text-white font-mono">
                       {new Date(flight.window_start).toLocaleString("en-US", {
@@ -353,7 +353,7 @@ export default function StarshipFlightDetailPage({ params }: { params: { id: str
                   </div>
                 )}
                 {flight.window_end && (
-                  <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/10 p-4">
+                  <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/30 p-4">
                     <p className="text-[10px] text-spacex-muted font-mono mb-1">WINDOW CLOSE</p>
                     <p className="text-sm text-white font-mono">
                       {new Date(flight.window_end).toLocaleString("en-US", {
@@ -388,7 +388,7 @@ export default function StarshipFlightDetailPage({ params }: { params: { id: str
                 <Info className="w-4 h-4 text-spacex-accent" /> PROGRAM
               </h2>
               {flight.program.map((prog, idx) => (
-                <div key={idx} className="rounded-xl bg-spacex-dark/30 border border-spacex-border/10 p-4">
+                <div key={idx} className="rounded-xl bg-spacex-dark/30 border border-spacex-border/30 p-4">
                   <h3 className="text-sm font-bold text-white mb-1">{prog.name}</h3>
                   {prog.description && (
                     <p className="text-xs text-spacex-text/60 leading-relaxed">{prog.description}</p>
@@ -414,7 +414,7 @@ export default function StarshipFlightDetailPage({ params }: { params: { id: str
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {relatedVehicles.map((v) => (
-                  <div key={v.id} className="rounded-xl bg-spacex-dark/30 border border-spacex-border/10 p-4 flex gap-4">
+                  <div key={v.id} className="rounded-xl bg-spacex-dark/30 border border-spacex-border/30 p-4 flex gap-4">
                     {v.image?.thumbnail_url && (
                       <div className="shrink-0 w-16 h-16 relative rounded-lg overflow-hidden border border-spacex-border/15">
                         <Image src={v.image.thumbnail_url} alt={v.serial_number} fill sizes="64px" className="object-cover" />
@@ -445,15 +445,15 @@ export default function StarshipFlightDetailPage({ params }: { params: { id: str
             transition={{ delay: 0.25 }}
             className="glass-panel hud-corners overflow-hidden"
           >
-            <div className="h-1 bg-gradient-to-r from-cyan-500/60 to-blue-600/60" />
+            <div className="h-1 bg-gradient-to-r from-amber-500/60 to-slate-600/60" />
             <div className="p-5">
               <h2 className="font-display text-sm font-bold text-white flex items-center gap-2 mb-3">
-                <Activity className="w-4 h-4 text-cyan-400" /> RELATED UPDATES
+                <Activity className="w-4 h-4 text-emerald-300" /> RELATED UPDATES
               </h2>
               <div className="space-y-3">
                 {relatedUpdates.map((u) => (
-                  <div key={u.id} className="flex gap-3 p-3 rounded-lg bg-spacex-dark/30 border border-spacex-border/10">
-                    <div className="w-1 shrink-0 rounded-full bg-cyan-500/40" />
+                  <div key={u.id} className="flex gap-3 p-3 rounded-lg bg-spacex-dark/30 border border-spacex-border/30">
+                    <div className="w-1 shrink-0 rounded-full bg-white/40" />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm text-spacex-text/70 leading-relaxed">{u.comment}</p>
                       <div className="flex items-center gap-3 mt-1.5">

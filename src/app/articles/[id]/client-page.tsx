@@ -141,17 +141,17 @@ interface LaunchpadData {
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
 const SOURCE_COLORS: Record<string, string> = {
-  SpaceNews: "text-blue-400 border-blue-400/30 bg-blue-400/10",
+  SpaceNews: "text-amber-400 border-amber-400/30 bg-amber-400/10",
   NASASpaceflight: "text-orange-400 border-orange-400/30 bg-orange-400/10",
-  "Spaceflight Now": "text-cyan-400 border-cyan-400/30 bg-cyan-400/10",
+  "Spaceflight Now": "text-emerald-300 border-white/30 bg-white/10",
   SpaceX: "text-white border-white/30 bg-white/10",
   NASA: "text-red-400 border-red-400/30 bg-red-400/10",
   Teslarati: "text-rose-400 border-rose-400/30 bg-rose-400/10",
   Arstechnica: "text-amber-400 border-amber-400/30 bg-amber-400/10",
   CNBC: "text-emerald-400 border-emerald-400/30 bg-emerald-400/10",
-  Reuters: "text-sky-400 border-sky-400/30 bg-sky-400/10",
-  "Space.com": "text-purple-400 border-purple-400/30 bg-purple-400/10",
-  "European Spaceflight": "text-indigo-400 border-indigo-400/30 bg-indigo-400/10",
+  Reuters: "text-violet-400 border-violet-400/30 bg-violet-400/10",
+  "Space.com": "text-amber-400 border-white/30 bg-white/10",
+  "European Spaceflight": "text-amber-400 border-white/30 bg-white/10",
   ESA: "text-teal-400 border-teal-400/30 bg-teal-400/10",
 };
 
@@ -534,7 +534,7 @@ export default function ArticleDetailPage() {
           <>
             <span className={`text-[9px] font-mono uppercase tracking-wider px-1.5 py-0.5 rounded border ${
               articleType === "blog"
-                ? "text-purple-400 border-purple-400/30 bg-purple-400/10"
+                ? "text-amber-400 border-white/30 bg-white/10"
                 : "text-amber-400 border-amber-400/30 bg-amber-400/10"
             }`}>
               {articleType}
@@ -694,7 +694,7 @@ export default function ArticleDetailPage() {
                           </span>
                         )}
                         {core?.reused && (
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[9px] font-mono font-semibold uppercase tracking-wider text-purple-400 border border-purple-400/30 bg-purple-400/10">
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[9px] font-mono font-semibold uppercase tracking-wider text-amber-400 border border-white/30 bg-white/10">
                             <Layers className="w-2.5 h-2.5" />Reused (Flight {core.flight || "?"})
                           </span>
                         )}
@@ -905,7 +905,7 @@ export default function ArticleDetailPage() {
               <h3 className="text-[10px] font-mono font-semibold text-spacex-muted tracking-wider uppercase">More from {article.news_site}</h3>
               <div className="space-y-2">
                 {moreFromSource.map((item) => (
-                  <Link key={item.id} href={`/articles/${itemSlug(item.id, articleType)}`} className="block p-2 -mx-1 rounded-lg hover:bg-white/[0.03] transition-colors group">
+                  <Link key={item.id} href={`/articles/${itemSlug(item.id, articleType)}`} className="block p-2 -mx-1 rounded-lg hover:bg-white/[0.05] transition-colors group">
                     <p className="text-[11px] text-white group-hover:text-spacex-accent transition-colors line-clamp-2 leading-snug">{item.title}</p>
                     <p className="text-[9px] font-mono text-spacex-muted mt-1">{formatShortDate(item.published_at)}</p>
                   </Link>

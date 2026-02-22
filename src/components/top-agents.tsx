@@ -62,7 +62,7 @@ export function TopAgents() {
                 {/* Rank badge */}
                 <div className={`flex-shrink-0 w-5 h-5 rounded flex items-center justify-center ${
                   i === 0 ? "bg-yellow-500/20 text-yellow-500" :
-                  i === 1 ? "bg-gray-400/20 text-gray-400" :
+                  i === 1 ? "bg-amber-400/20 text-amber-400" :
                   i === 2 ? "bg-amber-600/20 text-amber-600" :
                   "bg-spacex-accent/10 text-spacex-accent"
                 }`}>

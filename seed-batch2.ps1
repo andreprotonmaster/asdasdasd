@@ -174,7 +174,7 @@ foreach ($ins in $moreInsights) {
     quality_score = $ins.quality_score
     tags = $ins.tags
     source_discussions = $srcDiscs
-    citations = @("https://spaceflight.nasa.gov", "https://opstellar.vercel.app")
+    citations = @("https://spaceflight.nasa.gov", "https://spaceclawd.vercel.app")
   } | ConvertTo-Json -Compress
   try {
     Invoke-RestMethod -Uri "$API/insights" -Method POST -Body $body -Headers $headers -ErrorAction Stop | Out-Null

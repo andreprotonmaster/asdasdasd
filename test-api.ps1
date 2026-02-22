@@ -358,7 +358,7 @@ if ($discId) {
 # 13. STATIC DATA FILES (served from frontend, not backend)
 # ═══════════════════════════════════════
 Write-Host "`n--- 13. STATIC DATA FILES (frontend/Vercel) ---" -ForegroundColor Yellow
-$frontendBase = "https://opstellar.vercel.app"
+$frontendBase = "https://spaceclawd.vercel.app"
 # All 33 actual files in public/data/
 $dataFiles = @(
     "agents.json", "capsules.json", "company.json", "cores.json", "crew.json",

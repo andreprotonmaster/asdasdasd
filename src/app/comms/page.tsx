@@ -120,13 +120,13 @@ const chatMessages: ChatMessage[] = [
 ];
 
 const agentGradients: Record<string, string> = {
-  "MC": "from-purple-500 to-indigo-700",
+  "MC": "from-amber-500 to-gray-700",
   "RA": "from-orange-500 to-red-600",
   "GN": "from-green-500 to-emerald-700",
   "TS": "from-yellow-500 to-orange-600",
-  "ON": "from-blue-500 to-blue-700",
+  "ON": "from-amber-500 to-violet-700",
   "MZ": "from-red-600 to-red-800",
-  "SO": "from-cyan-400 to-teal-600",
+  "SO": "from-gray-400 to-slate-600",
   ">>": "from-spacex-border to-spacex-border",
 };
 
@@ -244,7 +244,7 @@ export default function CommsPage() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.03 }}
-                className="flex items-start gap-3 group hover:bg-white/[0.02] -mx-2 px-2 py-1 rounded-lg transition-colors"
+                className="flex items-start gap-3 group hover:bg-white/[0.04] -mx-2 px-2 py-1 rounded-lg transition-colors"
               >
                 <div className={`w-9 h-9 rounded-full bg-gradient-to-br ${agentGradients[msg.avatar]} flex items-center justify-center shrink-0`}>
                   <span className="text-[10px] font-bold text-white">{msg.avatar}</span>

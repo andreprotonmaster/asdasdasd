@@ -70,15 +70,15 @@ const allCrew: Crew[] = crewData as Crew[];
 const allLaunches: Launch[] = launchData as unknown as Launch[];
 
 const agencyColors: Record<string, { bg: string; text: string; border: string; gradient: string }> = {
-  NASA: { bg: "bg-blue-500/10", text: "text-blue-400", border: "border-blue-500/20", gradient: "from-blue-500 to-blue-700" },
+  NASA: { bg: "bg-amber-500/10", text: "text-amber-400", border: "border-amber-500/20", gradient: "from-amber-500 to-violet-700" },
   JAXA: { bg: "bg-red-500/10", text: "text-red-400", border: "border-red-500/20", gradient: "from-red-500 to-red-700" },
-  ESA: { bg: "bg-cyan-500/10", text: "text-cyan-400", border: "border-cyan-500/20", gradient: "from-cyan-500 to-cyan-700" },
-  SpaceX: { bg: "bg-spacex-accent/10", text: "text-spacex-accent", border: "border-spacex-accent/20", gradient: "from-spacex-accent to-blue-700" },
-  "Axiom Space": { bg: "bg-purple-500/10", text: "text-purple-400", border: "border-purple-500/20", gradient: "from-purple-500 to-purple-700" },
+  ESA: { bg: "bg-white/10", text: "text-emerald-300", border: "border-white/20", gradient: "from-emerald-500 to-emerald-700" },
+  SpaceX: { bg: "bg-spacex-accent/10", text: "text-spacex-accent", border: "border-spacex-accent/20", gradient: "from-spacex-accent to-violet-700" },
+  "Axiom Space": { bg: "bg-white/10", text: "text-amber-400", border: "border-white/20", gradient: "from-amber-500 to-gray-700" },
   Roscosmos: { bg: "bg-orange-500/10", text: "text-orange-400", border: "border-orange-500/20", gradient: "from-orange-500 to-orange-700" },
 };
 
-const defaultStyle = { bg: "bg-spacex-border/10", text: "text-spacex-muted", border: "border-spacex-border/20", gradient: "from-gray-500 to-gray-700" };
+const defaultStyle = { bg: "bg-spacex-border/10", text: "text-spacex-muted", border: "border-spacex-border/20", gradient: "from-amber-500 to-gray-700" };
 
 function formatDate(dateUTC: string): string {
   return new Date(dateUTC).toLocaleDateString("en-US", {
@@ -200,7 +200,7 @@ export default function CrewDetailPage({ params }: Params) {
               <p className="text-[10px] font-mono text-spacex-muted mt-1">EVAs</p>
             </div>
             <div className="rounded-lg bg-spacex-dark/40 border border-spacex-border/15 p-3 text-center">
-              <Clock className="w-4 h-4 text-cyan-400 mx-auto mb-1.5" />
+              <Clock className="w-4 h-4 text-emerald-300 mx-auto mb-1.5" />
               <p className="text-base font-bold text-white font-mono leading-none">{crew.timeInSpace || "—"}</p>
               <p className="text-[10px] font-mono text-spacex-muted mt-1">IN SPACE</p>
             </div>
@@ -326,7 +326,7 @@ export default function CrewDetailPage({ params }: Params) {
             href={`https://x.com/${crew.twitter}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2.5 rounded-lg glass-panel hover:border-cyan-400/30 transition-all text-sm text-cyan-400"
+            className="flex items-center gap-2 px-4 py-2.5 rounded-lg glass-panel hover:border-white/30 transition-all text-sm text-emerald-300"
           >
             <AtSign className="w-4 h-4" />
             @{crew.twitter}

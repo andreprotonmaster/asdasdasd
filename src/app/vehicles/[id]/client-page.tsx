@@ -154,7 +154,7 @@ function Gallery({ images, name }: { images: string[]; name: string }) {
   return (
     <>
       <div className="glass-panel hud-corners overflow-hidden">
-        <div className="h-1 bg-gradient-to-r from-cyan-500/60 to-blue-600/60" />
+        <div className="h-1 bg-gradient-to-r from-amber-500/60 to-slate-600/60" />
         <div className="p-5">
           <h2 className="font-display text-sm font-bold text-white mb-3">GALLERY</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -221,7 +221,7 @@ function RocketDetail({ rocket }: { rocket: RocketData }) {
     <div className="space-y-5">
       {/* Hero */}
       <div className="glass-panel hud-corners overflow-hidden">
-        <div className={`h-1.5 ${rocket.active ? "bg-gradient-to-r from-spacex-accent to-blue-600" : "bg-gradient-to-r from-gray-600 to-gray-700"}`} />
+        <div className={`h-1.5 ${rocket.active ? "bg-gradient-to-r from-spacex-accent to-amber-600" : "bg-gradient-to-r from-gray-600 to-gray-700"}`} />
         <div className="p-5">
           <div className="flex items-start justify-between mb-4">
             <div>
@@ -271,7 +271,7 @@ function RocketDetail({ rocket }: { rocket: RocketData }) {
 
       {/* Key specs */}
       <div className="glass-panel hud-corners overflow-hidden">
-        <div className="h-1 bg-gradient-to-r from-spacex-accent/60 to-blue-600/60" />
+        <div className="h-1 bg-gradient-to-r from-spacex-accent/60 to-slate-600/60" />
         <div className="p-5">
           <h2 className="font-display text-sm font-bold text-white mb-3">KEY SPECIFICATIONS</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
@@ -319,41 +319,41 @@ function RocketDetail({ rocket }: { rocket: RocketData }) {
             <Flame className="w-4 h-4 text-orange-400" /> ENGINE SPECIFICATIONS
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/10 p-3">
+            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/30 p-3">
               <p className="text-[10px] text-spacex-muted font-mono mb-0.5">TYPE</p>
               <p className="text-sm text-white font-mono capitalize">{rocket.engines.type} {rocket.engines.version}</p>
             </div>
-            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/10 p-3">
+            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/30 p-3">
               <p className="text-[10px] text-spacex-muted font-mono mb-0.5">LAYOUT</p>
               <p className="text-sm text-white font-mono capitalize">{rocket.engines.layout}</p>
             </div>
-            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/10 p-3">
+            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/30 p-3">
               <p className="text-[10px] text-spacex-muted font-mono mb-0.5">COUNT</p>
               <p className="text-sm text-white font-mono">{rocket.engines.number}</p>
             </div>
-            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/10 p-3">
+            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/30 p-3">
               <p className="text-[10px] text-spacex-muted font-mono mb-0.5">THRUST/WEIGHT</p>
               <p className="text-sm text-white font-mono">{rocket.engines.thrust_to_weight}</p>
             </div>
-            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/10 p-3">
+            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/30 p-3">
               <p className="text-[10px] text-spacex-muted font-mono mb-0.5">THRUST (SL)</p>
               <p className="text-sm text-white font-mono">{rocket.engines.thrust_sea_level.kN} kN</p>
             </div>
-            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/10 p-3">
+            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/30 p-3">
               <p className="text-[10px] text-spacex-muted font-mono mb-0.5">THRUST (VAC)</p>
               <p className="text-sm text-white font-mono">{rocket.engines.thrust_vacuum.kN} kN</p>
             </div>
-            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/10 p-3">
+            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/30 p-3">
               <p className="text-[10px] text-spacex-muted font-mono mb-0.5">ISP (SL / VAC)</p>
               <p className="text-sm text-white font-mono">{rocket.engines.isp.sea_level}s / {rocket.engines.isp.vacuum}s</p>
             </div>
-            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/10 p-3">
+            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/30 p-3">
               <p className="text-[10px] text-spacex-muted font-mono mb-0.5">ENGINE LOSS MAX</p>
               <p className="text-sm text-white font-mono">{rocket.engines.engine_loss_max}</p>
             </div>
           </div>
           <div className="mt-3 flex flex-wrap gap-2">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono bg-blue-500/10 text-blue-300 border border-blue-500/20">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono bg-amber-500/10 text-amber-300 border border-amber-500/20">
               <Flame className="w-3 h-3" /> {rocket.engines.propellant_1}
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono bg-orange-500/10 text-orange-300 border border-orange-500/20">
@@ -365,14 +365,14 @@ function RocketDetail({ rocket }: { rocket: RocketData }) {
 
       {/* Stages */}
       <div className="glass-panel hud-corners overflow-hidden">
-        <div className="h-1 bg-gradient-to-r from-purple-500/60 to-pink-500/60" />
+        <div className="h-1 bg-gradient-to-r from-amber-500/60 to-slate-600/60" />
         <div className="p-5">
           <h2 className="font-display text-sm font-bold text-white flex items-center gap-2 mb-3">
-            <Layers className="w-4 h-4 text-purple-400" /> STAGE DETAILS
+            <Layers className="w-4 h-4 text-amber-400" /> STAGE DETAILS
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* First stage */}
-            <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/10 p-4">
+            <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/30 p-4">
               <div className="flex items-center gap-2 mb-3">
                 <div className="w-8 h-8 rounded-lg bg-spacex-accent/10 flex items-center justify-center">
                   <span className="text-xs font-bold text-spacex-accent font-mono">S1</span>
@@ -394,10 +394,10 @@ function RocketDetail({ rocket }: { rocket: RocketData }) {
             </div>
 
             {/* Second stage */}
-            <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/10 p-4">
+            <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/30 p-4">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center">
-                  <span className="text-xs font-bold text-purple-400 font-mono">S2</span>
+                <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
+                  <span className="text-xs font-bold text-amber-400 font-mono">S2</span>
                 </div>
                 <div>
                   <p className="text-sm font-bold text-white">Second Stage</p>
@@ -413,7 +413,7 @@ function RocketDetail({ rocket }: { rocket: RocketData }) {
                 <div className="flex justify-between"><span className="text-spacex-muted">Thrust</span><span className="text-white">{rocket.second_stage.thrust.kN} kN</span></div>
               </div>
               {rocket.second_stage.payloads?.composite_fairing && (
-                <div className="mt-3 pt-3 border-t border-spacex-border/10">
+                <div className="mt-3 pt-3 border-t border-spacex-border/30">
                   <p className="text-[10px] text-spacex-muted font-mono mb-1">FAIRING</p>
                   <p className="text-xs text-white font-mono">
                     {rocket.second_stage.payloads.composite_fairing.height.meters}m × {rocket.second_stage.payloads.composite_fairing.diameter.meters}m
@@ -428,7 +428,7 @@ function RocketDetail({ rocket }: { rocket: RocketData }) {
       {/* Payload capacity */}
       {rocket.payload_weights.length > 0 && (
         <div className="glass-panel hud-corners overflow-hidden">
-          <div className="h-1 bg-gradient-to-r from-spacex-accent/60 to-cyan-500/60" />
+          <div className="h-1 bg-gradient-to-r from-spacex-accent/60 to-emerald-500/60" />
           <div className="p-5">
             <h2 className="font-display text-sm font-bold text-white flex items-center gap-2 mb-3">
               <Target className="w-4 h-4 text-spacex-accent" /> PAYLOAD CAPACITY
@@ -549,19 +549,19 @@ function DragonDetail({ dragon }: { dragon: DragonData }) {
             <Shield className="w-4 h-4 text-red-400" /> HEAT SHIELD
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/10 p-3">
+            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/30 p-3">
               <p className="text-[10px] text-spacex-muted font-mono mb-0.5">MATERIAL</p>
               <p className="text-sm text-white font-mono">{dragon.heat_shield.material}</p>
             </div>
-            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/10 p-3">
+            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/30 p-3">
               <p className="text-[10px] text-spacex-muted font-mono mb-0.5">SIZE</p>
               <p className="text-sm text-white font-mono">{dragon.heat_shield.size_meters}m</p>
             </div>
-            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/10 p-3">
+            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/30 p-3">
               <p className="text-[10px] text-spacex-muted font-mono mb-0.5">MAX TEMP</p>
               <p className="text-sm text-white font-mono">{dragon.heat_shield.temp_degrees}°C</p>
             </div>
-            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/10 p-3">
+            <div className="rounded-lg bg-spacex-dark/30 border border-spacex-border/30 p-3">
               <p className="text-[10px] text-spacex-muted font-mono mb-0.5">DEV PARTNER</p>
               <p className="text-sm text-white font-mono">{dragon.heat_shield.dev_partner}</p>
             </div>
@@ -571,14 +571,14 @@ function DragonDetail({ dragon }: { dragon: DragonData }) {
 
       {/* Payload */}
       <div className="glass-panel hud-corners overflow-hidden">
-        <div className="h-1 bg-gradient-to-r from-spacex-accent/60 to-cyan-500/60" />
+        <div className="h-1 bg-gradient-to-r from-spacex-accent/60 to-emerald-500/60" />
         <div className="p-5">
           <h2 className="font-display text-sm font-bold text-white flex items-center gap-2 mb-3">
             <Target className="w-4 h-4 text-spacex-accent" /> PAYLOAD CAPACITY
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Launch payload */}
-            <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/10 p-4">
+            <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/30 p-4">
               <div className="flex items-center gap-2 mb-3">
                 <div className="w-8 h-8 rounded-lg bg-green-500/10 flex items-center justify-center">
                   <Rocket className="w-4 h-4 text-green-400" />
@@ -591,10 +591,10 @@ function DragonDetail({ dragon }: { dragon: DragonData }) {
               </div>
             </div>
             {/* Return payload */}
-            <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/10 p-4">
+            <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/30 p-4">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center">
-                  <Rocket className="w-4 h-4 text-blue-400 rotate-180" />
+                <div className="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center">
+                  <Rocket className="w-4 h-4 text-amber-400 rotate-180" />
                 </div>
                 <p className="text-sm font-bold text-white">Return (Down)</p>
               </div>
@@ -607,11 +607,11 @@ function DragonDetail({ dragon }: { dragon: DragonData }) {
 
           {/* Trunk / capsule */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-            <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/10 p-4">
+            <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/30 p-4">
               <p className="text-[10px] text-spacex-muted font-mono mb-2">PRESSURIZED CAPSULE</p>
               <p className="text-sm text-white font-mono">{dragon.pressurized_capsule.payload_volume.cubic_meters} m³</p>
             </div>
-            <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/10 p-4">
+            <div className="rounded-xl bg-spacex-dark/30 border border-spacex-border/30 p-4">
               <p className="text-[10px] text-spacex-muted font-mono mb-2">TRUNK VOLUME</p>
               <p className="text-sm text-white font-mono">{dragon.trunk.trunk_volume.cubic_meters} m³</p>
               <p className="text-[10px] text-spacex-muted mt-1">
@@ -632,7 +632,7 @@ function DragonDetail({ dragon }: { dragon: DragonData }) {
             </h2>
             <div className="space-y-3">
               {dragon.thrusters.map((t, idx) => (
-                <div key={idx} className="rounded-xl bg-spacex-dark/30 border border-spacex-border/10 p-4">
+                <div key={idx} className="rounded-xl bg-spacex-dark/30 border border-spacex-border/30 p-4">
                   <div className="flex items-center gap-2 mb-3">
                     <div className="w-8 h-8 rounded-lg bg-orange-500/10 flex items-center justify-center">
                       <Flame className="w-4 h-4 text-orange-400" />

@@ -282,7 +282,7 @@ function processSatcatData(records: SatcatRecord[]) {
 export async function GET() {
   try {
     const headers = {
-      "User-Agent": "SpaceClawd/1.0 (satellite tracker)",
+      "User-Agent": "ElonAgents/1.0 (satellite tracker)",
     };
 
     // ------- Fetch constellation data (3 tiers: GP → Satcat → Mock) -------

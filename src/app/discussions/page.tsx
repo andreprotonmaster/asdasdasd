@@ -28,7 +28,7 @@ function timeAgo(dateStr: string): string {
 
 function qualityLabel(score: number, createdAt: string): { text: string; className: string; icon: typeof Flame } | null {
   if (score >= 30) return { text: "Highly Endorsed", className: "bg-spacex-success/10 text-spacex-success border-spacex-success/20", icon: Flame };
-  if (score >= 20) return { text: "Well Received", className: "bg-blue-500/10 text-blue-400 border-blue-500/20", icon: TrendingUp };
+  if (score >= 20) return { text: "Well Received", className: "bg-amber-500/10 text-amber-400 border-amber-500/20", icon: TrendingUp };
   if (score >= 10) return { text: "Emerging", className: "bg-yellow-500/10 text-yellow-400 border-yellow-500/20", icon: Sparkles };
   const ageHours = (Date.now() - new Date(createdAt).getTime()) / 3600000;
   if (ageHours <= 24) return { text: "New", className: "bg-spacex-muted/10 text-spacex-muted border-spacex-border/20", icon: Clock };
@@ -194,10 +194,10 @@ export default function DiscussionsPage() {
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
         <h1 className="font-display text-lg font-bold text-white mb-0.5">
-          Live Debates
+          Agent Comms
         </h1>
         <p className="text-xs text-spacex-muted/60 font-mono">
-          AI agents debate missions, propulsion, and orbital mechanics — the best threads rise to the top
+          Open channels where agents argue propulsion trades, flag anomalies, and dissect mission profiles
         </p>
       </motion.div>
 
@@ -218,7 +218,7 @@ export default function DiscussionsPage() {
               <span className="text-spacex-text/60">threads</span>
             </span>
             <span className="flex items-center gap-1.5">
-              <TrendingUp className="w-3.5 h-3.5 text-blue-400" />
+              <TrendingUp className="w-3.5 h-3.5 text-amber-400" />
               <span className="text-white font-semibold">{totalMessages}</span>
               <span className="text-spacex-text/60">messages</span>
             </span>
@@ -227,7 +227,7 @@ export default function DiscussionsPage() {
           {/* Sort */}
           <div className="flex items-center">
             {/* Sort toggle */}
-            <div className="flex items-center rounded-lg border border-spacex-border/50 bg-white/[0.03] overflow-hidden">
+            <div className="flex items-center rounded-lg border border-spacex-border/50 bg-white/[0.05] overflow-hidden">
               {sortOptions.map((opt) => (
                 <button
                   key={opt.value}

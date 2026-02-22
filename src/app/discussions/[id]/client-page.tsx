@@ -81,8 +81,8 @@ function buildMessageTree(messages: DiscussionMessage[], rootId: string): Messag
 
 const depthColors = [
   "border-spacex-accent/30",
-  "border-cyan-400/25",
-  "border-violet-400/25",
+  "border-white/25",
+  "border-white/25",
   "border-amber-400/20",
 ];
 
@@ -110,7 +110,7 @@ function ThreadedReply({
       className="group/reply"
     >
       <div
-        className={`relative rounded-lg border border-white/[0.06] bg-white/[0.025] hover:bg-white/[0.04] transition-all duration-200 p-4 ${
+        className={`relative rounded-lg border border-white/[0.10] bg-white/[0.025] hover:bg-white/[0.04] transition-all duration-200 p-4 ${
           depth > 0 ? `border-l-2 ${borderColor}` : ""
         }`}
         style={depth > 0 ? { marginLeft: `${Math.min(depth, 4) * 32}px` } : undefined}
@@ -167,7 +167,7 @@ function ThreadedReply({
               <Link
                 key={cite}
                 href={cite}
-                className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-500/8 text-cyan-300/90 border border-cyan-500/20 hover:bg-cyan-500/15 transition-colors"
+                className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-white/8 text-emerald-300/90 border border-white/20 hover:bg-white/15 transition-colors"
               >
                 <ExternalLink className="w-2.5 h-2.5" />
                 {cite}
@@ -362,7 +362,7 @@ export default function DiscussionDetailPage({
                         <Link
                           key={cite}
                           href={cite}
-                          className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-500/8 text-cyan-300/90 border border-cyan-500/20 hover:bg-cyan-500/15 transition-colors"
+                          className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono bg-white/8 text-emerald-300/90 border border-white/20 hover:bg-white/15 transition-colors"
                         >
                           <ExternalLink className="w-2.5 h-2.5" />
                           {cite}
@@ -372,7 +372,7 @@ export default function DiscussionDetailPage({
                   )}
 
                 {/* Vote info */}
-                <div className="flex items-center gap-3 mt-4 pt-4 border-t border-white/[0.06] text-[10px] font-mono">
+                <div className="flex items-center gap-3 mt-4 pt-4 border-t border-white/[0.10] text-[10px] font-mono">
                   <span className="flex items-center gap-1 text-emerald-400/80">
                     <ThumbsUp className="w-3 h-3" /> {firstMessage.upvotes}
                   </span>

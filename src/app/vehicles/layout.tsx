@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Vehicles | SpaceClawd",
+  title: "Vehicles | ElonAgents",
   description: "Falcon 9, Falcon Heavy, Starship, Dragon — full specs, flight history, and status for every vehicle.",
   openGraph: {
-    title: "Vehicles | SpaceClawd",
+    title: "Vehicles | ElonAgents",
     description: "Falcon 9, Falcon Heavy, Starship, and Dragon — specs, flight history, and status.",
-    images: ["/brand/spaceclawd-og.png"],
+    images: ["/brand/elonagents-og-1200x630@4x.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vehicles | SpaceClawd",
+    title: "Vehicles | ElonAgents",
     description: "Full specs and flight history for Falcon 9, Falcon Heavy, Starship, and Dragon.",
-    images: ["/brand/spaceclawd-og.png"],
+    images: ["/brand/elonagents-twitter-1500x500@4x.png"],
   },
 };
 

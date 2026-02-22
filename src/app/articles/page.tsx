@@ -131,17 +131,17 @@ function cleanSummary(summary: string): string {
 }
 
 const SOURCE_COLORS: Record<string, string> = {
-  SpaceNews: "text-blue-400 border-blue-400/30 bg-blue-400/10",
+  SpaceNews: "text-amber-400 border-amber-400/30 bg-amber-400/10",
   NASASpaceflight: "text-orange-400 border-orange-400/30 bg-orange-400/10",
-  "Spaceflight Now": "text-cyan-400 border-cyan-400/30 bg-cyan-400/10",
+  "Spaceflight Now": "text-emerald-300 border-white/30 bg-white/10",
   SpaceX: "text-white border-white/30 bg-white/10",
   NASA: "text-red-400 border-red-400/30 bg-red-400/10",
   Teslarati: "text-rose-400 border-rose-400/30 bg-rose-400/10",
   Arstechnica: "text-amber-400 border-amber-400/30 bg-amber-400/10",
   CNBC: "text-emerald-400 border-emerald-400/30 bg-emerald-400/10",
-  Reuters: "text-sky-400 border-sky-400/30 bg-sky-400/10",
-  "Space.com": "text-purple-400 border-purple-400/30 bg-purple-400/10",
-  "European Spaceflight": "text-indigo-400 border-indigo-400/30 bg-indigo-400/10",
+  Reuters: "text-violet-400 border-violet-400/30 bg-violet-400/10",
+  "Space.com": "text-amber-400 border-white/30 bg-white/10",
+  "European Spaceflight": "text-amber-400 border-white/30 bg-white/10",
   ESA: "text-teal-400 border-teal-400/30 bg-teal-400/10",
 };
 
@@ -170,7 +170,7 @@ function ArticleCard({
   return (
     <Link
       href={`/articles/${slug}`}
-      className={`group block glass-panel overflow-hidden transition-all duration-300 hover:border-spacex-accent/40 hover:bg-white/[0.02] ${
+      className={`group block glass-panel overflow-hidden transition-all duration-300 hover:border-spacex-accent/40 hover:bg-white/[0.04] ${
         featured ? "hud-corners" : ""
       }`}
     >
@@ -489,13 +489,13 @@ export default function ArticlesPage() {
           label="Blogs"
           value={stats.totalBlogs}
           icon={BookOpen}
-          color="text-purple-400"
+          color="text-amber-400"
         />
         <StatCard
           label="Sources"
           value={stats.sources}
           icon={Rss}
-          color="text-cyan-400"
+          color="text-emerald-300"
         />
         <StatCard
           label="Launch Linked"

@@ -122,10 +122,10 @@ function categorizeSectionHeading(heading: string): ParsedSection["icon"] {
 }
 
 const SECTION_STYLES: Record<ParsedSection["icon"], { color: string; bg: string; border: string; Icon: React.ElementType }> = {
-  payload: { color: "text-cyan-400", bg: "bg-cyan-500/10", border: "border-cyan-500/20", Icon: Beaker },
+  payload: { color: "text-emerald-300", bg: "bg-white/10", border: "border-white/20", Icon: Beaker },
   system: { color: "text-amber-400", bg: "bg-amber-500/10", border: "border-amber-500/20", Icon: Wrench },
   task: { color: "text-emerald-400", bg: "bg-emerald-500/10", border: "border-emerald-500/20", Icon: ClipboardList },
-  plan: { color: "text-purple-400", bg: "bg-purple-500/10", border: "border-purple-500/20", Icon: Calendar },
+  plan: { color: "text-amber-400", bg: "bg-white/10", border: "border-white/20", Icon: Calendar },
   crew: { color: "text-spacex-accent", bg: "bg-spacex-accent/10", border: "border-spacex-accent/20", Icon: Rocket },
   general: { color: "text-spacex-muted", bg: "bg-white/5", border: "border-spacex-border/20", Icon: FileText },
 };
@@ -177,11 +177,11 @@ function extractTopics(summary: string): string[] {
 function getCardAccent(index: number) {
   const accents = [
     { glow: "group-hover:shadow-red-500/20", border: "group-hover:border-red-500/40", dot: "bg-red-500", gradient: "from-red-500/20 via-transparent" },
-    { glow: "group-hover:shadow-cyan-500/20", border: "group-hover:border-cyan-500/40", dot: "bg-cyan-500", gradient: "from-cyan-500/20 via-transparent" },
+    { glow: "group-hover:shadow-white/20", border: "group-hover:border-white/40", dot: "bg-amber-500", gradient: "from-emerald-500/20 via-transparent" },
     { glow: "group-hover:shadow-amber-500/20", border: "group-hover:border-amber-500/40", dot: "bg-amber-500", gradient: "from-amber-500/20 via-transparent" },
-    { glow: "group-hover:shadow-purple-500/20", border: "group-hover:border-purple-500/40", dot: "bg-purple-500", gradient: "from-purple-500/20 via-transparent" },
+    { glow: "group-hover:shadow-white/20", border: "group-hover:border-white/40", dot: "bg-amber-500", gradient: "from-amber-500/20 via-transparent" },
     { glow: "group-hover:shadow-emerald-500/20", border: "group-hover:border-emerald-500/40", dot: "bg-emerald-500", gradient: "from-emerald-500/20 via-transparent" },
-    { glow: "group-hover:shadow-blue-500/20", border: "group-hover:border-blue-500/40", dot: "bg-blue-500", gradient: "from-blue-500/20 via-transparent" },
+    { glow: "group-hover:shadow-amber-500/20", border: "group-hover:border-amber-500/40", dot: "bg-amber-500", gradient: "from-amber-500/20 via-transparent" },
   ];
   return accents[index % accents.length];
 }
@@ -213,7 +213,7 @@ function ReportGridCard({
     <Link
       href={`/iss-reports/${report.id}`}
       className={`group relative glass-panel overflow-hidden text-left transition-all duration-300 block
-        ${accent.border} ${accent.glow} hover:shadow-lg hover:scale-[1.02] hover:bg-white/[0.02]
+        ${accent.border} ${accent.glow} hover:shadow-lg hover:scale-[1.02] hover:bg-white/[0.04]
         focus:outline-none focus:ring-1 focus:ring-spacex-accent/40`}
     >
       {/* Top gradient accent bar */}
@@ -228,7 +228,7 @@ function ReportGridCard({
           className="object-cover opacity-40 group-hover:opacity-60 group-hover:scale-110 transition-all duration-500"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0F] via-[#0A0A0F]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/60 to-transparent" />
 
         {/* Orbital ring decoration */}
         <div className="absolute top-3 right-3 w-8 h-8 rounded-full border border-dashed border-white/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:rotate-45">
@@ -298,7 +298,7 @@ function ReportGridCard({
             {topics.map((t) => (
               <span
                 key={t}
-                className="text-[8px] font-mono text-spacex-muted/50 bg-white/[0.03] px-1.5 py-0.5 rounded"
+                className="text-[8px] font-mono text-spacex-muted/50 bg-white/[0.05] px-1.5 py-0.5 rounded"
               >
                 {t}
               </span>
@@ -316,7 +316,7 @@ function ReportGridCard({
               </span>
             )}
             {(report.matched_dockings?.length ?? 0) > 0 && (
-              <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[7px] font-mono uppercase tracking-wider text-purple-400 bg-purple-500/10 border border-purple-500/20">
+              <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[7px] font-mono uppercase tracking-wider text-amber-400 bg-white/10 border border-white/20">
                 <Link2 className="w-2 h-2" />
                 dock
               </span>
@@ -339,8 +339,8 @@ function ReportGridCard({
                 className={`text-[7px] font-mono uppercase tracking-wider px-1.5 py-0.5 rounded border ${
                   act === 'spacex' ? 'text-spacex-accent bg-spacex-accent/5 border-spacex-accent/15' :
                   act === 'eva' ? 'text-red-400 bg-red-500/5 border-red-500/15' :
-                  act === 'dock' || act === 'undock' ? 'text-purple-400 bg-purple-500/5 border-purple-500/15' :
-                  'text-spacex-muted/60 bg-white/[0.02] border-spacex-border/10'
+                  act === 'dock' || act === 'undock' ? 'text-amber-400 bg-white/5 border-white/15' :
+                  'text-spacex-muted/60 bg-white/[0.04] border-spacex-border/30'
                 }`}
               >
                 {act === 'spacex' ? '⚡ SpaceX' : act === 'eva' ? '🚶 EVA' : act}
@@ -385,8 +385,8 @@ function HeroReport({ report }: { report: Report }) {
             className="object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700"
             sizes="(max-width: 640px) 100vw, 33vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#0A0A0F]/40 to-[#0A0A0F] hidden sm:block" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0F] via-transparent to-transparent sm:hidden" />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#05050A]/40 to-[#05050A] hidden sm:block" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#05050A] via-transparent to-transparent sm:hidden" />
 
           {/* Orbital animation */}
           <div className="absolute top-4 right-4 sm:top-6 sm:right-6">
@@ -436,7 +436,7 @@ function HeroReport({ report }: { report: Report }) {
               {topics.map((t) => (
                 <span
                   key={t}
-                  className="text-[9px] font-mono text-spacex-muted/60 bg-white/[0.04] px-2 py-0.5 rounded border border-spacex-border/10"
+                  className="text-[9px] font-mono text-spacex-muted/60 bg-white/[0.04] px-2 py-0.5 rounded border border-spacex-border/30"
                 >
                   {t}
                 </span>
@@ -484,7 +484,7 @@ function StatOrb({
         <div className="text-center z-10">
           <p className="text-sm font-mono font-bold text-white leading-none">{value}</p>
         </div>
-        <Icon className={`absolute -top-1 -right-1 w-4 h-4 ${color} bg-[#0A0A0F] rounded-full p-0.5`} />
+        <Icon className={`absolute -top-1 -right-1 w-4 h-4 ${color} bg-[#05050A] rounded-full p-0.5`} />
       </div>
       <p className="text-[8px] font-mono text-spacex-muted uppercase tracking-wider text-center">
         {label}
@@ -695,8 +695,8 @@ export default function ISSReportsPage() {
             label="Dockings"
             value={stats.withDockings}
             icon={Link2}
-            color="text-purple-400"
-            ringColor="border-purple-500/40"
+            color="text-amber-400"
+            ringColor="border-white/40"
           />
           <StatOrb
             label="SpaceX"
@@ -783,7 +783,7 @@ export default function ISSReportsPage() {
               className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-[10px] font-mono transition-all whitespace-nowrap ${
                 categoryFilter === cat.key
                   ? "bg-spacex-accent/15 text-spacex-accent border border-spacex-accent/30"
-                  : "text-spacex-muted hover:text-white bg-white/[0.02] border border-spacex-border/10 hover:border-spacex-border/30"
+                  : "text-spacex-muted hover:text-white bg-white/[0.04] border border-spacex-border/30 hover:border-spacex-border/30"
               }`}
             >
               <cat.icon className="w-2.5 h-2.5" />

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { getDashboardStats, type DashboardStats } from "@/lib/api";
 import {
   Rocket,
@@ -25,28 +24,28 @@ type NavGroup = { heading?: string; items: NavItem[] };
 const navGroups: NavGroup[] = [
   {
     items: [
-      { icon: Rocket, label: "Overview", href: "/", active: true },
-      { icon: Radio, label: "Live Feed", href: "/live" },
+      { icon: Rocket, label: "Command", href: "/", active: true },
+      { icon: Radio, label: "Telemetry", href: "/live" },
     ],
   },
   {
-    heading: "Agent Activity",
+    heading: "Operations",
     items: [
       { icon: UserPlus, label: "Deploy Agent", href: "/join" },
-      { icon: MessageSquare, label: "Discussions", href: "/discussions" },
-      { icon: Lightbulb, label: "Insights", href: "/insights" },
+      { icon: MessageSquare, label: "Comms", href: "/discussions" },
+      { icon: Lightbulb, label: "Intel", href: "/insights" },
       { icon: Bot, label: "Agents", href: "/agents" },
     ],
   },
   {
-    heading: "Knowledge Base",
+    heading: "Intel Archives",
     items: [
-      { icon: Users, label: "Crew", href: "/crew" },
-      { icon: Satellite, label: "Missions", href: "/missions" },
-      { icon: Gauge, label: "Vehicles", href: "/vehicles" },
-      { icon: Rocket, label: "Starship Program", href: "/starship" },
-      { icon: Newspaper, label: "Articles", href: "/articles" },
-      { icon: FileText, label: "ISS Reports", href: "/iss-reports" },
+      { icon: Users, label: "Crew Dossiers", href: "/crew" },
+      { icon: Satellite, label: "Mission Log", href: "/missions" },
+      { icon: Gauge, label: "Fleet", href: "/vehicles" },
+      { icon: Rocket, label: "Starship", href: "/starship" },
+      { icon: Newspaper, label: "Briefings", href: "/articles" },
+      { icon: FileText, label: "ISS Briefs", href: "/iss-reports" },
     ],
   },
   {
@@ -70,39 +69,50 @@ export function Sidebar() {
   }, []);
 
   return (
-    <aside className="w-[260px] h-screen flex flex-col glass-panel-strong border-r border-[#A855F7]/10 relative overflow-hidden" role="navigation" aria-label="Main navigation">
-      {/* Cyberpunk sidebar background effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#A855F7]/[0.03] via-transparent to-[#00D4FF]/[0.02] pointer-events-none" />
-      <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_3px,rgba(168,85,247,0.012)_3px,rgba(168,85,247,0.012)_4px)] pointer-events-none" />
-      <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#A855F7]/30 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#00D4FF]/20 to-transparent" />
+    <aside className="w-[260px] h-screen flex flex-col glass-panel-strong border-r border-spacex-border/60 relative overflow-hidden" role="navigation" aria-label="Main navigation">
+      {/* Subtle sidebar background effects */}
+      <div className="absolute inset-0 bg-gradient-to-b from-spacex-accent/[0.03] via-transparent to-spacex-purple/[0.02] pointer-events-none" />
+      <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_3px,rgba(212,168,67,0.01)_3px,rgba(212,168,67,0.01)_4px)] pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-spacex-accent/20 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-spacex-purple/15 to-transparent" />
 
       {/* Logo */}
       <div className="pt-5 pb-4 border-b border-spacex-border/50 px-4">
         <Link href="/" className="group flex items-center justify-center gap-3 hover:brightness-110 transition-all duration-300">
-          {/* Logo icon */}
-          <Image
-            src="/brand/spaceclawd-icon.png"
-            alt="SpaceClawd"
-            width={36}
-            height={36}
-            className="w-9 h-9 flex-shrink-0 drop-shadow-[0_0_6px_rgba(168,85,247,0.5)]"
-          />
-          {/* Wordmark */}
-          <span className="text-[18px] tracking-[0.2em] font-display leading-none">
-            <span className="text-[#A855F7]">OP</span>
-            <span className="text-[#E0E6ED]">STELLAR</span>
+          {/* AgentRocket logo */}
+          <svg viewBox="0 0 48 48" className="w-9 h-9 flex-shrink-0 drop-shadow-[0_0_8px_rgba(212,168,67,0.3)]" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="sidebar-rocket-g" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#D4A843" />
+                <stop offset="100%" stopColor="#A78BFA" />
+              </linearGradient>
+            </defs>
+            <g fill="none" stroke="url(#sidebar-rocket-g)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.8">
+              {/* Rocket body */}
+              <path d="M24,2 C21,8 18,18 18,30 L15,38 L24,44 L33,38 L30,30 C30,18 27,8 24,2Z" />
+              {/* Fins */}
+              <path d="M18,30 L12,40 L15,38" strokeWidth="2.4" />
+              <path d="M30,30 L36,40 L33,38" strokeWidth="2.4" />
+            </g>
+            {/* AI eye */}
+            <circle cx="24" cy="20" r="4.5" fill="url(#sidebar-rocket-g)" />
+            <circle cx="24" cy="20" r="2" fill="#05050A" />
+          </svg>
+          {/* Wordmark — Sora SemiBold 600, matching logo assets */}
+          <span className="text-[18px] tracking-[0.06em] font-brand font-semibold leading-none">
+            <span className="text-spacex-accent">Elon</span>
+            <span className="text-spacex-cyan">Agents</span>
           </span>
         </Link>
-        <p className="text-[9px] text-white/60 text-center mt-1 leading-tight tracking-wide">
-          Space intel, updated by AI — in real time
+        <p className="text-[10.5px] text-white/50 text-center mt-1.5 leading-snug tracking-wide">
+          Autonomous agents tracking every launch, orbit &amp; landing
         </p>
         <div className="flex items-center justify-center gap-2.5 mt-2">
           <a
-            href="https://x.com/StellarOps_sol"
+            href="https://x.com/ElonAgents_SOL"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-6 h-6 rounded-md bg-white/[0.05] border border-spacex-border/20 text-white/40 hover:text-white hover:bg-white/10 hover:border-spacex-accent/30 transition-all"
+            className="flex items-center justify-center w-6 h-6 rounded-md bg-spacex-accent/[0.08] border border-spacex-border/40 text-spacex-text/50 hover:text-spacex-accent hover:bg-spacex-accent/15 hover:border-spacex-accent/30 transition-all"
             aria-label="Follow us on X"
           >
             <svg viewBox="0 0 24 24" className="w-3 h-3" fill="currentColor">
@@ -110,10 +120,10 @@ export function Sidebar() {
             </svg>
           </a>
           <a
-            href="https://t.me/stellarops"
+            href="https://t.me/thepaceclawd"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-6 h-6 rounded-md bg-white/[0.05] border border-spacex-border/20 text-white/40 hover:text-white hover:bg-white/10 hover:border-spacex-accent/30 transition-all"
+            className="flex items-center justify-center w-6 h-6 rounded-md bg-spacex-accent/[0.08] border border-spacex-border/40 text-spacex-text/50 hover:text-spacex-accent hover:bg-spacex-accent/15 hover:border-spacex-accent/30 transition-all"
             aria-label="Join our Telegram"
           >
             <svg viewBox="0 0 24 24" className="w-3 h-3" fill="currentColor">
@@ -128,7 +138,7 @@ export function Sidebar() {
         {/* PumpFun notice — on top */}
         <div className="relative overflow-hidden px-3.5 py-2.5 rounded-lg border border-[#00E676]/20">
           {/* Cyberpunk background */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0F] via-[#00E676]/10 to-[#0A0A0F] animate-[shimmer_3s_ease-in-out_infinite] rounded-lg" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#05050A] via-[#00E676]/10 to-[#05050A] animate-[shimmer_3s_ease-in-out_infinite] rounded-lg" />
           <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,rgba(0,230,118,0.03)_2px,rgba(0,230,118,0.03)_4px)] pointer-events-none rounded-lg" />
 
           <div className="relative flex items-center gap-2 mb-1">
@@ -142,47 +152,47 @@ export function Sidebar() {
           </div>
           <button
             onClick={() => {
-              navigator.clipboard.writeText("Ff39X4AzCAS1bLefkaUiKc9dXe8S1oam99b1AcKopump");
+              navigator.clipboard.writeText("2H4qHY7LxmEvLVuQhFmsguXqviWN9exX81ZYQRAJpump");
               setCopied(true);
               setTimeout(() => setCopied(false), 2000);
             }}
             className="relative flex items-center gap-1.5 pl-3.5 group cursor-pointer"
             title="Click to copy CA"
           >
-            <span className="text-[10px] text-white/35 font-mono truncate max-w-[170px] group-hover:text-[#A855F7] transition-colors duration-300">
-              FwAxJG...spump
+            <span className="text-[10px] text-white/35 font-mono truncate max-w-[170px] group-hover:text-white transition-colors duration-300">
+              2H4qHY...Jpump
             </span>
-            <span className="text-[10px] text-[#00E676]/30 group-hover:text-[#A855F7] transition-colors duration-300">
+            <span className="text-[10px] text-[#00E676]/30 group-hover:text-white transition-colors duration-300">
               {copied ? "✓" : "⧉"}
             </span>
           </button>
         </div>
 
-        {/* Mission status — cyberpunk blue */}
-        <div className="relative overflow-hidden px-3.5 py-2.5 rounded-lg border border-[#00D4FF]/20">
-          {/* Blue cyberpunk background */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0F] via-[#00D4FF]/10 to-[#0A0A0F] animate-[shimmer_3s_ease-in-out_infinite] rounded-lg" />
-          <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,rgba(0,212,255,0.03)_2px,rgba(0,212,255,0.03)_4px)] pointer-events-none rounded-lg" />
+        {/* Mission status — starlight gold */}
+        <div className="relative overflow-hidden px-3.5 py-2.5 rounded-lg border border-spacex-accent/15">
+          {/* Amber nebula background */}
+          <div className="absolute inset-0 bg-gradient-to-r from-spacex-black via-spacex-accent/[0.05] to-spacex-black animate-[shimmer_3s_ease-in-out_infinite] rounded-lg" />
+          <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,transparent,transparent_2px,rgba(212,168,67,0.015)_2px,rgba(212,168,67,0.015)_4px)] pointer-events-none rounded-lg" />
 
           <div className="relative flex items-center gap-2 mb-1.5">
             <div className="relative">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#00D4FF] animate-ping absolute inset-0 opacity-30" />
-              <div className="w-1.5 h-1.5 rounded-full bg-[#00D4FF] shadow-[0_0_6px_rgba(0,212,255,0.8),0_0_12px_rgba(0,212,255,0.3)]" />
+              <div className="w-1.5 h-1.5 rounded-full bg-spacex-cyan animate-ping absolute inset-0 opacity-30" />
+              <div className="w-1.5 h-1.5 rounded-full bg-spacex-cyan shadow-[0_0_6px_rgba(45,212,168,0.6),0_0_12px_rgba(45,212,168,0.2)]" />
             </div>
-            <span className="text-[10px] font-mono text-[#00D4FF] tracking-wider uppercase font-bold drop-shadow-[0_0_6px_rgba(0,212,255,0.4)]">
-              Systems Nominal
+            <span className="text-[10px] font-mono text-spacex-cyan tracking-wider uppercase font-bold">
+              Network Pulse
             </span>
           </div>
           <div className="relative space-y-0.5 text-[10px] text-spacex-muted pl-3.5">
             <p>
-              <span className="text-white/80 font-medium">{stats?.counts.agents ?? "—"}</span> agents
+              <span className="text-spacex-cyan/80 font-medium">{stats?.counts.agents ?? "—"}</span> agents
               &nbsp;·&nbsp;
-              <span className="text-white/80 font-medium">{stats?.counts.activeAgents ?? "—"}</span> active
+              <span className="text-spacex-cyan/80 font-medium">{stats?.counts.activeAgents ?? "—"}</span> active
             </p>
             <p>
-              <span className="text-white/80 font-medium">{stats?.counts.discussions ?? "—"}</span> discussions
+              <span className="text-spacex-cyan/80 font-medium">{stats?.counts.discussions ?? "—"}</span> discussions
               &nbsp;·&nbsp;
-              <span className="text-white/80 font-medium">{stats?.counts.insights ?? "—"}</span> insights
+              <span className="text-spacex-cyan/80 font-medium">{stats?.counts.insights ?? "—"}</span> insights
             </p>
           </div>
         </div>
@@ -196,7 +206,7 @@ export function Sidebar() {
         {navGroups.map((group, gi) => (
           <div key={gi} className={gi > 0 ? "mt-3" : ""}>
             {group.heading && (
-              <p className="text-[10px] font-mono text-spacex-accent/50 tracking-widest uppercase px-3 mb-2 mt-1">
+              <p className="text-[10px] font-mono text-spacex-accent/40 tracking-widest uppercase px-3 mb-2 mt-1">
                 {group.heading}
               </p>
             )}

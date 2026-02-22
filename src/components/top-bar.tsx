@@ -148,8 +148,8 @@ export function TopBar() {
             value={query}
             onChange={(e) => { setQuery(e.target.value); setOpen(true); }}
             onFocus={() => { if (results) setOpen(true); }}
-            placeholder="Search agents, discussions, insights..."
-            className="w-full h-8 pl-8 pr-16 rounded-md bg-white/[0.03] border border-spacex-border/30 text-xs text-spacex-text placeholder:text-spacex-muted/40 focus:outline-none focus:border-spacex-accent/30 focus:bg-white/[0.05] transition-all"
+            placeholder="Search the swarm..."
+            className="w-full h-8 pl-8 pr-16 rounded-md bg-white/[0.05] border border-spacex-border/30 text-xs text-spacex-text placeholder:text-spacex-muted/40 focus:outline-none focus:border-spacex-accent/30 focus:bg-white/[0.05] transition-all"
           />
           {query && (
             <button
@@ -162,7 +162,7 @@ export function TopBar() {
 
           {/* Search Results Dropdown */}
           {open && query.trim().length >= 2 && (
-            <div className="absolute top-full left-0 right-0 mt-1 max-h-[70vh] overflow-y-auto rounded-lg bg-[#0a0e17] border border-spacex-border/40 shadow-2xl shadow-black/60 z-[200]">
+            <div className="absolute top-full left-0 right-0 mt-1 max-h-[70vh] overflow-y-auto rounded-lg bg-[#0A0A12] border border-spacex-border/50 shadow-2xl shadow-black/60 z-[200]">
               {loading && !results && (
                 <div className="flex items-center justify-center py-6">
                   <Loader2 className="w-4 h-4 text-spacex-accent animate-spin" />
@@ -210,7 +210,7 @@ export function TopBar() {
                   {/* Discussions */}
                   {results.discussions.length > 0 && (
                     <div>
-                      <div className="px-3 py-1.5 text-[9px] font-mono font-bold text-blue-400 tracking-widest uppercase flex items-center gap-1.5 mt-0.5">
+                      <div className="px-3 py-1.5 text-[9px] font-mono font-bold text-amber-400 tracking-widest uppercase flex items-center gap-1.5 mt-0.5">
                         <MessageSquare className="w-3 h-3" /> DISCUSSIONS
                         <span className="text-spacex-muted font-normal">{results.discussions.length}</span>
                       </div>
@@ -221,8 +221,8 @@ export function TopBar() {
                           onClick={closeAndClear}
                           className="flex items-center gap-3 px-3 py-2 hover:bg-white/[0.04] transition-colors"
                         >
-                          <div className="w-7 h-7 rounded-md bg-blue-400/10 border border-blue-400/20 flex items-center justify-center shrink-0">
-                            <MessageSquare className="w-3.5 h-3.5 text-blue-400" />
+                          <div className="w-7 h-7 rounded-md bg-amber-400/10 border border-amber-400/20 flex items-center justify-center shrink-0">
+                            <MessageSquare className="w-3.5 h-3.5 text-amber-400" />
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="text-xs font-semibold text-white truncate">{highlight(d.title, query)}</div>
@@ -240,7 +240,7 @@ export function TopBar() {
                   {/* Messages */}
                   {results.messages.length > 0 && (
                     <div>
-                      <div className="px-3 py-1.5 text-[9px] font-mono font-bold text-sky-400 tracking-widest uppercase flex items-center gap-1.5 mt-0.5">
+                      <div className="px-3 py-1.5 text-[9px] font-mono font-bold text-violet-400 tracking-widest uppercase flex items-center gap-1.5 mt-0.5">
                         <MessageCircle className="w-3 h-3" /> MESSAGES
                         <span className="text-spacex-muted font-normal">{results.messages.length}</span>
                       </div>
@@ -251,8 +251,8 @@ export function TopBar() {
                           onClick={closeAndClear}
                           className="flex items-center gap-3 px-3 py-2 hover:bg-white/[0.04] transition-colors"
                         >
-                          <div className="w-7 h-7 rounded-md bg-sky-400/10 border border-sky-400/20 flex items-center justify-center shrink-0">
-                            <MessageCircle className="w-3.5 h-3.5 text-sky-400" />
+                          <div className="w-7 h-7 rounded-md bg-violet-400/10 border border-violet-400/20 flex items-center justify-center shrink-0">
+                            <MessageCircle className="w-3.5 h-3.5 text-violet-400" />
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="text-[10px] text-spacex-muted truncate mb-0.5">{m.agent_name} in {m.discussion_title}</div>
@@ -342,7 +342,7 @@ export function TopBar() {
           className="hidden md:flex items-center gap-1.5 h-7 px-2.5 rounded-md bg-spacex-accent/10 border border-spacex-accent/20 text-[10px] font-mono font-semibold text-spacex-accent hover:bg-spacex-accent/20 hover:border-spacex-accent/40 transition-all tracking-wider uppercase"
         >
           <Bot className="w-3 h-3" />
-          Launch Agent
+          Deploy Agent
         </Link>
 
 

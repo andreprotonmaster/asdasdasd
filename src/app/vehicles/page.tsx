@@ -110,7 +110,7 @@ function VehicleCard({ rocket, index }: { rocket: RocketType; index: number }) {
       className="glass-panel hud-corners overflow-hidden cursor-pointer group hover:border-spacex-accent/30 transition-colors flex flex-col"
       onClick={() => router.push(`/vehicles/${rocket.id}`)}
     >
-      <div className={`h-1 ${rocket.active ? "bg-gradient-to-r from-spacex-accent to-blue-600" : "bg-gradient-to-r from-gray-600 to-gray-500"}`} />
+      <div className={`h-1 ${rocket.active ? "bg-gradient-to-r from-spacex-accent to-amber-600" : "bg-gradient-to-r from-gray-600 to-gray-500"}`} />
 
       {/* Image */}
       {rocket.flickr_images?.[0] && (
@@ -167,26 +167,26 @@ function VehicleCard({ rocket, index }: { rocket: RocketType; index: number }) {
 
         {/* Stats */}
         <div className="grid grid-cols-2 gap-2 mb-4 text-center">
-          <div className="rounded bg-spacex-dark/40 border border-spacex-border/10 py-2 px-1">
+          <div className="rounded bg-spacex-dark/40 border border-spacex-border/30 py-2 px-1">
             <p className="text-sm font-bold text-white font-mono">{rocket.height.meters}m</p>
             <p className="text-[8px] font-mono text-spacex-muted mt-0.5">HEIGHT</p>
           </div>
-          <div className="rounded bg-spacex-dark/40 border border-spacex-border/10 py-2 px-1">
+          <div className="rounded bg-spacex-dark/40 border border-spacex-border/30 py-2 px-1">
             <p className="text-sm font-bold text-white font-mono">{(rocket.mass.kg / 1000).toFixed(0)}t</p>
             <p className="text-[8px] font-mono text-spacex-muted mt-0.5">MASS</p>
           </div>
-          <div className="rounded bg-spacex-dark/40 border border-spacex-border/10 py-2 px-1">
+          <div className="rounded bg-spacex-dark/40 border border-spacex-border/30 py-2 px-1">
             <p className="text-sm font-bold text-white font-mono">{rocket.engines.number} {rocket.engines.type}</p>
             <p className="text-[8px] font-mono text-spacex-muted mt-0.5">ENGINES</p>
           </div>
-          <div className="rounded bg-spacex-dark/40 border border-spacex-border/10 py-2 px-1">
+          <div className="rounded bg-spacex-dark/40 border border-spacex-border/30 py-2 px-1">
             <p className="text-sm font-bold text-white font-mono">{(maxPayload / 1000).toFixed(0)}t</p>
             <p className="text-[8px] font-mono text-spacex-muted mt-0.5">TO LEO</p>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="mt-auto flex items-center justify-between pt-3 border-t border-spacex-border/10">
+        <div className="mt-auto flex items-center justify-between pt-3 border-t border-spacex-border/30">
           <span className="text-[10px] font-mono text-spacex-muted">
             {formatCost(rocket.cost_per_launch)}/launch
           </span>
@@ -232,7 +232,7 @@ function SpacecraftCard({ dragon, index }: { dragon: DragonType; index: number }
               <CheckCircle2 className="w-2.5 h-2.5" /> ACTIVE
             </span>
             {dragon.crew_capacity > 0 && (
-              <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[9px] font-mono bg-blue-500/20 text-blue-400 border border-blue-500/30 backdrop-blur-sm">
+              <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[9px] font-mono bg-amber-500/20 text-amber-400 border border-amber-500/30 backdrop-blur-sm">
                 <Users className="w-2.5 h-2.5" /> CREW RATED
               </span>
             )}
@@ -255,26 +255,26 @@ function SpacecraftCard({ dragon, index }: { dragon: DragonType; index: number }
 
         {/* Stats */}
         <div className="grid grid-cols-2 gap-2 mb-4 text-center">
-          <div className="rounded bg-spacex-dark/40 border border-spacex-border/10 py-2 px-1">
+          <div className="rounded bg-spacex-dark/40 border border-spacex-border/30 py-2 px-1">
             <p className="text-sm font-bold text-white font-mono">{dragon.crew_capacity}</p>
             <p className="text-[8px] font-mono text-spacex-muted mt-0.5">CREW</p>
           </div>
-          <div className="rounded bg-spacex-dark/40 border border-spacex-border/10 py-2 px-1">
+          <div className="rounded bg-spacex-dark/40 border border-spacex-border/30 py-2 px-1">
             <p className="text-sm font-bold text-white font-mono">{(dragon.dry_mass_kg / 1000).toFixed(1)}t</p>
             <p className="text-[8px] font-mono text-spacex-muted mt-0.5">MASS</p>
           </div>
-          <div className="rounded bg-spacex-dark/40 border border-spacex-border/10 py-2 px-1">
+          <div className="rounded bg-spacex-dark/40 border border-spacex-border/30 py-2 px-1">
             <p className="text-sm font-bold text-white font-mono">{dragon.heat_shield.temp_degrees}°</p>
             <p className="text-[8px] font-mono text-spacex-muted mt-0.5">HEAT SHIELD</p>
           </div>
-          <div className="rounded bg-spacex-dark/40 border border-spacex-border/10 py-2 px-1">
+          <div className="rounded bg-spacex-dark/40 border border-spacex-border/30 py-2 px-1">
             <p className="text-sm font-bold text-white font-mono">{dragon.thrusters.reduce((s, t) => s + t.amount, 0)}</p>
             <p className="text-[8px] font-mono text-spacex-muted mt-0.5">THRUSTERS</p>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="mt-auto flex items-center justify-between pt-3 border-t border-spacex-border/10">
+        <div className="mt-auto flex items-center justify-between pt-3 border-t border-spacex-border/30">
           <span className="text-[10px] font-mono text-spacex-muted">
             First flight: {new Date(dragon.first_flight).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
           </span>
@@ -330,7 +330,7 @@ export default function VehiclesPage() {
             <span className="text-spacex-muted">engines</span>
           </span>
           <span className="flex items-center gap-1.5 text-spacex-text/70">
-            <Target className="w-4 h-4 text-cyan-400" />
+            <Target className="w-4 h-4 text-emerald-300" />
             <strong className="text-white">{(maxPayload / 1000).toFixed(0)}t</strong>
             <span className="text-spacex-muted">max payload</span>
           </span>
