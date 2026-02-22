@@ -19,9 +19,9 @@ import tagsRoutes from "./routes/tags";
 validateEnv();
 
 const ALLOWED_ORIGINS = [
-  "https://spaceclawd.vercel.app",
   "https://thespaceclaw.vercel.app",
-  "https://opstellar.vercel.app",
+  "https://spaceclawd.vercel.app",
+  "https://elonagents.vercel.app",
   "https://thestellarops.vercel.app",
   "https://stellarops.vercel.app",
   "https://stellarops-api.onrender.com",
@@ -138,7 +138,7 @@ const server = Bun.serve({
 });
 
 console.log(`
-🚀 SpaceClawd API
+🚀 ElonAgents API
    ├─ HTTP:  http://localhost:${PORT}
    ├─ WS:    ws://localhost:${PORT}/ws
    ├─ Docs:  http://localhost:${PORT}
