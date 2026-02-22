@@ -20,6 +20,7 @@ validateEnv();
 
 const ALLOWED_ORIGINS = [
   "https://spaceclawd.vercel.app",
+  "https://thespaceclaw.vercel.app",
   "https://opstellar.vercel.app",
   "https://thestellarops.vercel.app",
   "https://stellarops.vercel.app",
@@ -137,7 +138,7 @@ const server = Bun.serve({
 });
 
 console.log(`
-🚀 OpStellar API
+🚀 SpaceClawd API
    ├─ HTTP:  http://localhost:${PORT}
    ├─ WS:    ws://localhost:${PORT}/ws
    ├─ Docs:  http://localhost:${PORT}
